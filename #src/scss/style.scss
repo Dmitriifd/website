@@ -1,0 +1,491 @@
+//<МИКСИНЫ>===============================================================================================
+@import "mixins";
+//</МИКСИНЫ>===============================================================================================
+
+//<ШРИФТЫ>===============================================================================================
+
+//<Подключаем шрифты>=======================================================================================
+//&display=swap&subset=cyrillic-ext
+@import "fonts";
+//</Подключаем шрифты>=======================================================================================
+
+//<Иконочные шрифты>==========================================================================================
+//@import "icons";
+//</Иконочные шрифты>==========================================================================================
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontFamily: "Geometria";
+$fontSize: 14;
+//</Шрифт по умолчанию>==========================================================================================
+
+//</ШРИФТЫ>=======================================================================================================
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minWidth: 0;
+$maxWidth: 1440;
+$maxWidthContainer: 1170;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainColor: #111;
+
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "null";
+body {
+	font-family: $fontFamily;
+	font-size: 14px;
+	color: $mainColor;
+	
+	// &._lock {
+	// 	overflow: hidden;
+	// }
+}
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	
+	&._loaded {
+	}
+}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+._container {
+	// max-width: $maxWidthContainer + px;
+	// max-width: 320px;
+	// margin: 0 auto;
+	// padding: 0 15px;
+	// @media (max-width: $md1+px) {
+	// 	max-width: 970px;
+	// }
+	// @media (max-width: $md2+px) {
+	// 	max-width: 750px;
+	// }
+	// @media (max-width: $md3+px) {
+	// 	max-width: none;
+	// 	padding: 0 10px;
+	// }
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "forms";
+@import "ui";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+//@import "datepicker";
+//@import "lightgallery";
+//@import "pagging";
+@import "popup";
+@import "header";
+@import "footer";
+@import "home";
+@import "slick";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
+
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+.page {
+	flex: 1 1 auto;
+}
+//===================================================================================================================================
+
+//</ОСНОВНОЙ БЛОК>====================================================================================================
+
+.container {
+	max-width: 1210px;
+	padding: 0 15px;
+	margin: 0 auto;
+	@media (min-width: 768px) {
+		padding: 0 20px;
+	}
+}
+
+/*  TOP SLIDER  */
+
+
+
+.top-slider {
+	visibility: visible;
+	overflow: visible;
+	@media (min-width: 1200px) {
+		// margin-right: -100%;
+		// margin-left: -100%;
+	}
+	// @media (max-width: 780px) {
+	// 	margin-right: -60px;
+	// 	margin-left: -60px;
+	// }
+	@media (max-width: 480px) {
+		// margin-right: -15px;
+	}
+}
+
+.top-slider__item {
+	margin: 0 8px;
+	padding-bottom: 18px;
+
+	img {
+		border-radius: 10px;
+		max-width: 100%;
+	}
+
+	
+	
+}
+
+
+/* Head nav  */
+
+.head {
+	
+	
+
+	&__promotions {
+		display: none;
+		@media (max-width: 767px) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			min-width: 286px;
+			margin-bottom: 18px;
+		}
+	}
+
+	&__link {
+		font-weight: 500;
+		line-height: 18px;
+		color:#E94F1D;
+		padding-left: 34px;
+		padding-right: 34px;
+		// margin-left: 10px;
+		// margin-right: 20px;
+		&:first-child {
+			margin-right: 42px;
+		}
+
+		&--promotion {
+			position: relative;
+			
+			
+			&::before {
+				content: '';
+				position: absolute;
+				top: 7px; 
+				left: 0;
+				width: 24px;
+				height: 24px;
+				background-image: url('../img/icons/discount.svg');
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: 11px; 
+				right: -12px; 
+				width: 24px;
+				height: 24px;
+				background-image: url('../img/icons/arrow.right.svg');
+				background-repeat: no-repeat;
+			}
+			
+		}
+		&--delivery {
+			position: relative;
+			
+			&::before {
+				content: '';
+				position: absolute;
+				top: 6px;
+				left: -3px;
+				width: 24px;
+				height: 24px;
+				background-image: url('../img/icons/dostavka.svg');
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: 10px;
+				right: -8px;
+				width: 24px;
+				height: 24px;
+				background-image: url('../img/icons/arrow.right.svg');
+				background-repeat: no-repeat;
+			}
+		}
+	}
+	
+	&__promo {
+		min-height: 60px;
+		background: #F8F8F8;
+		margin-bottom: 20px;
+		@media (min-width: 767px) {
+			display: none;
+		}
+		@media (min-width: 1200px) {
+			display: block;
+			padding: 15px 0;
+			background: none;
+			
+		}
+	}
+
+	&__promo-wrap {
+		@media (min-width: 1200px) {
+			width: 390px;
+			background: #F8F8F8;
+			border-radius: 10px;
+			margin: 0 auto;
+			padding: 15px;
+		}
+	}
+
+	&__form {
+		@media (max-width: 767px) {
+			display: flex;
+			padding: 10px 0;
+			max-width: 360px;
+			margin: 0 auto;
+		}
+		@media (min-width: 1200px) {
+			display: flex;
+			max-width: 360px;
+			margin: 0 auto;
+		}
+		input {
+			background: #FFFFFF;
+			box-shadow: 0px 5px 10px rgba(120, 125, 139, 0.15);
+			border-radius: 6px;
+			width: 100%;
+			height: 40px;
+			padding: 0 20px;
+			border: 1px solid #D6D6D6;
+
+			&::placeholder {
+				color: #969696;
+			}
+			
+			@media (min-width: 1200px) {
+				width: 360px;
+			}
+			
+		}
+		
+
+		button {
+			margin-left: -30px;
+		}
+	}
+
+	
+}
+
+.product-slider .slick-list {
+	overflow: hidden;
+}
+
+.slick-list {
+	overflow: visible;
+	@media (min-width: 768px) {
+		
+	}
+}
+
+.slick-slider{
+	min-width: 0;
+}
+.slick-initialized .slick-slide {
+    display: flex;
+}
+
+// .slick-track{
+// 	display: flex;
+// 	align-items: flex-start;
+// }
+
+
+/* Product slider */
+
+.product-slider {
+		position: relative;
+		margin-right: -100%;
+		margin-bottom: 20px;
+		
+		&__header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+		&__title {
+
+		}
+		&__controls {
+
+		}
+		&__button {
+			// fill: #4B4B4B;
+		}
+		&__button:focus {
+			// fill: #B3B1B1;
+		}
+
+
+
+		&__slide {
+			display: flex;
+			align-items:center;
+			width: 200px;
+			min-height: 100px;
+			background: #FFFFFF;
+			padding: 10px;
+			border: 1px solid #D6D6D6;
+			border-radius: 10px;
+			margin-right: 15px;
+			img {
+				margin-right: 10px;
+			}
+		}
+		&__wrap {
+
+		}
+		&__title {
+			font-weight: 500;
+			line-height: 22px;
+			padding-bottom: 10px;
+			color: #111111;
+		}
+
+		&__title-top {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 30px;
+
+			color: #111111;
+		}
+		
+		&__price {
+			background-color: #FCEBE8;
+			border-radius: 6px;
+			color: #E94F1D;
+			padding: 4px 12px;
+			font-weight: 500;
+			line-height: 22px;
+		}
+		
+}
+
+
+.product {
+
+	&__list {
+		display: flex;
+		overflow: auto;
+		margin-right: -20px;
+	}
+	
+	&__item {
+		border: 1px solid #E5E5E5;
+		border-radius: 8px;
+		padding: 4px 15px;
+		flex: 0 0 auto;
+		margin-right: 10px;
+		&.active {
+			background: linear-gradient(0deg, #E7351D, #E7351D), linear-gradient(0deg, #FC5824, #FC5824), #E94F1D;
+			color: #fff;
+			.product__link {
+				color: #fff;
+			}
+		}
+		@media (min-width: 768px) {
+			padding: 8px 20px;
+		}
+	}
+	
+	&__link {
+		display: inline-block;
+		
+		line-height: 22px;
+		color: #111111;
+		
+		
+ 	}
+
+}
+
+/* Стилизация стрелок слайдера product-slider */
+
+.product-slider__controls .slick-arrow {
+	font-size: 0;
+	width: 24px;
+	height: 24px;
+}
+
+.product-slider__controls .slick-arrow.slick-prev{
+	left: 0;
+	background: url('../img/icons/arrow-left.svg') 0 0 / 100% no-repeat;
+}
+.product-slider__controls .slick-arrow.slick-next{
+	right: 0;
+	background: url('../img/icons/arrow-right.svg') 0 0 / 100% no-repeat;
+}
+
+.slick-prev.slick-arrow.slick-disabled{
+	opacity: 0.3;
+}
+.slick-next.slick-arrow.slick-disabled{
+	opacity: 0.3;
+}
+
+.footer {
+	min-height: 60px;
+	background-color: white;
+	margin-top: 20px;
+	
+}
+
+.mobile-footer {
+	display: none;
+		@media (max-width: 767px) {
+			display: block;
+		}
+		&__list {
+			min-height: 60px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__item {
+
+		}
+		&__link {
+			position: relative;
+		}
+		&__cart-link {
+			
+		}
+		&__label {
+			position: absolute;
+			top: -15px;
+			right: -8px;
+			width: 16px;
+			height: 16px;
+			background: linear-gradient(0deg, #E7351D, #E7351D), linear-gradient(0deg, #FC5824, #FC5824), #E94F1D;
+			border-radius: 50%;
+			color: #fff;
+			font-weight: bold;
+			font-size: 10px;
+			line-height: 1.6;
+			text-align: center;
+		}
+}
+
