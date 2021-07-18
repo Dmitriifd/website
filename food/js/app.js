@@ -161,7 +161,7 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 	}
 };
 
-const da = new DynamicAdapt("max");
+const da = new DynamicAdapt("min");
 da.init();
 
 var ua = window.navigator.userAgent;
@@ -955,11 +955,11 @@ animate({
 })();
 $(function () {
 	 $('.top-slider').slick({
-		 
-			slidesToShow: 1,
+			slidesToShow: 3,
 			infinite: false,
 			variableWidth: true,
 			arrows: false,
+			centerMode: true,
 			responsive: [
 				{
 					breakpoint: 1170,
@@ -986,7 +986,7 @@ $(function () {
 					},
 				},
 			],
-	});
+		})
 
 	$('.product-slider').slick({
 		slidesToShow: 5,

@@ -1,10 +1,10 @@
 $(function () {
 	 $('.top-slider').slick({
-		 
-			slidesToShow: 1,
+			slidesToShow: 3,
 			infinite: false,
 			variableWidth: true,
 			arrows: false,
+			centerMode: true,
 			responsive: [
 				{
 					breakpoint: 1170,
@@ -31,7 +31,7 @@ $(function () {
 					},
 				},
 			],
-	});
+		})
 
 	$('.product-slider').slick({
 		slidesToShow: 5,
