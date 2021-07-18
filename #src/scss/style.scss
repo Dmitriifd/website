@@ -40,9 +40,9 @@ body {
 	font-size: 14px;
 	color: $mainColor;
 	
-	// &._lock {
-	// 	overflow: hidden;
-	// }
+	&._lock {
+		overflow: hidden;
+	}
 }
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
@@ -415,19 +415,18 @@ body {
 	&__item {
 		border: 1px solid #E5E5E5;
 		border-radius: 8px;
-		padding: 4px 15px;
+		
 		flex: 0 0 auto;
 		margin-right: 10px;
-		&.active {
+		transition: all 0.3s ease;
+		&.active, &:hover, &:focus {
 			background: linear-gradient(0deg, #E7351D, #E7351D), linear-gradient(0deg, #FC5824, #FC5824), #E94F1D;
 			color: #fff;
 			.product__link {
 				color: #fff;
 			}
 		}
-		@media (min-width: 768px) {
-			padding: 8px 20px;
-		}
+		
 	}
 	
 	&__link {
@@ -435,7 +434,9 @@ body {
 		
 		line-height: 22px;
 		color: #111111;
+		padding: 4px 15px;
 		@media (min-width: 768px) {
+			padding: 8px 20px;
 			font-size: 16px;
 			line-height: 24px;
 		}
@@ -583,8 +584,9 @@ body {
 			align-items: center;
 			justify-content: space-between;
 			
-			h3 {
+			a {
 				margin-right: auto;
+				color: inherit;
 				@media (min-width: 768px) {
 					font-weight: 500;
 					font-size: 18px;
@@ -741,7 +743,9 @@ body {
 }
 
 .page__products-title {
+	display: none;
 	@media (min-width: 1200px) {
+		display: block;
 		font-weight: 500;
 		font-size: 24px;
 		line-height: 32px;

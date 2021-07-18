@@ -37,6 +37,10 @@
         font-size: 20px;
         line-height: 30px;
         color: #FFFFFF;
+        transition: border 0.1s linear;
+        &:hover {
+            border-bottom: 2px solid whitesmoke;
+        }
     }
     &__content {
         @media (min-width: 1200px) {
