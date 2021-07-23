@@ -1,0 +1,151 @@
+.header {
+	position: relative;
+	z-index: 4;
+	&__content {
+		
+	}
+	&__logo {
+		@media (max-width: 650px) {
+			margin-right: auto;
+		}
+	}	
+	&__contacts {
+		display: flex;
+		align-items: center;
+		@media (min-width: 650px) {
+			margin-left: auto;
+		}
+		span {
+			display: none;
+			@media (min-width: 414px) {
+				display: block;
+				white-space: nowrap;
+				margin-right: 20px;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 140%;
+
+				color: #333333;
+			}
+			@media (min-width: 768px) {
+				font-size: 24px;
+			}
+			@media (min-width: 1200px) {
+				margin-right: 32px;
+			}
+		}
+		img {
+
+		}
+		
+	}
+	&__phone {
+
+		@media (min-width: 1200px) {
+				display: none;
+		}
+		
+
+		p {
+			display: none;
+			
+		}
+		&-desk {
+			display: none;
+			@media (min-width: 1200px) {
+				border: 2px solid #2F80ED;
+				border-radius: 8px;
+				display: inline-block;
+				line-height: 19px;
+				color: #2F80ED;
+				padding: 10px 35px;
+			}
+		}
+	}
+	&__wrap {
+		display: flex;
+		
+		align-items: center;
+		padding: 16px 0;
+		margin-bottom: 20px;
+		@media (min-width: 1200px) {
+			margin-bottom: 0;
+			padding-top: 40px;
+		}
+	}
+	&__desc {
+
+		p {
+			font-size: 14px;
+			display: none;
+			color: #333333;
+			@media (min-width: 650px) {
+				
+				display: block;
+				padding-left: 30px;
+				margin-right: auto;
+				max-width: 260px;
+			}
+			@media (min-width: 1200px) {
+				padding-left: 38px;
+				line-height: 140%;
+
+				
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+/*
+//Burger
+.icon-menu {
+	display: none;
+	@media (max-width: $md3+px) {
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span {
+			transition: all 0.3s ease 0s;
+			top: calc(50% - 1px);
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			&:first-child {
+				top: 0px;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+			}
+		}
+		&._active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+}
+*/
