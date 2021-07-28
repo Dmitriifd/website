@@ -1,0 +1,160 @@
+.header {
+
+
+
+	&__content {}
+
+	&__menu {
+		position: relative;
+		display: flex;
+		align-items: center;
+		padding: 15px 0;
+		border-bottom: 1px solid rgba(232, 232, 232, 0.5);
+	}
+	&__logo {
+		img {
+			max-width: 100%;
+		}
+		@media (max-width: 480px) {
+			margin-right: 30px;
+		}
+	}
+	&__button {
+		@include adaptiv-value("font-size", 24, 12, 1);
+		line-height: 29 / 24 * 100%;
+		// padding: 15px 22px;
+		@include adaptiv-value("padding-top", 15, 5, 1);
+		@include adaptiv-value("padding-bottom", 15, 5, 1);
+		@include adaptiv-value("padding-left", 22, 10, 1);
+		@include adaptiv-value("padding-right", 22, 10, 1);
+		color: #FE9E45;
+		border: 1px solid #FE9E45;
+		box-shadow: 0px 0px 10px 0.5px #FE9E45;
+		white-space: nowrap;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			border: 1px solid #fff;
+			box-shadow: 0px 0px 10px 0.5px #fff;
+		}
+
+		@media (max-width: 890px) {
+			margin-left: auto;
+			margin-right: 20px;
+		}
+	}
+}
+
+.menu {
+	
+
+	&__body {
+		    
+		@include adaptiv-value("margin-right", 81, 30, 1);
+		margin-left: auto;
+		@media (max-width: 890px) {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			top: 0;
+			left: -100%;
+			transition: left .5s ease 0s;
+		}
+
+		
+	}
+
+	&__body._active {
+		
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		margin-right: 0;
+		overflow: auto;
+	}
+
+	&__list {
+
+		@media (max-width: 890px) {
+			padding-top: 85px;
+			padding-left: 50px;
+		}
+		@media (min-width: 890px) {
+			display: flex;
+		}
+	}
+	&__item {
+		@include adaptiv-value("margin-left", 42, 20, 1);
+
+		@media (max-width: 890px) {
+			padding: 10px 10px;
+			font-size: 24px;
+		}
+	}
+	&__link {
+		white-space: nowrap;
+		color: #fff;
+		@include adaptiv-value("font-size", 24, 16, 1);
+		padding-bottom: 5px;
+		transition: all 0.3s ease;
+		&:hover {
+			border-bottom: 1px solid #FE9E45;
+			color: #FE9E45;
+		}
+	}
+	&__icon {}
+}
+
+
+
+
+// //Burger
+.icon-menu {
+	display: none;
+	@media (max-width: 890px) {
+		display: block;
+		position: relative;
+		// top: 15px;
+		// right: 0px;
+		// transform: translateY(-50%);
+		// width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		flex: 0 0 30px;
+		span {
+			transition: all 0.3s ease 0s;
+			top: calc(50% - 1px);
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #fff;
+			&:first-child {
+				top: 0px;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+			}
+		}
+		&._active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+}
+ 

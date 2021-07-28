@@ -1,0 +1,29 @@
+.footer{
+    padding: 20px 0;
+
+    background: #262D36;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin-left: 30px;
+    @include adaptiv-value("font-size", 18, 12, 1);
+    line-height: 22px;
+    color: #fff;
+    text-align: left;
+}
+
+.footer__logo {
+    img {
+        max-width: 100%;
+    }
+}
+//====================================================================================================
+
+//====================================================================================================
+
