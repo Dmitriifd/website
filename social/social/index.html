@@ -1,1 +1,698 @@
-<!DOCTYPE html><html lang="ru"> <head>	<title>SocialBook</title>	<meta charset="UTF-8">	<meta name="format-detection" content="telephone=no">	<link rel="stylesheet" href="css/style.min.css">	<link rel="shortcut icon" href="favicon.ico">	<!-- <meta name="robots" content="noindex, nofollow"> -->	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<script src="https://kit.fontawesome.com/7790372253.js" crossorigin="anonymous"></script></head><body>	<div class="wrapper">		<header class="header">	<nav>		<div class="nav-left">			<picture><source srcset="img/logo.webp" type="image/webp"><img class="logo" src="img/logo.png" alt="logo"></picture>			<ul>				<li>					<picture><source srcset="img/notification.webp" type="image/webp"><img src="img/notification.png" alt=""></picture>				</li>				<li>					<picture><source srcset="img/inbox.webp" type="image/webp"><img src="img/inbox.png" alt=""></picture>				</li>				<li>					<picture><source srcset="img/video.webp" type="image/webp"><img src="img/video.png" alt=""></picture>				</li>			</ul>		</div>		<div class="nav-right">			<div class="search-box">				<picture><source srcset="img/search.webp" type="image/webp"><img src="img/search.png" alt="search"></picture>				<input type="text" placeholder="Search">			</div>			<div class="nav-user-icon online" onclick="settingsMenuToggle()">				<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture>			</div>		</div>		<div class="settings-menu">			<div  id="dark-btn">				<span></span>			</div>			<div class="settings-menu-inner">				<div class="user-profile">					<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture>					<div>						<p>John Nicholson</p>						<a href="#">See your profile</a>					</div>				</div>				<hr>				<div class="user-profile">					<picture><source srcset="img/feedback.webp" type="image/webp"><img src="img/feedback.png" alt=""></picture>					<div>						<p>Give Feedback</p>						<a href="#">Help us to improve the new desing</a>					</div>				</div>				<hr>				<div class="setting-links">					<picture><source srcset="img/setting.webp" type="image/webp"><img class="settings-icon" src="img/setting.png" alt=""></picture>					<a href="#">Settings & Privacy <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" width="10"></picture></a>				</div>				<div class="setting-links">					<picture><source srcset="img/help.webp" type="image/webp"><img class="settings-icon" src="img/help.png" alt=""></picture>					<a href="#">Help & Support <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" width="10"></picture></a>				</div>				<div class="setting-links">					<picture><source srcset="img/display.webp" type="image/webp"><img class="settings-icon" src="img/display.png" alt=""></picture>					<a href="#">Display & Accessibility <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" width="10"></picture></a>				</div>				<div class="setting-links">					<picture><source srcset="img/logout.webp" type="image/webp"><img class="settings-icon" src="img/logout.png" alt=""></picture>					<a href="#">Logout <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="" width="10"></picture></a>				</div>			</div>		</div>	</nav></header>		<main class="page">			<div class="container">				<!-- left-sidebar -->				<div class="left-sidebar">					<div class="imp-links">						<a href="#"><picture><source srcset="img/news.webp" type="image/webp"><img src="img/news.png" alt=""></picture> Latest News</a>						<a href="#"><picture><source srcset="img/friends.webp" type="image/webp"><img src="img/friends.png" alt=""></picture> Friends</a>						<a href="#"><picture><source srcset="img/group.webp" type="image/webp"><img src="img/group.png" alt=""></picture> Group</a>						<a href="#"><picture><source srcset="img/marketplace.webp" type="image/webp"><img src="img/marketplace.png" alt=""></picture> Marketplace</a>						<a href="#"><picture><source srcset="img/watch.webp" type="image/webp"><img src="img/watch.png" alt=""></picture> Watch</a>						<a href="#">See More</a>					</div>					<div class="shortcut-links">						<p>Your Shortcuts</p>						<a href="#"><picture><source srcset="img/shortcut-1.webp" type="image/webp"><img src="img/shortcut-1.png" alt=""></picture> Web Developers</a>						<a href="#"><picture><source srcset="img/shortcut-2.webp" type="image/webp"><img src="img/shortcut-2.png" alt=""></picture> Web Design course</a>						<a href="#"><picture><source srcset="img/shortcut-3.webp" type="image/webp"><img src="img/shortcut-3.png" alt=""></picture> Full Stack Development</a>						<a href="#"><picture><source srcset="img/shortcut-4.webp" type="image/webp"><img src="img/shortcut-4.png" alt=""></picture> Website Experts</a>					</div>				</div>				<!-- main-content -->				<div class="main-content">					<div class="story-gallery">						<div class="story story1">							<picture><source srcset="img/upload.webp" type="image/webp"><img src="img/upload.png" alt=""></picture>							<p>Post Story</p>						</div>						<div class="story story2">							<picture><source srcset="img/member-1.webp" type="image/webp"><img src="img/member-1.png" alt=""></picture>							<p>Alison</p>						</div>						<div class="story story3">							<picture><source srcset="img/member-2.webp" type="image/webp"><img src="img/member-2.png" alt=""></picture>							<p>Jackson</p>						</div>						<div class="story story4">							<picture><source srcset="img/member-3.webp" type="image/webp"><img src="img/member-3.png" alt=""></picture>							<p>Samona</p>						</div>						<div class="story story5">							<picture><source srcset="img/member-4.webp" type="image/webp"><img src="img/member-4.png" alt=""></picture>							<p>Jon Doe</p>						</div>					</div>					<div class="write-post-container">						<div class="user-profile">							<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture>							<div>								<p>John Nicholson</p>								<small>Public <i class="fas fa-caret-down"></i></small>							</div>						</div>						<div class="post-input-container">							<textarea rows="3" placeholder="What's on your mind, John?"></textarea>							<div class="add-post-links">								<a href="#"><picture><source srcset="img/live-video.webp" type="image/webp"><img src="img/live-video.png" alt=""></picture> Live Video</a>								<a href="#"><picture><source srcset="img/photo.webp" type="image/webp"><img src="img/photo.png" alt=""></picture> Photo/Video</a>								<a href="#"><picture><source srcset="img/feeling.webp" type="image/webp"><img src="img/feeling.png" alt=""></picture> Feling/Activity</a>							</div>						</div>					</div>					<div class="post-container">						<div class="post-row">							<div class="user-profile">								<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture>								<div>									<p>John Nicholson</p>									<span>June 24 2021, 13:40 pm</span>								</div>							</div>							<a href="#"><i class="fas fa-ellipsis-v"></i></a>						</div>						<p class="post-text">Subscribe <span>Lorem ipsum dolor</span> sit amet consecteturadipisicing							elit. Ratione, doloremque! Lorem ipsum dolor sit amet.<a href="#">#Link</a> </p>						<picture><source srcset="img/feed-image-1.webp" type="image/webp"><img class="post-img" src="img/feed-image-1.png" alt=""></picture>						<div class="post-row">							<div class="activity-icons">								<div><picture><source srcset="img/like-blue.webp" type="image/webp"><img src="img/like-blue.png" alt=""></picture> 120</div>								<div><picture><source srcset="img/comments.webp" type="image/webp"><img src="img/comments.png" alt=""></picture> 45</div>								<div><picture><source srcset="img/share.webp" type="image/webp"><img src="img/share.png" alt=""></picture> 20</div>							</div>							<div class="post-profile-icon">								<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture><i class="fas fa-caret-down"></i>							</div>						</div>					</div>					<div class="post-container">						<div class="post-row">							<div class="user-profile">								<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture>								<div>									<p>John Nicholson</p>									<span>June 25 2021, 15:43 pm</span>								</div>							</div>							<a href="#"><i class="fas fa-ellipsis-v"></i></a>						</div>						<p class="post-text">Subscribe <span>Lorem ipsum dolor</span> sit amet consecteturadipisicing							elit. Ratione, doloremque! Lorem ipsum dolor sit amet.<a href="#">#Link</a> </p>						<picture><source srcset="img/feed-image-2.webp" type="image/webp"><img class="post-img" src="img/feed-image-2.png" alt=""></picture>						<div class="post-row">							<div class="activity-icons">								<div><picture><source srcset="img/like.webp" type="image/webp"><img src="img/like.png" alt=""></picture> 120</div>								<div><picture><source srcset="img/comments.webp" type="image/webp"><img src="img/comments.png" alt=""></picture> 45</div>								<div><picture><source srcset="img/share.webp" type="image/webp"><img src="img/share.png" alt=""></picture> 20</div>							</div>							<div class="post-profile-icon">								<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture><i class="fas fa-caret-down"></i>							</div>						</div>					</div>					<div class="post-container">						<div class="post-row">							<div class="user-profile">								<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture>								<div>									<p>John Nicholson</p>									<span>June 28 2021, 14:06 pm</span>								</div>							</div>							<a href="#"><i class="fas fa-ellipsis-v"></i></a>						</div>						<p class="post-text">Subscribe <span>Lorem ipsum dolor</span> sit amet consecteturadipisicing							elit. Ratione, doloremque! Lorem ipsum dolor sit amet.<a href="#">#Link</a> </p>						<picture><source srcset="img/feed-image-3.webp" type="image/webp"><img class="post-img" src="img/feed-image-3.png" alt=""></picture>						<div class="post-row">							<div class="activity-icons">								<div><picture><source srcset="img/like.webp" type="image/webp"><img src="img/like.png" alt=""></picture> 120</div>								<div><picture><source srcset="img/comments.webp" type="image/webp"><img src="img/comments.png" alt=""></picture> 45</div>								<div><picture><source srcset="img/share.webp" type="image/webp"><img src="img/share.png" alt=""></picture> 20</div>							</div>							<div class="post-profile-icon">								<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture><i class="fas fa-caret-down"></i>							</div>						</div>					</div>					<div class="post-container">						<div class="post-row">							<div class="user-profile">								<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture>								<div>									<p>John Nicholson</p>									<span>June 28 2021, 14:06 pm</span>								</div>							</div>							<a href="#"><i class="fas fa-ellipsis-v"></i></a>						</div>						<p class="post-text">Subscribe <span>Lorem ipsum dolor</span> sit amet consecteturadipisicing							elit. Ratione, doloremque! Lorem ipsum dolor sit amet.<a href="#">#Link</a> </p>						<picture><source srcset="img/feed-image-4.webp" type="image/webp"><img class="post-img" src="img/feed-image-4.png" alt=""></picture>						<div class="post-row">							<div class="activity-icons">								<div><picture><source srcset="img/like.webp" type="image/webp"><img src="img/like.png" alt=""></picture> 120</div>								<div><picture><source srcset="img/comments.webp" type="image/webp"><img src="img/comments.png" alt=""></picture> 45</div>								<div><picture><source srcset="img/share.webp" type="image/webp"><img src="img/share.png" alt=""></picture> 20</div>							</div>							<div class="post-profile-icon">								<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture><i class="fas fa-caret-down"></i>							</div>						</div>					</div>					<div class="post-container">						<div class="post-row">							<div class="user-profile">								<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture>								<div>									<p>John Nicholson</p>									<span>June 28 2021, 14:06 pm</span>								</div>							</div>							<a href="#"><i class="fas fa-ellipsis-v"></i></a>						</div>						<p class="post-text">Subscribe <span>Lorem ipsum dolor</span> sit amet consecteturadipisicing							elit. Ratione, doloremque! Lorem ipsum dolor sit amet.<a href="#">#Link</a> </p>						<picture><source srcset="img/feed-image-5.webp" type="image/webp"><img class="post-img" src="img/feed-image-5.png" alt=""></picture>						<div class="post-row">							<div class="activity-icons">								<div><picture><source srcset="img/like.webp" type="image/webp"><img src="img/like.png" alt=""></picture> 120</div>								<div><picture><source srcset="img/comments.webp" type="image/webp"><img src="img/comments.png" alt=""></picture> 45</div>								<div><picture><source srcset="img/share.webp" type="image/webp"><img src="img/share.png" alt=""></picture> 20</div>							</div>							<div class="post-profile-icon">								<picture><source srcset="img/profile-pic.webp" type="image/webp"><img src="img/profile-pic.png" alt=""></picture><i class="fas fa-caret-down"></i>							</div>						</div>					</div>					<button class="load-more-btn"type="button">Load More</button>				</div>				<!-- right-sidebar -->				<div class="right-sidebar">					<div class="sidebar-title">						<h4>Events</h4>						<a href="#">See All</a>					</div>					<div class="event">						<div class="left-event">							<h3>18</h3>							<span>March</span>						</div>						<div class="right-event">							<h4>Social Media</h4>							<p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>							<a href="#">More Info</a>						</div>					</div>					<div class="event">						<div class="left-event">							<h3>22</h3>							<span>June</span>						</div>						<div class="right-event">							<h4>Mobile Marketing</h4>							<p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>							<a href="#">More Info</a>						</div>					</div>					<div class="sidebar-title">						<h4>Advertisement</h4>						<a href="#">Close</a>					</div>					<picture><source srcset="img/advertisement.webp" type="image/webp"><img class="sidebar-asd" src="img/advertisement.png" alt=""></picture>					<div class="sidebar-title">						<h4>Conversation</h4>						<a href="#">Hide Chat</a>					</div>					<div class="online-list">						<div class="online">							<picture><source srcset="img/member-1.webp" type="image/webp"><img src="img/member-1.png" alt=""></picture>						</div>						<p>Alison Mina</p>					</div>					<div class="online-list">						<div class="online">							<picture><source srcset="img/member-2.webp" type="image/webp"><img src="img/member-2.png" alt=""></picture>						</div>						<p>Jackson Aston</p>					</div>					<div class="online-list">						<div class="online">							<picture><source srcset="img/member-3.webp" type="image/webp"><img src="img/member-3.png" alt=""></picture>						</div>						<p>Samona Rose</p>					</div>				</div>				<!-- right-sidebar -->			</div>		</main>		<footer class="footer">	<p>Copyright 2021</p></footer>	</div>	<div class="popup popup_popup">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close"></div>		</div>	</div></div><div class="popup popup_massagename-message">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close"></div>		</div>	</div></div><div class="popup popup_video">	<div class="popup__content">		<div class="popup__body">			<div class="popup__close popup__close_video"></div>			<div class="popup__video _video"></div>		</div>	</div></div>	<!-- Swiper --><!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> --><script src="js/vendors.min.js"></script><script src="js/app.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>SocialBook</title>
+		<meta charset="UTF-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!-- <meta name="robots" content="noindex, nofollow"> -->
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://kit.fontawesome.com/7790372253.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<nav>
+					<div class="nav-left">
+						<picture
+							><source srcset="img/logo.webp" type="image/webp" />
+							<img class="logo" src="img/logo.png" alt="logo"
+						/></picture>
+						<ul>
+							<li>
+								<picture
+									><source srcset="img/notification.webp" type="image/webp" />
+									<img src="img/notification.png" alt=""
+								/></picture>
+							</li>
+							<li>
+								<picture
+									><source srcset="img/inbox.webp" type="image/webp" />
+									<img src="img/inbox.png" alt=""
+								/></picture>
+							</li>
+							<li>
+								<picture
+									><source srcset="img/video.webp" type="image/webp" />
+									<img src="img/video.png" alt=""
+								/></picture>
+							</li>
+						</ul>
+					</div>
+					<div class="nav-right">
+						<div class="search-box">
+							<picture
+								><source srcset="img/search.webp" type="image/webp" />
+								<img src="img/search.png" alt="search"
+							/></picture>
+							<input type="text" placeholder="Search" />
+						</div>
+						<div class="nav-user-icon online" onclick="settingsMenuToggle()">
+							<picture
+								><source srcset="img/profile-pic.webp" type="image/webp" />
+								<img src="img/profile-pic.png" alt=""
+							/></picture>
+						</div>
+					</div>
+
+					<div class="settings-menu">
+						<div id="dark-btn">
+							<span></span>
+						</div>
+						<div class="settings-menu-inner">
+							<div class="user-profile">
+								<picture
+									><source srcset="img/profile-pic.webp" type="image/webp" />
+									<img src="img/profile-pic.png" alt=""
+								/></picture>
+								<div>
+									<p>John Nicholson</p>
+									<a href="#">See your profile</a>
+								</div>
+							</div>
+							<hr />
+							<div class="user-profile">
+								<picture
+									><source srcset="img/feedback.webp" type="image/webp" />
+									<img src="img/feedback.png" alt=""
+								/></picture>
+								<div>
+									<p>Give Feedback</p>
+									<a href="#">Help us to improve the new desing</a>
+								</div>
+							</div>
+							<hr />
+
+							<div class="setting-links">
+								<picture
+									><source srcset="img/setting.webp" type="image/webp" />
+									<img class="settings-icon" src="img/setting.png" alt=""
+								/></picture>
+								<a href="#"
+									>Settings & Privacy
+									<picture
+										><source srcset="img/arrow.webp" type="image/webp" />
+										<img src="img/arrow.png" alt="" width="10" /></picture
+								></a>
+							</div>
+							<div class="setting-links">
+								<picture
+									><source srcset="img/help.webp" type="image/webp" />
+									<img class="settings-icon" src="img/help.png" alt=""
+								/></picture>
+								<a href="#"
+									>Help & Support
+									<picture
+										><source srcset="img/arrow.webp" type="image/webp" />
+										<img src="img/arrow.png" alt="" width="10" /></picture
+								></a>
+							</div>
+							<div class="setting-links">
+								<picture
+									><source srcset="img/display.webp" type="image/webp" />
+									<img class="settings-icon" src="img/display.png" alt=""
+								/></picture>
+								<a href="#"
+									>Display & Accessibility
+									<picture
+										><source srcset="img/arrow.webp" type="image/webp" />
+										<img src="img/arrow.png" alt="" width="10" /></picture
+								></a>
+							</div>
+							<div class="setting-links">
+								<picture
+									><source srcset="img/logout.webp" type="image/webp" />
+									<img class="settings-icon" src="img/logout.png" alt=""
+								/></picture>
+								<a href="#"
+									>Logout
+									<picture
+										><source srcset="img/arrow.webp" type="image/webp" />
+										<img src="img/arrow.png" alt="" width="10" /></picture
+								></a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<main class="page">
+				<div class="container">
+					<!-- left-sidebar -->
+					<div class="left-sidebar">
+						<div class="imp-links">
+							<a href="#"
+								><picture
+									><source srcset="img/news.webp" type="image/webp" />
+									<img src="img/news.png" alt=""
+								/></picture>
+								Latest News</a
+							>
+							<a href="#"
+								><picture
+									><source srcset="img/friends.webp" type="image/webp" />
+									<img src="img/friends.png" alt=""
+								/></picture>
+								Friends</a
+							>
+							<a href="#"
+								><picture
+									><source srcset="img/group.webp" type="image/webp" />
+									<img src="img/group.png" alt=""
+								/></picture>
+								Group</a
+							>
+							<a href="#"
+								><picture
+									><source srcset="img/marketplace.webp" type="image/webp" />
+									<img src="img/marketplace.png" alt=""
+								/></picture>
+								Marketplace</a
+							>
+							<a href="#"
+								><picture
+									><source srcset="img/watch.webp" type="image/webp" />
+									<img src="img/watch.png" alt=""
+								/></picture>
+								Watch</a
+							>
+							<a href="#">See More</a>
+						</div>
+						<div class="shortcut-links">
+							<p>Your Shortcuts</p>
+							<a href="#"
+								><picture
+									><source srcset="img/shortcut-1.webp" type="image/webp" />
+									<img src="img/shortcut-1.png" alt=""
+								/></picture>
+								Web Developers</a
+							>
+							<a href="#"
+								><picture
+									><source srcset="img/shortcut-2.webp" type="image/webp" />
+									<img src="img/shortcut-2.png" alt=""
+								/></picture>
+								Web Design course</a
+							>
+							<a href="#"
+								><picture
+									><source srcset="img/shortcut-3.webp" type="image/webp" />
+									<img src="img/shortcut-3.png" alt=""
+								/></picture>
+								Full Stack Development</a
+							>
+							<a href="#"
+								><picture
+									><source srcset="img/shortcut-4.webp" type="image/webp" />
+									<img src="img/shortcut-4.png" alt=""
+								/></picture>
+								Website Experts</a
+							>
+						</div>
+					</div>
+
+					<!-- main-content -->
+					<div class="main-content">
+						<div class="story-gallery">
+							<div class="story story1">
+								<picture
+									><source srcset="img/upload.webp" type="image/webp" />
+									<img src="img/upload.png" alt=""
+								/></picture>
+								<p>Post Story</p>
+							</div>
+							<div class="story story2">
+								<picture
+									><source srcset="img/member-1.webp" type="image/webp" />
+									<img src="img/member-1.png" alt=""
+								/></picture>
+								<p>Alison</p>
+							</div>
+							<div class="story story3">
+								<picture
+									><source srcset="img/member-2.webp" type="image/webp" />
+									<img src="img/member-2.png" alt=""
+								/></picture>
+								<p>Jackson</p>
+							</div>
+							<div class="story story4">
+								<picture
+									><source srcset="img/member-3.webp" type="image/webp" />
+									<img src="img/member-3.png" alt=""
+								/></picture>
+								<p>Samona</p>
+							</div>
+							<div class="story story5">
+								<picture
+									><source srcset="img/member-4.webp" type="image/webp" />
+									<img src="img/member-4.png" alt=""
+								/></picture>
+								<p>Jon Doe</p>
+							</div>
+						</div>
+
+						<div class="write-post-container">
+							<div class="user-profile">
+								<picture
+									><source srcset="img/profile-pic.webp" type="image/webp" />
+									<img src="img/profile-pic.png" alt=""
+								/></picture>
+								<div>
+									<p>John Nicholson</p>
+									<small>Public <i class="fas fa-caret-down"></i></small>
+								</div>
+							</div>
+
+							<div class="post-input-container">
+								<textarea
+									rows="3"
+									placeholder="What's on your mind, John?"
+								></textarea>
+								<div class="add-post-links">
+									<a href="#"
+										><picture
+											><source srcset="img/live-video.webp" type="image/webp" />
+											<img src="img/live-video.png" alt=""
+										/></picture>
+										Live Video</a
+									>
+									<a href="#"
+										><picture
+											><source srcset="img/photo.webp" type="image/webp" />
+											<img src="img/photo.png" alt=""
+										/></picture>
+										Photo/Video</a
+									>
+									<a href="#"
+										><picture
+											><source srcset="img/feeling.webp" type="image/webp" />
+											<img src="img/feeling.png" alt=""
+										/></picture>
+										Feling/Activity</a
+									>
+								</div>
+							</div>
+						</div>
+
+						<div class="post-container">
+							<div class="post-row">
+								<div class="user-profile">
+									<picture
+										><source srcset="img/profile-pic.webp" type="image/webp" />
+										<img src="img/profile-pic.png" alt=""
+									/></picture>
+									<div>
+										<p>John Nicholson</p>
+										<span>June 24 2021, 13:40 pm</span>
+									</div>
+								</div>
+								<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+							</div>
+
+							<p class="post-text">
+								Subscribe <span>Lorem ipsum dolor</span> sit amet
+								consecteturadipisicing elit. Ratione, doloremque! Lorem ipsum
+								dolor sit amet.<a href="#">#Link</a>
+							</p>
+							<picture
+								><source srcset="img/feed-image-1.webp" type="image/webp" />
+								<img class="post-img" src="img/feed-image-1.png" alt=""
+							/></picture>
+
+							<div class="post-row">
+								<div class="activity-icons">
+									<div>
+										<picture
+											><source srcset="img/like-blue.webp" type="image/webp" />
+											<img src="img/like-blue.png" alt=""
+										/></picture>
+										120
+									</div>
+									<div>
+										<picture
+											><source srcset="img/comments.webp" type="image/webp" />
+											<img src="img/comments.png" alt=""
+										/></picture>
+										45
+									</div>
+									<div>
+										<picture
+											><source srcset="img/share.webp" type="image/webp" />
+											<img src="img/share.png" alt=""
+										/></picture>
+										20
+									</div>
+								</div>
+								<div class="post-profile-icon">
+									<picture
+										><source srcset="img/profile-pic.webp" type="image/webp" />
+										<img src="img/profile-pic.png" alt="" /></picture
+									><i class="fas fa-caret-down"></i>
+								</div>
+							</div>
+						</div>
+						<div class="post-container">
+							<div class="post-row">
+								<div class="user-profile">
+									<picture
+										><source srcset="img/profile-pic.webp" type="image/webp" />
+										<img src="img/profile-pic.png" alt=""
+									/></picture>
+									<div>
+										<p>John Nicholson</p>
+										<span>June 25 2021, 15:43 pm</span>
+									</div>
+								</div>
+								<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+							</div>
+
+							<p class="post-text">
+								Subscribe <span>Lorem ipsum dolor</span> sit amet
+								consecteturadipisicing elit. Ratione, doloremque! Lorem ipsum
+								dolor sit amet.<a href="#">#Link</a>
+							</p>
+							<picture
+								><source srcset="img/feed-image-2.webp" type="image/webp" />
+								<img class="post-img" src="img/feed-image-2.png" alt=""
+							/></picture>
+
+							<div class="post-row">
+								<div class="activity-icons">
+									<div>
+										<picture
+											><source srcset="img/like.webp" type="image/webp" />
+											<img src="img/like.png" alt=""
+										/></picture>
+										120
+									</div>
+									<div>
+										<picture
+											><source srcset="img/comments.webp" type="image/webp" />
+											<img src="img/comments.png" alt=""
+										/></picture>
+										45
+									</div>
+									<div>
+										<picture
+											><source srcset="img/share.webp" type="image/webp" />
+											<img src="img/share.png" alt=""
+										/></picture>
+										20
+									</div>
+								</div>
+								<div class="post-profile-icon">
+									<picture
+										><source srcset="img/profile-pic.webp" type="image/webp" />
+										<img src="img/profile-pic.png" alt="" /></picture
+									><i class="fas fa-caret-down"></i>
+								</div>
+							</div>
+						</div>
+						<div class="post-container">
+							<div class="post-row">
+								<div class="user-profile">
+									<picture
+										><source srcset="img/profile-pic.webp" type="image/webp" />
+										<img src="img/profile-pic.png" alt=""
+									/></picture>
+									<div>
+										<p>John Nicholson</p>
+										<span>June 28 2021, 14:06 pm</span>
+									</div>
+								</div>
+								<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+							</div>
+
+							<p class="post-text">
+								Subscribe <span>Lorem ipsum dolor</span> sit amet
+								consecteturadipisicing elit. Ratione, doloremque! Lorem ipsum
+								dolor sit amet.<a href="#">#Link</a>
+							</p>
+							<picture
+								><source srcset="img/feed-image-3.webp" type="image/webp" />
+								<img class="post-img" src="img/feed-image-3.png" alt=""
+							/></picture>
+
+							<div class="post-row">
+								<div class="activity-icons">
+									<div>
+										<picture
+											><source srcset="img/like.webp" type="image/webp" />
+											<img src="img/like.png" alt=""
+										/></picture>
+										120
+									</div>
+									<div>
+										<picture
+											><source srcset="img/comments.webp" type="image/webp" />
+											<img src="img/comments.png" alt=""
+										/></picture>
+										45
+									</div>
+									<div>
+										<picture
+											><source srcset="img/share.webp" type="image/webp" />
+											<img src="img/share.png" alt=""
+										/></picture>
+										20
+									</div>
+								</div>
+								<div class="post-profile-icon">
+									<picture
+										><source srcset="img/profile-pic.webp" type="image/webp" />
+										<img src="img/profile-pic.png" alt="" /></picture
+									><i class="fas fa-caret-down"></i>
+								</div>
+							</div>
+						</div>
+						<div class="post-container">
+							<div class="post-row">
+								<div class="user-profile">
+									<picture
+										><source srcset="img/profile-pic.webp" type="image/webp" />
+										<img src="img/profile-pic.png" alt=""
+									/></picture>
+									<div>
+										<p>John Nicholson</p>
+										<span>June 28 2021, 14:06 pm</span>
+									</div>
+								</div>
+								<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+							</div>
+
+							<p class="post-text">
+								Subscribe <span>Lorem ipsum dolor</span> sit amet
+								consecteturadipisicing elit. Ratione, doloremque! Lorem ipsum
+								dolor sit amet.<a href="#">#Link</a>
+							</p>
+							<picture
+								><source srcset="img/feed-image-4.webp" type="image/webp" />
+								<img class="post-img" src="img/feed-image-4.png" alt=""
+							/></picture>
+
+							<div class="post-row">
+								<div class="activity-icons">
+									<div>
+										<picture
+											><source srcset="img/like.webp" type="image/webp" />
+											<img src="img/like.png" alt=""
+										/></picture>
+										120
+									</div>
+									<div>
+										<picture
+											><source srcset="img/comments.webp" type="image/webp" />
+											<img src="img/comments.png" alt=""
+										/></picture>
+										45
+									</div>
+									<div>
+										<picture
+											><source srcset="img/share.webp" type="image/webp" />
+											<img src="img/share.png" alt=""
+										/></picture>
+										20
+									</div>
+								</div>
+								<div class="post-profile-icon">
+									<picture
+										><source srcset="img/profile-pic.webp" type="image/webp" />
+										<img src="img/profile-pic.png" alt="" /></picture
+									><i class="fas fa-caret-down"></i>
+								</div>
+							</div>
+						</div>
+						<div class="post-container">
+							<div class="post-row">
+								<div class="user-profile">
+									<picture
+										><source srcset="img/profile-pic.webp" type="image/webp" />
+										<img src="img/profile-pic.png" alt=""
+									/></picture>
+									<div>
+										<p>John Nicholson</p>
+										<span>June 28 2021, 14:06 pm</span>
+									</div>
+								</div>
+								<a href="#"><i class="fas fa-ellipsis-v"></i></a>
+							</div>
+
+							<p class="post-text">
+								Subscribe <span>Lorem ipsum dolor</span> sit amet
+								consecteturadipisicing elit. Ratione, doloremque! Lorem ipsum
+								dolor sit amet.<a href="#">#Link</a>
+							</p>
+							<picture
+								><source srcset="img/feed-image-5.webp" type="image/webp" />
+								<img class="post-img" src="img/feed-image-5.png" alt=""
+							/></picture>
+
+							<div class="post-row">
+								<div class="activity-icons">
+									<div>
+										<picture
+											><source srcset="img/like.webp" type="image/webp" />
+											<img src="img/like.png" alt=""
+										/></picture>
+										120
+									</div>
+									<div>
+										<picture
+											><source srcset="img/comments.webp" type="image/webp" />
+											<img src="img/comments.png" alt=""
+										/></picture>
+										45
+									</div>
+									<div>
+										<picture
+											><source srcset="img/share.webp" type="image/webp" />
+											<img src="img/share.png" alt=""
+										/></picture>
+										20
+									</div>
+								</div>
+								<div class="post-profile-icon">
+									<picture
+										><source srcset="img/profile-pic.webp" type="image/webp" />
+										<img src="img/profile-pic.png" alt="" /></picture
+									><i class="fas fa-caret-down"></i>
+								</div>
+							</div>
+						</div>
+
+						<button class="load-more-btn" type="button">Load More</button>
+					</div>
+
+					<!-- right-sidebar -->
+					<div class="right-sidebar">
+						<div class="sidebar-title">
+							<h4>Events</h4>
+							<a href="#">See All</a>
+						</div>
+
+						<div class="event">
+							<div class="left-event">
+								<h3>18</h3>
+								<span>March</span>
+							</div>
+							<div class="right-event">
+								<h4>Social Media</h4>
+								<p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+								<a href="#">More Info</a>
+							</div>
+						</div>
+						<div class="event">
+							<div class="left-event">
+								<h3>22</h3>
+								<span>June</span>
+							</div>
+							<div class="right-event">
+								<h4>Mobile Marketing</h4>
+								<p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+								<a href="#">More Info</a>
+							</div>
+						</div>
+
+						<div class="sidebar-title">
+							<h4>Advertisement</h4>
+							<a href="#">Close</a>
+						</div>
+						<picture
+							><source srcset="img/advertisement.webp" type="image/webp" />
+							<img class="sidebar-asd" src="img/advertisement.png" alt=""
+						/></picture>
+
+						<div class="sidebar-title">
+							<h4>Conversation</h4>
+							<a href="#">Hide Chat</a>
+						</div>
+
+						<div class="online-list">
+							<div class="online">
+								<picture
+									><source srcset="img/member-1.webp" type="image/webp" />
+									<img src="img/member-1.png" alt=""
+								/></picture>
+							</div>
+							<p>Alison Mina</p>
+						</div>
+						<div class="online-list">
+							<div class="online">
+								<picture
+									><source srcset="img/member-2.webp" type="image/webp" />
+									<img src="img/member-2.png" alt=""
+								/></picture>
+							</div>
+							<p>Jackson Aston</p>
+						</div>
+						<div class="online-list">
+							<div class="online">
+								<picture
+									><source srcset="img/member-3.webp" type="image/webp" />
+									<img src="img/member-3.png" alt=""
+								/></picture>
+							</div>
+							<p>Samona Rose</p>
+						</div>
+					</div>
+					<!-- right-sidebar -->
+				</div>
+			</main>
+			<footer class="footer">
+				<p>Copyright 2021</p>
+			</footer>
+		</div>
+		<div class="popup popup_popup">
+			<div class="popup__content">
+				<div class="popup__body">
+					<div class="popup__close"></div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup_massagename-message">
+			<div class="popup__content">
+				<div class="popup__body">
+					<div class="popup__close"></div>
+				</div>
+			</div>
+		</div>
+		<div class="popup popup_video">
+			<div class="popup__content">
+				<div class="popup__body">
+					<div class="popup__close popup__close_video"></div>
+					<div class="popup__video _video"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Swiper -->
+		<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+		<script src="js/vendors.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
