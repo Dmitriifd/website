@@ -1,0 +1,105 @@
+.footer {
+    @include adaptiv-value("padding-top", 120, 20, 1);
+	&__content {}
+
+    &__body {
+        display: flex;
+        gap: 80px;
+        row-gap: 50px;
+        @include adaptiv-value("margin-bottom", 60, 30, 1);
+
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+         @media (max-width: 520px) {
+            row-gap: 30px;
+            flex-direction: column;
+        }
+    }
+    &__logo {
+        display: inline-block;
+        margin-bottom: 19px;
+
+        @media (max-width: 520px) {
+            padding-top: 20px;
+        }
+    }
+    &__column {
+        flex: 0 1 auto;
+
+        
+    }
+    &__desc {
+        max-width: 248px;
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 20px;
+    }
+    &__app {}
+    &__app-google {
+        cursor: pointer;
+        margin-right: 12px;
+    }
+    &__app-store {
+        cursor: pointer;
+    }
+    &__column-wrap {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+
+        @media (max-width: 520px) {
+            row-gap: 30px;
+            flex-direction: column;
+        }
+    }
+    &__column-item {}
+    &__column-title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26 / 22 * 100%;
+        @include adaptiv-value("padding-bottom", 31, 15, 1);
+    }
+    &__list {}
+    &__item {}
+    &__link {
+        color: inherit;
+        font-size: 16px;
+        line-height: 40px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 520px) {
+            font: 18px;
+        }
+    }
+    &__column-addres {
+
+        p {
+            font-size: 16px;
+            line-height: 40px;
+
+            color: rgba(#18216D, 0.8);
+
+            
+        }
+    }
+    &__copyright {
+        border-top: 1px solid rgba(#18216D, 0.1);
+        padding-top: 30px;
+        @include adaptiv-value("padding-bottom", 57, 30, 1);
+        text-align: center;
+    }
+
+
+
+}
+
+.footer__column--center {
+    @media (max-width: 1140px) {
+            flex: 0 1 auto;
+    }
+}
+
