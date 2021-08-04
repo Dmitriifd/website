@@ -1164,10 +1164,8 @@ body.ie ._ibg img {
 /* Hero */
 
 .hero {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   margin-top: 80px;
+  margin-bottom: 73px;
   background: url("../img/dots.png"), url("../img/up_bg.jpg");
   background-repeat: no-repeat;
   background-size: 1310px, cover;
@@ -1302,6 +1300,18 @@ body.ie ._ibg img {
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
+}
+
+/* Facts */
+
+.facts__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 80px;
 }
 
 @media (min-width: 991.98px) {

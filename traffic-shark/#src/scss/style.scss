@@ -100,8 +100,8 @@ body {
 /* Hero */
 
 .hero {
-	flex-grow: 1;
 	margin-top: 80px;
+	margin-bottom: 73px;
 	background: url('../img/dots.png'),
 				url('../img/up_bg.jpg');
 
@@ -221,8 +221,21 @@ body {
 	}
 }
 
-.btn {
+/* Facts */
+
+.facts {
+	&__content {}
+	&__title {
+		font-weight: 900;
+		font-size: 30px;
+		line-height: 37px;
+		text-align: center;
+		text-transform: uppercase;
+
+		color: #000000;
+		margin-bottom: 80px;
+	}
 }
 
-// background: linear-gradient(195.2deg, #6CCC87 10.68%, #2A8E46 89.32%);
+
 
