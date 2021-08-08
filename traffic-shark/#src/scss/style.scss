@@ -101,30 +101,75 @@ body {
 
 .hero {
 	margin-top: 80px;
-	margin-bottom: 78px;
+	@include adaptiv-value("margin-bottom", 78, 32, 1);
 	background: url("../img/dots.png"), url("../img/up_bg.jpg");
 
 	background-repeat: no-repeat;
 	background-size: 1310px, cover;
-	background-position: top 23px center, center center;
+	background-position: top 23px center, center;
+
+	@media (max-width: 727px) {
+		margin-top: 60px;
+	}
+	@media (max-width: 685px) {
+		margin-top: 0;
+	}
+
 	&__content {
 	}
 	&__head {
-		margin-bottom: 57px;
+		@include adaptiv-value("margin-bottom", 57, 32, 1);
 	}
 	&__title {
-		padding-top: 140px;
+		@include adaptiv-value("padding-top", 140, 32, 1);
 		font-weight: 900;
-		font-size: 60px;
-		line-height: 75px;
+		@include adaptiv-value("font-size", 60, 30, 1);
+		line-height: 75 / 60 * 100%;
 		text-align: center;
 		text-transform: uppercase;
 
 		color: #ffffff;
+
+		@media (max-width: 1130px) {
+			margin-bottom: 10px;
+		}
 	}
 	&__row {
 		display: flex;
 		align-items: center;
+		position: relative;
+		
+		@media (max-width: 799px) {
+			flex-wrap: wrap;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 2px;
+				height: 100%;
+				background: rgba(255, 255, 255, 0.25);
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background: rgba(255, 255, 255, 0.25);
+
+			}
+		}
+
+		@media (max-width: 480px) {
+			margin: 0 -17px;
+		}
+
+		
+		
 	}
 	&__column {
 		flex: 0 1 25%;
@@ -133,25 +178,49 @@ body {
 		min-height: 150px;
 		text-align: center;
 		border-right: 2px solid rgba(255, 255, 255, 0.25);
+
+		@media (max-width: 799px) {
+			flex: 1 1 50%;
+			border-right: none;
+			min-height: 90px;
+		}
+		@media (max-width: 480px) {
+			flex: 1 1 35%;
+			margin: 0 17px;
+		}
 	}
 	&__column:last-child {
 		border-right: none;
 	}
 	&__stats {
+
+		@media (max-width: 940px) {
+			padding: 0 15px;
+		}
+		@media (min-width: 745px) and (max-width: 799px) {
+			margin-bottom: 20px;
+		}
+		@media (max-width: 768px) {
+			padding: 20px 0px;
+		}
 	}
 	&__stat-title {
 		font-weight: 800;
-		font-size: 40px;
-		line-height: 49px;
-		margin-top: 29px;
+		@include adaptiv-value("font-size", 40, 27, 1);
+		line-height: 49 / 40 * 100%;
+		
 		text-align: center;
 
 		color: #ffffff;
+
+		@media (min-width: 768px) {
+			margin-top: 29px;
+		}
 	}
 	&__stat-text {
 		font-weight: 500;
-		font-size: 16px;
-		line-height: 19px;
+		@include adaptiv-value("font-size", 16, 13, 1);
+		line-height: 19 / 16 * 100%;
 
 		text-align: center;
 
@@ -164,19 +233,93 @@ body {
 		background: #ffffff;
 		box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
 		border-radius: 8px;
+		position: relative;
+
+		@media (max-width: 1140px) {
+			padding: 58px 10px;
+		}
+		@media (max-width: 799px) {
+			flex-direction: column;
+			align-items:center;
+			padding: 35px 10px;
+		}
+
+		@media (min-width: 800px) {
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 50%;
+				width: 2px;
+				height: 100%;
+				background-color: #F3F3F3;
+			}
+		}
+
+		@media (max-width: 799px) {
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 100%;
+				height: 2px;
+				background-color: #F3F3F3;
+			}
+		}
+
+		@media (max-width: 420px) {
+			padding: 20px 10px;
+		}
+
+		
 	}
 	&__info-column:first-child {
+		
 		margin-right: 102px;
+
+		@media (max-width: 1140px) {
+			margin-right: 0;
+		}
+
+		@media (max-width: 799px) {
+			margin-bottom: 41px;
+		}
+	}
+	&__info-column {
+
+
+		@media (max-width: 1140px) {
+			flex: 0 1 50%;
+			padding: 0 15px;
+
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+		}
+
+		@media (max-width: 420px) {
+			padding: 0;
+		}
 	}
 	&__info-text {
 		max-width: 454px;
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 24px;
-		/* or 150% */
 
 		text-align: center;
 		margin-bottom: 32px;
+
+		@media (max-width: 799px) {
+			min-width: 100%;
+		}
+		@media (max-width: 420px) {
+			font-size: 13px;
+			line-height: 20px;
+			margin-bottom: 16px;
+			max-width: 256px;
+		}
 	}
 	&__info-link {
 		display: inline-flex;
@@ -188,25 +331,60 @@ body {
 		text-transform: uppercase;
 		color: #ffffff;
 		margin-left: 50px;
+
+		@media (max-width: 1140px) {
+			min-width: 100%;
+			margin-left: 0;
+			
+		}
+
+
+		
+		
+			
 	}
 	&__info-link-w {
 		background: #2e9adb;
 		box-shadow: 0px 10px 20px rgba(78, 170, 224, 0.35);
 		border-radius: 40px;
 		padding: 28px 0;
-		min-width: 354px;
+		width: 100%;
+		max-width: 354px;
+
+		@media (max-width: 420px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			min-height: 60px;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		
 	}
 	&__info-link-r {
 		background: #55b570;
 		box-shadow: 0px 10px 20px rgba(85, 181, 112, 0.35);
 		border-radius: 40px;
 		padding: 28px 0;
-		min-width: 354px;
+		width: 100%;
+		max-width: 354px;
+
+		@media (max-width: 420px) {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0;
+			min-height: 60px;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		
 	}
 	&__desc {
 		font-weight: 500;
-		font-size: 20px;
-		line-height: 24px;
+		@include adaptiv-value("font-size", 20, 16, 1);
+		line-height: 24 / 20 * 100%;
 
 		text-align: center;
 
@@ -224,12 +402,12 @@ body {
 	}
 	&__title {
 		font-weight: 900;
-		font-size: 30px;
-		line-height: 37px;
+		@include adaptiv-value("font-size", 30, 20, 1);
+		line-height: 37 / 30 * 100%;
 		text-align: center;
 		text-transform: uppercase;
 
-		margin-bottom: 80px;
+		@include adaptiv-value("margin-bottom", 80, 30, 1);
 	}
 
 	&__body {
@@ -242,20 +420,32 @@ body {
 	&__column {
 		flex-basis: 33.333%;
 		padding: 0 15px;
-		margin-bottom: 80px;
+		@include adaptiv-value("margin-bottom", 80, 30, 1);
+
+		@media (max-width: 480px) {
+			flex-basis: 50%;
+		}
 	}
 
 	&__item {
 	}
 	&__item-img {
 		text-align: center;
-		margin-bottom: 30px;
+		@include adaptiv-value("margin-bottom", 30, 20, 1);
+
+		img {
+			@media (max-width: 480px) {
+				width: 48px;
+				height: 48px;
+			}
+		}
+		
 	}
 	&__item-text {
 		text-align: center;
 		font-weight: 300;
-		font-size: 20px;
-		line-height: 23px;
+		@include adaptiv-value("font-size", 20, 13, 1);
+		line-height: 23 / 20 * 100%;
 	}
 	&__button {
 		background: linear-gradient(0deg, #ffffff, #ffffff);
@@ -265,14 +455,20 @@ body {
 		margin: 0 auto;
 
 		font-weight: 900;
-		font-size: 20px;
-		line-height: 24px;
-		padding: 25px 115px;
-
+		@include adaptiv-value("font-size", 20, 16, 1);
+		line-height: 20 / 23 * 100%;
+		padding: 0 20px;
+		min-height: 80px;
+		max-width: 350px;
+		width: 100%;
 		text-align: center;
 		text-transform: uppercase;
 
 		color: #2e9adb;
+
+		@media (max-width: 480px) {
+			min-height: 60px;
+		}
 	}
 }
 
@@ -285,40 +481,64 @@ body {
 	background-size: cover;
 	background-position: center center;
 	height: 717px;
+	
 	position: relative;
+
+	@media (max-width: 480px) {
+		height: auto;
+		padding-bottom: 100px;
+	}
 
 	&::before {
 		content: "";
 		position: absolute;
 		background-image: url("../img/top-wave.png");
-		top: 0;
+		background-position: center top;
+		background-size: contain;
+		top: -1px;
 		left: 0;
 		width: 100%;
 		height: 140px;
 		background-repeat: no-repeat;
+
+		@media (max-width: 480px) {
+			background-image: url('../img/top-mob.png');
+			height: 60px;
+		}
 	}
 
 	&::after {
 		content: "";
 		position: absolute;
-		background-image: url("../img/bottom-wave.png");
-		bottom: 0;
+		background-image: url("../img/b-w.svg");
+		background-size: contain;
+		background-position: center bottom;
 		left: 0;
+		bottom: -1px;
 		width: 100%;
 		height: 140px;
 		background-repeat: no-repeat;
+
+		@media (max-width: 480px) {
+			background-image: url('../img/bottom-mob.png');
+			height: 60px;
+		}
 	}
 
 	&__content {
 	}
 
 	&__head {
+
+		@media (max-width: 768px) {
+			margin-top: 25px;
+		}
 	}
 	&__title {
-		padding-top: 184px;
+		@include adaptiv-value("padding-top", 184, 68, 1);
 		font-weight: 900;
-		font-size: 30px;
-		line-height: 37px;
+		@include adaptiv-value("font-size", 30, 20, 1);
+		line-height: 37 / 30 * 100%;
 		text-align: center;
 		text-transform: uppercase;
 
@@ -327,37 +547,44 @@ body {
 	}
 	&__text {
 		font-weight: 500;
-		font-size: 20px;
-		line-height: 24px;
+		@include adaptiv-value("font-size", 20, 16, 1);
+		line-height: 24 / 20 * 100%;
 		text-align: center;
 
 		color: #ffffff;
-		margin-bottom: 80px;
+		@include adaptiv-value("margin-bottom", 80, 32, 1);
 	}
 	&__list {
 		display: flex;
+		flex-wrap: wrap;
 		margin: 0 -12px;
+		row-gap: 60px;
 	}
 	&__item {
 		padding: 0 12px;
-		flex: 1 1 350px;
+		flex: 1 1 calc(33.333% - 24px);
+
+		@media (max-width: 480px) {
+			flex: 1 1 100%;
+		}
+		
 	}
 	&__item-title {
 		font-weight: 900;
-		font-size: 81px;
-		line-height: 75px;
+		@include adaptiv-value("font-size", 81, 45, 1);
+		line-height: 70 / 81 * 100%;
 		text-align: center;
 		text-transform: uppercase;
 
 		color: #ffffff;
-		margin-bottom: 30px;
+		@include adaptiv-value("margin-bottom", 30, 20, 1);
 	}
 	&__item-text {
 		font-weight: bold;
-		font-size: 16px;
-		line-height: 19px;
+		@include adaptiv-value("font-size", 16, 13, 1);
+		line-height: 19 / 16 * 100%;
 		text-align: center;
-		width: 350px;
+		// width: 350px;
 		color: #ffffff;
 	}
 }
@@ -365,19 +592,19 @@ body {
 /* Clients */
 
 .clients {
-	margin-bottom: 80px;
+	@include adaptiv-value("margin-bottom", 80, 32, 1);
 
 	&__content {
 		max-width: 965px;
 	}
 	&__title {
 		font-weight: 900;
-		font-size: 30px;
-		line-height: 37px;
+		@include adaptiv-value("font-size", 30, 20, 1);
+		line-height: 37 / 30 * 100%;
 		text-align: center;
 		text-transform: uppercase;
 
-		margin-bottom: 80px;
+		@include adaptiv-value("margin-bottom", 80, 32, 1);
 	}
 
 	&__list {
@@ -385,25 +612,36 @@ body {
 		flex-wrap: wrap;
 		justify-content: center;
 		margin: 0 -25px;
+
+		@media (max-width: 540px) {
+			margin: 0 -8px;
+		}
 	}
 	&__item {
 		flex: 0 1 calc(25% - 50px);
-		margin-bottom: 60px;
+		@include adaptiv-value("margin-bottom", 60, 30, 1);
 		padding: 0 25px;
+
+		@media (max-width: 540px) {
+			flex: 0 1 calc(50% - 16px);
+			padding: 0 8px;
+		}
 	}
 	&__item:last-child {
-		margin-bottom: 80px;
+		@include adaptiv-value("margin-bottom", 80, 32, 1);
 	}
 	&__link {
-		img {
-			// max-width: 100%;
-		}
+		@media (max-width: 540px) {
+			img {
+				max-width: 100%;
+			}
+		}	
 	}
 	&__text {
 		p {
 			font-weight: 500;
-			font-size: 20px;
-			line-height: 24px;
+			@include adaptiv-value("font-size", 20, 13, 1);
+			line-height: 24 / 20 * 100%;
 
 			text-align: center;
 
@@ -954,4 +1192,5 @@ body {
 		text-align: center;
 	}
 }
+
 
