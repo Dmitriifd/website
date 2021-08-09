@@ -9,6 +9,8 @@
 		@@include('_header.html',{})
 		<main class="page">
 			<section class="hero">
+				<div id="particles-js"></div>
+
 				<div class="hero__content _container">
 					<div class="hero__head">
 						<h1 class="hero__title">разработка и продвижение мобильных приложений</h1>
@@ -62,7 +64,7 @@
 
 				</div>
 
-			</section> 
+			</section>
 			<section class="facts">
 				<div class="facts__content _container">
 					<h2 class="facts__title">Факты о нас</h2>
@@ -238,12 +240,12 @@
 					</div>
 				</div>
 			</section>
-			<!-- <section class="promotion">
+			<section class="promotion">
 				<div class="promotion__content _container">
 					<h3 class="promotion__subtitle">направления нашей деятельности</h3>
 
-					<div class="promotion__block">
-						<div class="promotion__header">
+					<div class="promotion__block" data-spollers>
+						<div class="promotion__header _active" data-spoller>
 							<h2 class="promotion__title">Продвижение</h2>
 							<p class="promotion__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 								eiusmod tempor incididunt ut
@@ -252,210 +254,213 @@
 								aliquip ex ea commodo consequat.
 							</p>
 							<button class="promotion__button">
-								<img src="img/icons/down-arrow-s.svg" alt="">
+								
 							</button>
 						</div>
 
 
-						<div class="formats">
-							<h4 class="formats__title">Рекламные форматы</h4>
-							<div class="formats__container">
-								<ul class="formats__list">
-									<li class="formats__item">
-										<div class="formats__item-img">
-											<img src="img/formats/1.svg" alt="">
-										</div>
-										<p class="formats__item-text">Facebook</p>
-									</li>
-									<li class="formats__item">
-										<div class="formats__item-img">
-											<img src="img/formats/2.svg" alt="">
-										</div>
-										<p class="formats__item-text">Google UAC</p>
-									</li>
-									<li class="formats__item">
-										<div class="formats__item-img">
-											<img src="img/formats/3.svg" alt="">
-										</div>
-										<p class="formats__item-text">MyTarget</p>
-									</li>
-									<li class="formats__item">
-										<div class="formats__item-img">
-											<img src="img/formats/4.svg" alt="">
-										</div>
-										<p class="formats__item-text">TikTok</p>
-									</li>
-									<li class="formats__item">
-										<div class="formats__item-img">
-											<img src="img/formats/5.svg" alt="">
-										</div>
-										<p class="formats__item-text">ASA</p>
-									</li>
-									<li class="formats__item">
-										<div class="formats__item-img">
-											<img src="img/formats/6.svg" alt="">
-										</div>
-										<p class="formats__item-text">InApp</p>
-									</li>
-									<li class="formats__item">
-										<div class="formats__item-img">
-											<img src="img/formats/7.svg" alt="">
-										</div>
-										<p class="formats__item-text">Popunder</p>
-									</li>
-									<li class="formats__item">
-										<div class="formats__item-img">
-											<img src="img/formats/8.svg" alt="">
-										</div>
-										<p class="formats__item-text">Push</p>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="case">
-							<div class="case__container">
-								<h4 class="case__title">наши кейсы</h4>
-
-
-								<div class="case-block">
-									<div class="case-block__logo">
-										<img src="img/clients/3.jpg" alt="">
-									</div>
-									<ul class="case-block__list">
-										<li class="case-block__item">
-											<h5 class="case-block__title">Траффик</h5>
-											<p class="case-block__desc">Facebook</p>
+						<div class="spoller-block">
+							<div class="formats">
+								<h4 class="formats__title">Рекламные форматы</h4>
+								<div class="formats__container">
+									<ul class="formats__list">
+										<li class="formats__item">
+											<div class="formats__item-img">
+												<img src="img/formats/1.svg" alt="">
+											</div>
+											<p class="formats__item-text">Facebook</p>
 										</li>
-										<li class="case-block__item">
-											<h5 class="case-block__title">Расходы</h5>
-											<p class="case-block__desc">54.800 $</p>
+										<li class="formats__item">
+											<div class="formats__item-img">
+												<img src="img/formats/2.svg" alt="">
+											</div>
+											<p class="formats__item-text">Google UAC</p>
 										</li>
-										<li class="case-block__item">
-											<h5 class="case-block__title">Показатели компании</h5>
-											<p class="case-block__desc">
-												<span>
-													Покупки более чем на 200.000$
-												</span>
-											</p>
+										<li class="formats__item">
+											<div class="formats__item-img">
+												<img src="img/formats/3.svg" alt="">
+											</div>
+											<p class="formats__item-text">MyTarget</p>
 										</li>
-									</ul>
-								</div>
-
-								<div class="case-block">
-									<div class="case-block__logo">
-										<img src="img/clients/6.jpg" alt="">
-									</div>
-									<ul class="case-block__list">
-										<li class="case-block__item">
-											<h5 class="case-block__title">Траффик</h5>
-											<p class="case-block__desc">Facebook, TikTok, InApp</p>
+										<li class="formats__item">
+											<div class="formats__item-img">
+												<img src="img/formats/4.svg" alt="">
+											</div>
+											<p class="formats__item-text">TikTok</p>
 										</li>
-										<li class="case-block__item">
-											<h5 class="case-block__title">Расходы</h5>
-											<p class="case-block__desc">10.000.000 руб.</p>
+										<li class="formats__item">
+											<div class="formats__item-img">
+												<img src="img/formats/5.svg" alt="">
+											</div>
+											<p class="formats__item-text">ASA</p>
 										</li>
-										<li class="case-block__item">
-											<h5 class="case-block__title">Показатели компании</h5>
-											<p class="case-block__desc">
-												<span>
-													Привлеченные пользователи купили билеты более чем на 30.000.000 руб.
-												</span>
-											</p>
+										<li class="formats__item">
+											<div class="formats__item-img">
+												<img src="img/formats/6.svg" alt="">
+											</div>
+											<p class="formats__item-text">InApp</p>
 										</li>
-									</ul>
-								</div>
-
-								<div class="case-block">
-									<div class="case-block__logo">
-										<img src="img/icons/vpn-pro.png" alt="">
-										<h4 class="case-block__icon-title">VPN PRO - Anonymity & Secure</h4>
-									</div>
-
-									<ul class="case-block__list">
-										<li class="case-block__item">
-											<h5 class="case-block__title">Траффик</h5>
-											<p class="case-block__desc">Popunder, Push</p>
+										<li class="formats__item">
+											<div class="formats__item-img">
+												<img src="img/formats/7.svg" alt="">
+											</div>
+											<p class="formats__item-text">Popunder</p>
 										</li>
-										<li class="case-block__item">
-											<h5 class="case-block__title">Расходы</h5>
-											<p class="case-block__desc">500.000 $</p>
-										</li>
-										<li class="case-block__item">
-											<h5 class="case-block__title">Показатели компании</h5>
-											<p class="case-block__desc">
-												<span>
-													25.000+ триалов в месяц, 7.500+ покупок,
-													ТОП-10 в США по выручке в Apple Store
-												</span>
-											</p>
-										</li>
-									</ul>
-								</div>
-
-								<div class="case-block">
-									<div class="case-block__logo">
-										<img src="img/icons/vpn-ultima.png" alt="">
-										<h4 class="case-block__icon-title">VPN Ultima</h4>
-									</div>
-
-									<ul class="case-block__list">
-										<li class="case-block__item">
-											<h5 class="case-block__title">Траффик</h5>
-											<p class="case-block__desc">Popunder, Push, In-Page push, Calendar</p>
-										</li>
-										<li class="case-block__item">
-											<h5 class="case-block__title">Расходы</h5>
-											<p class="case-block__desc">160.000 $</p>
-										</li>
-										<li class="case-block__item">
-											<h5 class="case-block__title">Показатели компании</h5>
-											<p class="case-block__desc">
-												<span>
-													10.000+ триалов в месяц, 4.000+ покупок
-												</span>
-											</p>
+										<li class="formats__item">
+											<div class="formats__item-img">
+												<img src="img/formats/8.svg" alt="">
+											</div>
+											<p class="formats__item-text">Push</p>
 										</li>
 									</ul>
 								</div>
 							</div>
-						</div>
 
-						<div class="advantages">
-							<div class="advantages__container">
-								<h4 class="advantages__title">Преимущества</h4>
+							<div class="case">
+								<div class="case__container">
+									<h4 class="case__title">наши кейсы</h4>
 
-								<ul class="advantages__list">
-									<li class="advantages__item">
-										Сильный inhouse медиабаинг из более чем 10 человек
-									</li>
-									<li class="advantages__item">
-										Проверенный траффик высокого качества
-									</li>
-									<li class="advantages__item">
-										Понимание потребностей клиента, опираясь на опыт продвижения собственных
-										продуктов
-									</li>
-									<li class="advantages__item">
-										Собственное производство промо-материалов
-									</li>
-									<li class="advantages__item">
-										Никакого фрода и ботов
-									</li>
-									<li class="advantages__item">
-										Интеграции с Adjust, Appsflyer и др. трекерами
-									</li>
-								</ul>
 
-								<button class="advantages__button">Связаться</button>
+									<div class="case-block">
+										<div class="case-block__logo">
+											<img src="img/clients/3.jpg" alt="">
+										</div>
+										<ul class="case-block__list">
+											<li class="case-block__item">
+												<h5 class="case-block__title">Траффик</h5>
+												<p class="case-block__desc">Facebook</p>
+											</li>
+											<li class="case-block__item">
+												<h5 class="case-block__title">Расходы</h5>
+												<p class="case-block__desc">54.800 $</p>
+											</li>
+											<li class="case-block__item">
+												<h5 class="case-block__title">Показатели компании</h5>
+												<p class="case-block__desc">
+													<span>
+														Покупки более чем на 200.000$
+													</span>
+												</p>
+											</li>
+										</ul>
+									</div>
+
+									<div class="case-block">
+										<div class="case-block__logo">
+											<img src="img/clients/6.jpg" alt="">
+										</div>
+										<ul class="case-block__list">
+											<li class="case-block__item">
+												<h5 class="case-block__title">Траффик</h5>
+												<p class="case-block__desc">Facebook, TikTok, InApp</p>
+											</li>
+											<li class="case-block__item">
+												<h5 class="case-block__title">Расходы</h5>
+												<p class="case-block__desc">10.000.000 руб.</p>
+											</li>
+											<li class="case-block__item">
+												<h5 class="case-block__title">Показатели компании</h5>
+												<p class="case-block__desc">
+													<span>
+														Привлеченные пользователи купили билеты более чем на 30.000.000
+														руб.
+													</span>
+												</p>
+											</li>
+										</ul>
+									</div>
+
+									<div class="case-block">
+										<div class="case-block__logo">
+											<img src="img/icons/vpn-pro.png" alt="">
+											<h4 class="case-block__icon-title">VPN PRO - Anonymity & Secure</h4>
+										</div>
+
+										<ul class="case-block__list">
+											<li class="case-block__item">
+												<h5 class="case-block__title">Траффик</h5>
+												<p class="case-block__desc">Popunder, Push</p>
+											</li>
+											<li class="case-block__item">
+												<h5 class="case-block__title">Расходы</h5>
+												<p class="case-block__desc">500.000 $</p>
+											</li>
+											<li class="case-block__item">
+												<h5 class="case-block__title">Показатели компании</h5>
+												<p class="case-block__desc">
+													<span>
+														25.000+ триалов в месяц, 7.500+ покупок,
+														ТОП-10 в США по выручке в Apple Store
+													</span>
+												</p>
+											</li>
+										</ul>
+									</div>
+
+									<div class="case-block">
+										<div class="case-block__logo">
+											<img src="img/icons/vpn-ultima.png" alt="">
+											<h4 class="case-block__icon-title">VPN Ultima</h4>
+										</div>
+
+										<ul class="case-block__list">
+											<li class="case-block__item">
+												<h5 class="case-block__title">Траффик</h5>
+												<p class="case-block__desc">Popunder, Push, In-Page push, Calendar</p>
+											</li>
+											<li class="case-block__item">
+												<h5 class="case-block__title">Расходы</h5>
+												<p class="case-block__desc">160.000 $</p>
+											</li>
+											<li class="case-block__item">
+												<h5 class="case-block__title">Показатели компании</h5>
+												<p class="case-block__desc">
+													<span>
+														10.000+ триалов в месяц, 4.000+ покупок
+													</span>
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="advantages">
+								<div class="advantages__container">
+									<h4 class="advantages__title">Преимущества</h4>
+
+									<ul class="advantages__list">
+										<li class="advantages__item">
+											Сильный inhouse медиабаинг из более чем 10 человек
+										</li>
+										<li class="advantages__item">
+											Проверенный траффик высокого качества
+										</li>
+										<li class="advantages__item">
+											Понимание потребностей клиента, опираясь на опыт продвижения собственных
+											продуктов
+										</li>
+										<li class="advantages__item">
+											Собственное производство промо-материалов
+										</li>
+										<li class="advantages__item">
+											Никакого фрода и ботов
+										</li>
+										<li class="advantages__item">
+											Интеграции с Adjust, Appsflyer и др. трекерами
+										</li>
+									</ul>
+
+									<button class="facts__button">Связаться</button>
+								</div>
 							</div>
 						</div>
 
 
 					</div>
 
-					<div class="promotion__block">
-						<div class="promotion__header">
+					<div class="promotion__block" data-spollers>
+						<div class="promotion__header" data-spoller>
 							<h2 class="promotion__title">разработка</h2>
 							<p class="promotion__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 								eiusmod tempor incididunt ut
@@ -464,205 +469,207 @@
 								aliquip ex ea commodo consequat.
 							</p>
 							<button class="promotion__button">
-								<img src="img/icons/down-arrow-s.svg" alt="">
+								
 							</button>
 						</div>
 
 
-						<div class="formats">
-							<h4 class="formats__title">разрабатываем мобильные приложения под ключ</h4>
-							<div class="formats__container">
-								<div class="development development__columns">
-									<div class="development__column">
-										<div class="development__items">
-											<div class="development__item development__item--left">
-												<img src="img/icons/swift.svg" alt="">
-												<p>IOS</p>
-											</div>
-											<div class="development__item development__item--right">
-												<h5>Используемые технологии:</h5>
-												<b>Swift</b>
+						<div class="spoller-block">
+							<div class="formats">
+								<h4 class="formats__title">разрабатываем мобильные приложения под ключ</h4>
+								<div class="formats__container">
+									<div class="development development__columns">
+										<div class="development__column">
+											<div class="development__items">
+												<div class="development__item development__item--left">
+													<img src="img/icons/swift.svg" alt="">
+													<p>IOS</p>
+												</div>
+												<div class="development__item development__item--right">
+													<h5>Используемые технологии:</h5>
+													<b>Swift</b>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div class="development__column">
-										<div class="development__items">
-											<div class="development__item development__item--left">
-												<img src="img/icons/android.svg" alt="">
-												<p>Android</p>
-											</div>
-											<div class="development__item development__item--right">
-												<h5>Используемые технологии:</h5>
-												<b>Java, Kotlin</b>
+										<div class="development__column">
+											<div class="development__items">
+												<div class="development__item development__item--left">
+													<img src="img/icons/android.svg" alt="">
+													<p>Android</p>
+												</div>
+												<div class="development__item development__item--right">
+													<h5>Используемые технологии:</h5>
+													<b>Java, Kotlin</b>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="case">
-							<div class="case__container">
-								<h4 class="case__title case-title">Полный цикл разработки</h4>
+							<div class="case">
+								<div class="case__container">
+									<h4 class="case__title case-title">Полный цикл разработки</h4>
 
-								<p class="case__desc">
-									От идеи, прототипа, дизайна и технического задания до публикации и поддержки
-									приложения!
-								</p>
+									<p class="case__desc">
+										От идеи, прототипа, дизайна и технического задания до публикации и поддержки
+										приложения!
+									</p>
 
-								<div class="case__block">
-									<div class="case__block-img">
-										<img src="img/icons/connection.svg" alt="">
+									<div class="case__block">
+										<div class="case__block-img">
+											<img src="img/icons/connection.svg" alt="">
+										</div>
+										<div class="case__text">
+											<p>Так же мы успешно разрабатываем свои IOS | Android приложения, поэтому мы
+												отлично понимаем, что необходимо нашим
+												партнерам</p>
+										</div>
 									</div>
-									<div class="case__text">
-										<p>Так же мы успешно разрабатываем свои IOS | Android приложения, поэтому мы
-											отлично понимаем, что необходимо нашим
-											партнерам</p>
-									</div>
+
+
+
+
+
 								</div>
-
-
-
-
-
 							</div>
-						</div>
 
-						<div class="products">
-							<div class="products__container">
-								<h4 class="products__title">наши продукты</h4>
+							<div class="products">
+								<div class="products__container">
+									<h4 class="products__title">наши продукты</h4>
 
 
-								<ul class="products__list">
-									<li class="products__item">
-										<div class="products__item-img">
-											<img src="img/products/1.png" alt="">
-										</div>
-										<div class="products__label">
-											<div class="products__label-android">
-												<img src="img/products/android.svg" alt="">
+									<ul class="products__list">
+										<li class="products__item">
+											<div class="products__item-img">
+												<img src="img/products/1.png" alt="">
 											</div>
-										</div>
-										<p class="products__item-text">Ghost Cleaner</p>
-									</li>
-									<li class="products__item">
-										<div class="products__item-img">
-											<img src="img/products/2.png" alt="">
-										</div>
-										<div class="products__label">
-											<div class="products__label-apple">
-												<img src="img/products/apple.svg" alt="">
+											<div class="products__label">
+												<div class="products__label-android">
+													<img src="img/products/android.svg" alt="">
+												</div>
 											</div>
-										</div>
-										<p class="products__item-text">FOX VPN</p>
-									</li>
-									<li class="products__item">
-										<div class="products__item-img">
-											<img src="img/products/3.png" alt="">
-										</div>
-										<div class="products__label">
-											<div class="products__label-apple">
-												<img src="img/products/apple.svg" alt="">
+											<p class="products__item-text">Ghost Cleaner</p>
+										</li>
+										<li class="products__item">
+											<div class="products__item-img">
+												<img src="img/products/2.png" alt="">
 											</div>
-										</div>
-										<p class="products__item-text">HOT VPN</p>
-									</li>
-									<li class="products__item">
-										<div class="products__item-img">
-											<img src="img/products/4.png" alt="">
-										</div>
-										<div class="products__label">
-											<div class="products__label-apple">
-												<img src="img/products/apple.svg" alt="">
+											<div class="products__label">
+												<div class="products__label-apple">
+													<img src="img/products/apple.svg" alt="">
+												</div>
 											</div>
-										</div>
-										<p class="products__item-text">Screen Defender</p>
-									</li>
-									<li class="products__item">
-										<div class="products__item-img">
-											<img src="img/products/5.png" alt="">
-										</div>
-										<div class="products__label">
-											<div class="products__label-android">
-												<img src="img/products/android.svg" alt="">
+											<p class="products__item-text">FOX VPN</p>
+										</li>
+										<li class="products__item">
+											<div class="products__item-img">
+												<img src="img/products/3.png" alt="">
 											</div>
-										</div>
-										<p class="products__item-text">Idle Mafia Clicker</p>
-									</li>
-									<li class="products__item">
-										<div class="products__item-img">
-											<img src="img/products/6.png" alt="">
-										</div>
-										<div class="products__label">
-											<div class="products__label-android">
-												<img src="img/products/android.svg" alt="">
+											<div class="products__label">
+												<div class="products__label-apple">
+													<img src="img/products/apple.svg" alt="">
+												</div>
 											</div>
-										</div>
-										<p class="products__item-text">Coin Lord</p>
-									</li>
-									<li class="products__item">
-										<div class="products__item-img">
-											<img src="img/products/7.png" alt="">
-										</div>
-										<div class="products__label">
-											<div class="products__label-apple">
-												<img src="img/products/apple.svg" alt="">
+											<p class="products__item-text">HOT VPN</p>
+										</li>
+										<li class="products__item">
+											<div class="products__item-img">
+												<img src="img/products/4.png" alt="">
 											</div>
-										</div>
-										<p class="products__item-text">Filters.Pro
-											Photo editor</p>
-									</li>
-									<li class="products__item">
-										<div class="products__item-img">
-											<img src="img/products/8.png" alt="">
-										</div>
-										<div class="products__label">
-											<div class="products__label-apple">
-												<img src="img/products/apple.svg" alt="">
+											<div class="products__label">
+												<div class="products__label-apple">
+													<img src="img/products/apple.svg" alt="">
+												</div>
 											</div>
-										</div>
-										<p class="products__item-text">Fitness&Workout</p>
-									</li>
-									<li class="products__item">
-										<div class="products__item-img">
-											<img src="img/products/9.png" alt="">
-										</div>
-										<div class="products__label">
-											<div class="products__label-apple">
-												<img src="img/products/apple.svg" alt="">
+											<p class="products__item-text">Screen Defender</p>
+										</li>
+										<li class="products__item">
+											<div class="products__item-img">
+												<img src="img/products/5.png" alt="">
 											</div>
-										</div>
-										<p class="products__item-text">VPN PRO - Anonymity & Secure</p>
-									</li>
-									<li class="products__item">
-										<div class="products__item-img">
-											<img src="img/products/10.png" alt="">
-										</div>
-										<div class="products__label">
-											<div class="products__label-apple">
-												<img src="img/products/apple.svg" alt="">
+											<div class="products__label">
+												<div class="products__label-android">
+													<img src="img/products/android.svg" alt="">
+												</div>
 											</div>
-										</div>
-										<p class="products__item-text">VPN Ultima</p>
-									</li>
-								</ul>
+											<p class="products__item-text">Idle Mafia Clicker</p>
+										</li>
+										<li class="products__item">
+											<div class="products__item-img">
+												<img src="img/products/6.png" alt="">
+											</div>
+											<div class="products__label">
+												<div class="products__label-android">
+													<img src="img/products/android.svg" alt="">
+												</div>
+											</div>
+											<p class="products__item-text">Coin Lord</p>
+										</li>
+										<li class="products__item">
+											<div class="products__item-img">
+												<img src="img/products/7.png" alt="">
+											</div>
+											<div class="products__label">
+												<div class="products__label-apple">
+													<img src="img/products/apple.svg" alt="">
+												</div>
+											</div>
+											<p class="products__item-text">Filters.Pro
+												Photo editor</p>
+										</li>
+										<li class="products__item">
+											<div class="products__item-img">
+												<img src="img/products/8.png" alt="">
+											</div>
+											<div class="products__label">
+												<div class="products__label-apple">
+													<img src="img/products/apple.svg" alt="">
+												</div>
+											</div>
+											<p class="products__item-text">Fitness&Workout</p>
+										</li>
+										<li class="products__item">
+											<div class="products__item-img">
+												<img src="img/products/9.png" alt="">
+											</div>
+											<div class="products__label">
+												<div class="products__label-apple">
+													<img src="img/products/apple.svg" alt="">
+												</div>
+											</div>
+											<p class="products__item-text">VPN PRO - Anonymity & Secure</p>
+										</li>
+										<li class="products__item">
+											<div class="products__item-img">
+												<img src="img/products/10.png" alt="">
+											</div>
+											<div class="products__label">
+												<div class="products__label-apple">
+													<img src="img/products/apple.svg" alt="">
+												</div>
+											</div>
+											<p class="products__item-text">VPN Ultima</p>
+										</li>
+									</ul>
 
-								<div class="products__desc">
-									<p>и многие другие проекты...</p>
+									<div class="products__desc">
+										<p>и многие другие проекты...</p>
+									</div>
+
+									<button class="facts__button">
+										Связаться
+									</button>
+
 								</div>
-
-								<button class="products__button">
-									Связаться
-								</button>
-
 							</div>
 						</div>
 
 
 					</div>
 
-					<div class="promotion__block">
-						<div class="promotion__header">
+					<div class="promotion__block" data-spollers>
+						<div class="promotion__header" data-spoller>
 							<h2 class="promotion__title">ASO (App store optimization)</h2>
 							<p class="promotion__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 								eiusmod tempor incididunt ut
@@ -671,16 +678,17 @@
 								aliquip ex ea commodo consequat.
 							</p>
 							<button class="promotion__button">
-								<img src="img/icons/down-arrow-s.svg" alt="">
+								
 							</button>
 						</div>
 
 
 						<div class="optimization">
-							
+
 							<div class="optimization__container">
 
-								<h4 class="optimization__title">продвижение мобильных приложений в apple app store и google play</h4>
+								<h4 class="optimization__title">продвижение мобильных приложений в apple app store и
+									google play</h4>
 
 								<div class="optimization__items">
 									<div class="optimization__item">
@@ -712,7 +720,7 @@
 								</div>
 
 
-								<button class="products__button button">
+								<button class="facts__button button">
 									Связаться
 								</button>
 							</div>
@@ -724,12 +732,18 @@
 					</div>
 
 				</div>
-			</section> -->
+			</section>
+
+
+
+
+			
+	
 		</main>
 		@@include('_footer.html',{})
 	</div>
-	@@include('_popup.html',{})
-	@@include('_js.html',{})
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
 </body>
 
 </html>

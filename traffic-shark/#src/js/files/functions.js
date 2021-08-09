@@ -50,6 +50,8 @@ window.addEventListener("load", function () {
 
 let unlock = true;
 
+
+
 //=================
 //ActionsOnHash
 if (location.hash) {
