@@ -1243,7 +1243,7 @@ canvas {
 .footer__title {
   font-weight: 900;
   font-size: 30px;
-  line-height: 80%;
+  line-height: 100%;
   text-align: center;
   text-transform: uppercase;
   color: #939393;
@@ -1306,13 +1306,11 @@ canvas {
   margin-top: 20px;
   margin-bottom: 170px;
   color: #ffffff;
-  -webkit-transition: background-color 3s linear;
-  -o-transition: background-color 3s linear;
-  transition: background-color 3s linear;
 }
 
 .footer__button:hover {
-  background-color: #3497BE;
+  background: -o-linear-gradient(254.8deg, #2e9adb 10.68%, #55b570 89.32%);
+  background: linear-gradient(195.2deg, #2e9adb 10.68%, #55b570 89.32%);
 }
 
 .footer__bottom {
@@ -1684,7 +1682,7 @@ canvas {
   border: 4px solid #2e9adb;
   border-radius: 40px;
   display: block;
-  margin: 0 auto;
+  margin: 3px auto;
   font-weight: 900;
   font-size: 20px;
   line-height: 86.9565217391%;
@@ -1878,7 +1876,8 @@ canvas {
   -webkit-box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-bottom: 60px;
 }
 
@@ -2456,6 +2455,7 @@ canvas {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .optimization__container {
@@ -2760,6 +2760,18 @@ canvas {
     font-size: calc(20px + 10 * ((100vw - 320px) / 820));
   }
 
+  .promotion__block {
+    padding-top: calc(20px + 40 * ((100vw - 320px) / 820));
+  }
+
+  .promotion__block {
+    padding-bottom: calc(26px + 34 * ((100vw - 320px) / 820));
+  }
+
+  .promotion__block {
+    margin-bottom: calc(16px + 44 * ((100vw - 320px) / 820));
+  }
+
   .promotion__title {
     padding-bottom: calc(10px + 10 * ((100vw - 320px) / 820));
   }
@@ -2870,6 +2882,18 @@ canvas {
 
   .products__title {
     margin-bottom: calc(32px + 28 * ((100vw - 320px) / 820));
+  }
+
+  .products__desc {
+    margin-bottom: calc(30px + 30 * ((100vw - 320px) / 820));
+  }
+
+  .optimization__title {
+    margin-bottom: calc(30px + 30 * ((100vw - 320px) / 820));
+  }
+
+  .optimization__title {
+    margin-top: calc(30px + 30 * ((100vw - 320px) / 820));
   }
 
   .optimization__text {
@@ -3230,7 +3254,7 @@ canvas {
 
 @media (max-width: 680px) and (max-width: 456px) {
   .footer__top::before {
-    bottom: -150px;
+    bottom: -158px;
   }
 }
 
