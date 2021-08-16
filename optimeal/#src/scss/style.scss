@@ -40,6 +40,7 @@ $mainColor: #000;
 @import "null";
 body {
 	color: $mainColor;
+	min-width: 1250px;
 	&._lock {
 		overflow: hidden;
 	}
@@ -105,27 +106,31 @@ body {
 
 .hero {
 
-	background-image: url('../img/bg.png');
+	background-image: url('../img/hero/bg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	min-height: 1082px;
+	background-position: center;
+	min-height: 1106px;
 	padding-top: 120.5px;
 	position: relative;
 
-	// &::after {
-	// 	content: '';
-	// 	position: absolute;
-	// 	left: 0;
-	// 	bottom: 0;
-	// 	background-image: url('../img/hero-wave.svg');
-	// 	width: 100%;
-	// 	height: 164px;
-	// }
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		background-image: url('../img/hero/wave-bottom.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		min-height: 164px;
+	}
 
 	&__content {}
 	&__info {
-		margin-top: 181px;
+		margin-top: 184px;
+		margin-bottom: auto;
 	}
 	&__title {
 		font-style: normal;
@@ -143,7 +148,7 @@ body {
 		line-height: 27px;
 		max-width: 470px;
 		color: #FFFFFF;
-		margin-bottom: 22px;
+		margin-bottom: 27px;
 	}
 	&__link {
 		position: absolute;
@@ -164,6 +169,10 @@ body {
 	}
 }
 
+.hero__wave {
+	// margin-top: auto;
+}
+
 /* New-line */
 .new-line {
 	
@@ -173,18 +182,7 @@ body {
 
 	// padding-top: 75px;
 	
-	&::before {
-		content: '';
-		position: absolute;
-		top: -132px;
-		left: 0;
-		width: 100%;
-		height: 164px;
-		background-image: url('../img/new-line/wave-top.svg');
-		background-repeat: no-repeat;
-		background-size: cover;
 
-	}
 
 	
 
@@ -198,6 +196,7 @@ body {
 		max-width: 617px;
 		margin: 0 auto;
 		margin-bottom: 50px;
+		padding-top: 14px;
 		&::before {
 			content: '';
 			position: absolute;
@@ -215,8 +214,8 @@ body {
 	}
 	&__title {
 		position: absolute;
-		top: 16px;
-    	left: 2px;
+		top: 32px;
+    	left: 6px;
 		
 		text-align: center;
 		width: 100%;
@@ -257,24 +256,7 @@ body {
 	&__column--left  &__img {
 		width: 294px;
 	}
-	&__column--left &__img {
-		background-image: url('../img/new-line/column-bg-1.svg');
-		background-repeat: no-repeat;
-		background-position: top 29px left -28px
-		
-	}
-	&__column--center &__img {
-		background-image: url('../img/new-line/column-bg-2.svg');
-		background-repeat: no-repeat;
-		background-position: top -39px left -56px
-		
-	}
-	&__column--right &__img {
-		background-image: url('../img/new-line/column-bg-3.svg');
-		background-repeat: no-repeat;
-		background-position: top 84px left -27px;
-		
-	}
+	
 	&__body {
 
 	}
@@ -293,14 +275,28 @@ body {
 		margin-bottom: 18px;
 	}
 
-	// &__bg {
-	// 	position: absolute;
-	// 	bottom: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 190px;
-	// }
+	&__bg {
+		margin-top: 25px;
+	}
 	
+}
+
+.new-line__wave {
+	position: relative;
+
+		&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		background-image: url('../img/new-line/wave-bottom.svg');
+		background-repeat: no-repeat;
+		background-size:cover;
+
+		width: 100%;
+		height: 190px;
+	}
+
 }
 
 /* Vitamins */
@@ -308,8 +304,9 @@ body {
 .vitamins {
 	
 	background-image: url('../img/vitamin/bg.png');
+	background-position: center top 120px ;
 	min-height: 100vh;
-	padding-bottom: 90px;
+	padding-bottom: 91px;
 
 	&__content {
 
@@ -325,7 +322,7 @@ body {
 	&__list {
 		display: flex;
 		justify-content: space-between;
-		padding-top: 150px;
+		padding-top: 448px;
 		margin: 0 -15px;
 	}
 	&__item {
@@ -345,7 +342,7 @@ body {
 
 	}
 	&__img {
-		margin-bottom: 10px;
+		margin-bottom: 21px;
 		max-width: 245px;
 		img {
 			max-width: 100%;
@@ -358,7 +355,22 @@ body {
 		background-size: 100%;
 		background-repeat: no-repeat;
 		min-height: 741px;
-		margin-top: 227px;
+		margin-top: 199px;
+		position: relative;
+		padding-bottom: 64px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -72px;
+    		left: 72px;
+			width: 100%;
+			height: 184px;
+			background-image: url('../img/vitamin/shadow.png');
+			background-repeat: no-repeat;
+			background-size: contain;
+
+		}
 		
 	}
 	&__slider {
@@ -479,13 +491,12 @@ body {
 	top: 50%;
 	left: -30px;
 	font-size: 0;
-	background-image: url('../img/vitamin/arrow-l.png');
+	background-image: url('../img/vitamin/arrow.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: contain;
 	cursor: pointer;
-	width: 60px;
-	height: 60px;
-	z-index: 11;
+	width: 81px;
+	height: 81px;
 }
 
 .slick-next.slick-arrow {
@@ -495,10 +506,10 @@ body {
 	font-size: 0;
 	background-image: url('../img/vitamin/arrow-r.svg');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: contain;
 	cursor: pointer;
-	width: 60px;
-	height: 60px;
+	width: 81px;
+	height: 81px;
 }
 
 .slick-list.draggable {
@@ -513,7 +524,7 @@ body {
 	background-image: url('../img/recomend/bg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding: 85px 0 190px;
+	padding: 0 0 190px;
 
 	&__content {
 
@@ -524,11 +535,12 @@ body {
 		font-size: 32px;
 		line-height: 40px;
 		margin-bottom: 27px;
+		padding-top: 91px;
 
 		color: #FFFFFF;
 	}
 	&__list {
-
+		padding-bottom: 12px;
 	}
 	&__item {
 		max-width: 540px;
@@ -555,7 +567,7 @@ body {
 
 .book {
 	position: relative;
-	background-color: #FFF6EE;
+	background: linear-gradient(0.97deg, #FFFFFF -17.47%, rgba(255, 255, 255, 0) 37.7%), #FFF6EE;
 	&::before {
 		content: '';
 		position: absolute;
@@ -569,7 +581,9 @@ body {
 		background-position: center;
 	}
 	
-	&__content {}
+	&__content {
+		max-width: 1230px;
+	}
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -612,6 +626,7 @@ body {
 	&__desc-logo {
 		display: block;
 		margin-top: 21px;
+		padding-bottom: 1px;
 	}
 }
 
