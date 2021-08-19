@@ -944,7 +944,7 @@ body.ie ._ibg img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 60px;
+  min-height: 60px;
 }
 
 .header__logo {
@@ -1521,9 +1521,6 @@ canvas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   padding: 58px 50px;
   background: #ffffff;
   -webkit-box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
@@ -1536,7 +1533,21 @@ canvas {
   margin-right: 102px;
 }
 
+.hero__info-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
 .hero__info-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   max-width: 454px;
   font-weight: 500;
   font-size: 16px;
@@ -1566,7 +1577,7 @@ canvas {
   -webkit-box-shadow: 0px 10px 20px rgba(78, 170, 224, 0.35);
           box-shadow: 0px 10px 20px rgba(78, 170, 224, 0.35);
   border-radius: 40px;
-  padding: 28px 0;
+  padding: 28px 40px;
   width: 100%;
   max-width: 354px;
   position: relative;
@@ -1597,7 +1608,7 @@ canvas {
   -webkit-box-shadow: 0px 10px 20px rgba(85, 181, 112, 0.35);
           box-shadow: 0px 10px 20px rgba(85, 181, 112, 0.35);
   border-radius: 40px;
-  padding: 28px 0;
+  padding: 28px 40px;
   width: 100%;
   max-width: 354px;
   position: relative;
@@ -1610,13 +1621,10 @@ canvas {
   position: absolute;
   content: "";
   background-image: url("../img/icons/right-arrow.svg");
-  top: 30px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+      -ms-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
   right: 40px;
   width: 20px;
   height: 20px;
@@ -1711,8 +1719,9 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 717px;
+  min-height: 717px;
   position: relative;
+  padding-bottom: 200px;
 }
 
 .top::before {
