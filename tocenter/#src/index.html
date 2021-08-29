@@ -1,17 +1,148 @@
 <!DOCTYPE html>
 <html lang="ru">
-	@@include('_head.html',{
-	"title":"Главная"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
-			<main class="page">
+@@include('_head.html',{
+"title":"Главная"
+})
 
-			</main>
-			@@include('_footer.html',{})
-		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
-	</body>
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<section class="hero">
+				<div class="hero__content _container">
+					<div class="hero__head">
+						<h1 class="hero__title">Запись на технический осмотр</h1>
+						<h2 class="hero__subtitle">с бронированием времени и оплатой онлайн</h2>
+						<p class="hero__desc">более 5 000 центров по всей России</p>
+					</div>
+					<form class="form">
+						<h3 class="form__title">Выберите свой город</h3>
+						<div class="form__line">
+							<select name="form[]" class="form__select">
+								<option value="1" selected="selected">Санкт Петербург</option>
+								<option value="2">Москва</option>
+								<option value="3">Екатеринбург</option>
+								<option value="4">Казань</option>
+							</select>
+						</div>
+						<button type="submit" class="form__btn btn">Записаться</button>
+					</form>
+				</div>
+			</section>
+
+			<section class="advantages">
+				<div class="advantages__content _container">
+					<ul class="advantages__list">
+						<li class="advantages__item">
+							<span>01</span>
+							<p>Выбираете центр<br> и бронируете время</p>
+						</li>
+						<li class="advantages__item">
+							<span>02</span>
+							<p>Вводите данные<br> владельца</p>
+						</li>
+						<li class="advantages__item">
+							<span>03</span>
+							<p>Оплачиваете<br> заказ</p>
+						</li>
+						<li class="advantages__item">
+							<span>04</span>
+							<p>Проходите<br> техосмотр</p>
+						</li>
+					</ul>
+
+					<div class="advantages__inner">
+						<h2 class="advantages__title">Преимущества<br> нашего сервиса</h2>
+
+						<ul class="advantages__list-items">
+							<li class="advantages__list-item list-advantages">
+								<div class="list-advantages__img">
+									<img src="img/advantages/1.png" alt="">
+								</div>
+								<h3 class="list-advantages__title">Удобное<br> бронирование времени</h3>
+								<p class="list-advantages__text">
+									С помощью нашего сервиса Вы сможете подобрать и забронировать подходящее время для
+									посещения
+									оператора
+									технического осмотра.
+								</p>
+							</li>
+							<li class="advantages__list-item list-advantages">
+								<div class="list-advantages__img">
+									<img src="img/advantages/2.png" alt="">
+								</div>
+								<h3 class="list-advantages__title">Личный кабинет</h3>
+								<p class="list-advantages__text">
+									Вся ваша информация сохраняетсяв удобном личном кабинете. Вам большене придется
+									вводить ваши данные
+									при
+									повторой записи на технический осмотр.
+								</p>
+							</li>
+							<li class="advantages__list-item list-advantages">
+								<div class="list-advantages__img">
+									<img src="img/advantages/3.png" alt="">
+								</div>
+								<h3 class="list-advantages__title">Карта расположения<br>
+									сервисных центров</h3>
+								<p class="list-advantages__text">
+									На нашей карте вы сможете увидеть адреса расположений всех сервисных центров,а также
+									всю информацию о
+									них.
+								</p>
+							</li>
+							<li class="advantages__list-item list-advantages">
+								<div class="list-advantages__img">
+									<img src="img/advantages/4.png" alt="">
+								</div>
+								<h3 class="list-advantages__title">Онлайн оплата</h3>
+								<p class="list-advantages__text">
+									С помощью нашего сервиса Вы сможете подобрать и забронировать подходящее время для
+									посещения
+									оператора
+									технического осмотра.
+								</p>
+							</li>
+							<li class="advantages__list-item list-advantages">
+								<div class="list-advantages__img">
+									<img src="img/advantages/5.png" alt="">
+								</div>
+								<h3 class="list-advantages__title">Построение маршрута<br>
+									до нужного центра ТО</h3>
+								<p class="list-advantages__text">
+									Вся ваша информация сохраняетсяв удобном личном кабинете. Вам большене придется
+									вводить ваши данные
+									при
+									повторой записи на технический осмотр.
+								</p>
+							</li>
+							<li class="advantages__list-item list-advantages">
+								<div class="list-advantages__img">
+									<img src="img/advantages/6.png" alt="">
+								</div>
+								<h3 class="list-advantages__title">Напоминание о прохождении последующего осмотра</h3>
+								<p class="list-advantages__text">
+									На нашей карте вы сможете увидеть адреса расположений всех сервисных центров,а также
+									всю информацию о
+									них.
+								</p>
+							</li>
+						</ul>
+					</div>
+
+
+
+				</div>
+			</section>
+
+
+
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
 </html>

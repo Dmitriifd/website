@@ -26,6 +26,9 @@
 			border-left: 1px solid #F8F4DA;
 			border-right: 1px solid #F8F4DA;
 		}
+		@media (min-width: 1570px) {
+			padding-right: 32px;
+		}
 	}
 	&__desc {
 		display: inline-block;
@@ -37,6 +40,7 @@
 
 		@media (min-width: 1100px) {
 			font-size: 13px;
+			line-height: 130%;
 			max-width: 250px;
 			padding-left: 24px;
 		}
@@ -92,6 +96,9 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+		}
+		@media (min-width: 1570px) {
+			margin-right: 0;
 		}
 	}
 	&__icon  {
@@ -160,10 +167,11 @@
 	&__item {
 		margin-left: 20px;
 
-		@media (min-width: 1100px) {
+		@media (max-width: 1130px) {
+			margin: 0 10px;
+		}
+		@media (min-width: 1130px) {
 			margin: 0 17px;
-
-			
 		}
 	}
 	&__link {
@@ -185,7 +193,7 @@
 				&::before {
 					content: '';
 					position: absolute;
-					bottom: -28px;
+    				bottom: -42px;
 					left: 50%;
 					transform: translateX(-50%);
 					width: 135%;

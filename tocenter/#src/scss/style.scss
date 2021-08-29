@@ -96,4 +96,362 @@ body {
 }
 //===================================================================================================================================
 
-//</ОСНОВНОЙ БЛОК>====================================================================================================
+/* Hero */
+
+.hero {
+	background-color: #F0F5FA;
+	padding-bottom: 33px;
+	background-image: url('../img/bg-desk.png');
+	background-repeat: no-repeat;
+	background-position: bottom 95px center;
+	background-size: 347px;
+	
+	@media (min-width: 768px) {
+		background-position: bottom 50px center;
+	}
+
+	@media (min-width: 1024px) {
+		min-height: 494px;
+		background-position: bottom right;
+		padding-bottom: 0;
+		background-size: 50%;
+	}
+	@media (min-width: 1570px) {
+		background-size: contain;
+	}
+
+	&__content {}
+	&__head {
+		padding-top: 45px;
+		padding-bottom: 169px;
+		@media (min-width: 1024px) {
+			padding-top: 60px;
+			padding-bottom: 35px;
+		}
+		@media (min-width: 1570px) {
+			padding-top: 137px;
+		}
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 25px;
+		line-height: 100%;
+		text-align: center;
+		color: #333333;
+		margin-bottom: 10px;
+		@media (min-width: 1024px) {
+			font-size: 42px;
+			line-height: 129.4%;
+			text-align: left;
+		}
+	}
+	&__subtitle {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 120%;
+		text-align: center;
+		color: #515151;
+		margin-bottom: 14px;
+		@media (min-width: 1024px) {
+			font-size: 24px;
+			line-height: 150.4%;
+			text-align: left;
+		}
+	}
+	&__desc {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 150.4%;
+		text-align: center;
+		color: #515151;
+		@media (min-width: 1024px) {
+			font-size: 18px;
+			text-align: left;
+		}
+	}
+
+}
+
+/* Form */
+
+.form {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 96px rgba(0, 0, 0, 0.15);
+	border-radius: 20px;
+	padding: 15px;
+	margin-bottom: -95px;
+
+	@media (min-width: 768px) {
+		display: flex;
+		align-items: center;
+		width: 731px;
+		min-height: 99px;
+		box-shadow: 0px 27px 63px rgba(0, 0, 0, 0.1);
+		border-radius: 80px;
+		padding: 5px 22px;
+		margin-bottom: -80px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@media (min-width: 1024px) {
+		margin: 0;
+		margin-bottom: 86px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 130.4%;
+		text-align: center;
+		color: #13141E;
+		margin-bottom: 10px;
+
+		@media (min-width: 768px) {
+			font-size: 16px;
+			margin-right: 18px;
+		}
+		
+	}
+	&__line {
+
+		@media (min-width: 768px) {
+			margin-right: 7px;
+			width: 295px;
+			height: 59px;
+		}
+	}
+	&__select {
+		margin-bottom: 10px;
+	}
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		min-height: 50px;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+		color: #FFFFFF;
+		background: #006FE6;
+		border-radius: 50px;
+		transition: background-color 0.3s linear;
+
+		&:hover {
+			background-color: #2C92FF;
+		}
+
+		@media (min-width: 768px) {
+			width: 182px;
+			height: 59px;
+		}
+	}
+
+}
+
+.select_form__select {
+	margin-bottom: 10px;
+}
+
+/* Advantages */
+
+.advantages {
+	padding-top: 105px;
+	padding-bottom: 100px;
+
+	@media (min-width: 1024px) {
+		padding-top: 60px;
+	}
+	@media (min-width: 1570px) {
+		padding-top: 64px;
+	}
+
+	&__content {}
+	&__inner {
+
+		@media (min-width: 1570px) {
+			display: flex;
+			column-gap: 121px;
+		}
+	}
+
+	&__list {
+		padding-bottom: 41px;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -26px;
+		margin-right: -30px;
+		&::after {
+			content: '';
+			position: absolute;
+			display: block;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			height: 1px;
+			width: 110vw;
+			background-color: #D0D0D0;
+
+			@media (min-width: 1570px) {
+				height: 0;
+				width: 0;
+			}
+		}
+
+		@media (min-width: 1570px) {
+			// align-items: center;
+			// min-height: 101px;
+			// padding-bottom: 143px;
+			// margin-top: 0;
+			// margin-right: 0;
+			border-bottom: 1px solid #D0D0D0;
+			// column-gap: 115px;
+		}
+	}
+	&__item {
+		flex-basis: 145px;
+		position: relative;
+		margin-top: 26px;
+		margin-right: 30px;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 120%;
+		text-align: center;
+		color: #000000;
+
+		p {
+
+		}
+
+		span {
+			display: block;
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 140%;
+			text-align: center;
+			color: #EBEBEB;
+			margin-bottom: 6px;
+
+			@media (min-width: 1024px) {
+				font-size: 72px;
+			}
+			@media (min-width: 1570px) {
+				margin-bottom: 0;
+				margin-right: 30px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			flex: 0 1 calc(25% - 30px);
+			font-size: 16px;
+		}
+		@media (min-width: 1024px) {
+			margin-top: 0;
+		}
+		@media (min-width: 1570px) {
+			display: flex;
+			align-items: center;
+		}
+	
+	}
+	&__title {
+		padding-top: 37px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 120%;
+		text-align: center;
+		letter-spacing: 0.02em;
+		color: #13141E;
+		margin-bottom: 30px;
+		@media (min-width: 1570px) {
+			text-align: left;
+			padding-top: 0;
+			font-size: 30px;
+			line-height: 134.4%;
+			flex: 1 1 300px;
+			margin-top: 113px;
+			white-space: nowrap;
+		}
+	}
+	&__list-items {
+		@media (min-width: 768px) {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 -15px;
+			margin-top: -30px;
+		}
+
+		@media (min-width: 1200px) {
+			justify-content: space-between;
+		}
+		@media (min-width: 1570px) {
+			margin: 0;
+			margin-top: 102px;
+			row-gap: 75px;
+			flex: 0 1 auto;
+		}
+	}
+	&__list-item {
+		margin-bottom: 35px;
+
+		@media (min-width: 768px) {
+			flex: 1 1 calc(50% - 30px);
+			margin: 0 15px;
+			margin-top: 30px;
+		}
+		@media (min-width: 1200px) {
+			flex: 0 1 calc(28% - 30px);
+			margin: 30px 0 15px;
+		}
+		@media (min-width: 1570px) {
+			flex: 0 1 32%;
+			margin: 0;
+		}
+	}
+	&__list-item:last-child {
+		margin-bottom: 0px;
+	}
+}
+
+.list-advantages {
+
+	
+
+	&__title {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 140%;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 10px;
+		@media (min-width: 1570px) {
+			text-align: left;
+			margin-bottom: 20px;
+		}
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 150.4%;
+		text-align: center;
+		color: #000000;
+		@media (min-width: 1570px) {
+			text-align: left;
+			max-width: 329px;
+		}
+	}
+	&__img {
+		text-align: center;
+		margin-bottom: 18px;
+		img {
+
+		}
+
+		@media (min-width: 1570px) {
+			text-align: left;
+			margin-bottom: 40px;
+		}
+
+	}
+}
