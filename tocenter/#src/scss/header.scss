@@ -81,6 +81,10 @@
 			line-height: 16px;
 			margin-right: 10px;
 			color: #046EE3;
+			transition: color 0.2s linear;
+			&:hover {
+				color: black;
+			}
 		}
 	}
 	&__profile {

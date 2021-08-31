@@ -1239,6 +1239,7 @@ body.ie ._ibg img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: inherit;
   width: 100%;
   min-height: 50px;
   font-weight: 600;
@@ -1539,6 +1540,7 @@ body.ie ._ibg img {
 .act__button {
   display: block;
   background-color: #FBF9ED;
+  font-family: inherit;
   border-radius: 80px;
   margin-left: auto;
   font-size: 13px;
@@ -1586,7 +1588,7 @@ form.act-form {
 /* Spoiler */
 
 .block {
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 39px 0px;
 }
 
 .block__item {
@@ -1602,6 +1604,12 @@ form.act-form {
   background-color: transparent;
   padding: 10px;
   position: relative;
+  min-height: 80px;
+}
+
+.block__title span {
+  display: block;
+  margin-right: 35px;
 }
 
 .block._init .block__title {
@@ -1610,10 +1618,9 @@ form.act-form {
 
 .block._init .block__title {
   font-family: inherit;
-  padding: 20px 40px 20px 20px;
+  padding: 20px 40px 25px 20px;
 }
 
-.block._init .block__title::before,
 .block._init .block__title::after {
   content: "";
   background-image: url("../img/icons/spoiler-arrow.svg");
@@ -1621,8 +1628,8 @@ form.act-form {
   width: 47px;
   height: 47px;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 21px;
+  top: 25%;
   -webkit-transition: -webkit-transform 0.3s ease 0s;
   transition: -webkit-transform 0.3s ease 0s;
   -o-transition: transform 0.3s ease 0s;
@@ -1643,13 +1650,41 @@ form.act-form {
 }
 
 .block__text {
-  padding: 0 10px 10px;
+  padding: 0 20px 40px;
   line-height: 130%;
 }
 
 .block_1 .block__item {
   border-radius: 20px;
   background-color: #F9FAFB;
+}
+
+.block__text ol {
+  list-style: none;
+  counter-reset: counter;
+}
+
+.block__text li:first-child {
+  border-top: 1px solid #E0DFD5;
+}
+
+.block__text li {
+  position: relative;
+  margin-bottom: 18px;
+  padding-left: 25px;
+  padding-top: 21px;
+}
+
+.block__text li:before {
+  content: "0" counter(counter) ".";
+  counter-increment: counter;
+  position: absolute;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150.4%;
+  color: #ff0007;
+  left: 0;
+  top: 21px;
 }
 
 @media (min-width: 375px) {
@@ -1678,6 +1713,13 @@ form.act-form {
     line-height: 16px;
     margin-right: 10px;
     color: #046EE3;
+    -webkit-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+  }
+
+  .header__button:hover {
+    color: black;
   }
 }
 
@@ -1996,6 +2038,14 @@ form.act-form {
   .act-form .act-form__title {
     font-size: 20px;
     margin-bottom: 25px;
+  }
+
+  .block__item {
+    margin-bottom: 20px;
+  }
+
+  .block__title {
+    min-height: 103px;
   }
 }
 
@@ -2324,6 +2374,36 @@ form.act-form {
             flex: 0 1 50%;
   }
 
+  .inspection__actions-item:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .inspection__actions-item:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .inspection__actions-item:nth-child(3) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+
+  .inspection__actions-item:nth-child(4) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .inspection__actions-item:nth-child(5) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+
   .act__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2376,6 +2456,24 @@ form.act-form {
 
   .block {
     padding-bottom: 100px;
+  }
+
+  .block._init .block__title {
+    padding: 40px 40px 40px 83px;
+  }
+
+  .block__text li {
+    padding-top: 42px;
+    padding-left: 78px;
+  }
+
+  .block__text li:before {
+    top: 41px;
+  }
+
+  .block__text {
+    padding-left: 40px;
+    padding-right: 68px;
   }
 }
 
