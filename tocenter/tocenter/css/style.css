@@ -1550,6 +1550,13 @@ body.ie ._ibg img {
   padding-bottom: 13px;
   padding-right: 39px;
   position: relative;
+  -webkit-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
+.act__button:hover {
+  background-color: #FFFCDD;
 }
 
 .act__button:before {
@@ -1713,13 +1720,6 @@ form.act-form {
     line-height: 16px;
     margin-right: 10px;
     color: #046EE3;
-    -webkit-transition: color 0.2s linear;
-    -o-transition: color 0.2s linear;
-    transition: color 0.2s linear;
-  }
-
-  .header__button:hover {
-    color: black;
   }
 }
 
@@ -1897,6 +1897,21 @@ form.act-form {
 }
 
 @media (min-width: 1024px) {
+  .header__actions {
+    border-radius: 40px;
+    -webkit-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    transition: background-color 0.3s linear;
+  }
+
+  .header__actions:hover {
+    background-color: #F0F5FA;
+  }
+
+  .header__button {
+    padding-left: 20px;
+  }
+
   .hero {
     min-height: 494px;
     background-position: bottom right;

@@ -835,8 +835,11 @@ body {
 		padding-bottom: 13px;
 		padding-right: 39px;
 		position: relative;
+		transition: background-color 0.2s linear;
 
-		
+		&:hover {
+			background-color: #FFFCDD;
+		}
 
 		&:before {
 			content: '';
@@ -862,6 +865,7 @@ form.act-form {
 		border-radius: 20px;
 	}
 }
+
 .act-form .select__title {
 	background-color: #fff;
 }
