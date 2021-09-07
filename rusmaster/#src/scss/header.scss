@@ -1,0 +1,138 @@
+.header {
+
+	background-color: #fff;
+	min-height: 150px;
+
+	&__content {}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__logo {
+		margin-right: 170px;
+	}
+	&__logo-img {}
+	&__info {
+		margin-right: 96px;
+	}
+	&__info-address {
+		font-size: 18px;
+		line-height: 150%;
+		text-align: right;
+		letter-spacing: 0.045em;
+		margin-bottom: 3px;
+	}
+	&__info-link {
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 150%;
+		text-decoration-line: underline;
+		color: #357CDD;
+		padding-right: 11px;
+		margin-right: 12px;
+		border-right: 1px solid #C2C2C2;
+	}
+	&__info-link:last-child {
+		border: none;
+		padding-right: 0;
+		margin-right: 0;
+	}
+	&__contacts {
+		margin-right: 92px;
+	}
+	&__contacts-phone {
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 150%;
+		margin-bottom: 2px;
+		// padding-right: 28px;
+		color: inherit;
+	}
+	&__contacts-btn {
+		width: 15px;
+		height: 15px;
+	}
+	&__contacts-info {
+		font-weight: 300;
+		font-size: 13px;
+		line-height: 150%;
+		position: relative;
+		padding-left: 17px;
+		margin-left: 32px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 6px;
+			height: 6px;
+			background-color: #13DB1B;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 0;
+			border-radius: 50%;
+		}
+	}
+	&__menu {}
+}
+
+.menu {
+	&__body {}
+	&__list {}
+	&__item {}
+	&__link {}
+	&__icon {}
+}
+
+
+
+
+
+
+
+
+/*
+//Burger
+.icon-menu {
+	display: none;
+	@media (max-width: $md3+px) {
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span {
+			transition: all 0.3s ease 0s;
+			top: calc(50% - 1px);
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			&:first-child {
+				top: 0px;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+			}
+		}
+		&._active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+}
+*/
