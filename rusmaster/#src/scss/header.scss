@@ -1,27 +1,58 @@
 .header {
 
 	background-color: #fff;
-	min-height: 150px;
+	
 
 	&__content {}
 	&__wrapper {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		min-height: 80px;
+
+		@media (min-width: 768px) {
+			min-height: 150px;
+		}
+	}
+	&__column {
+		flex: 0 1 33.333%;
+
+		@media (max-width: 1065px) {
+			flex: 0 1 50%;
+		}
 	}
 	&__logo {
-		margin-right: 170px;
+		@media (max-width: 1200px) {
+			margin-right: 30px;
+		}
 	}
-	&__logo-img {}
+	&__logo-img {
+		@media (max-width: 768px) {
+			width: 200px;
+			max-width: 100%;
+		}
+		@media (max-width: 410px) {
+			max-width: none;
+			width: 200px;
+		}
+	}
 	&__info {
-		margin-right: 96px;
+
+		@media (max-width: 1065px) {
+			display: none;
+		}
 	}
 	&__info-address {
-		font-size: 18px;
+		@include adaptiv-value("font-size", 18, 12, 1);
 		line-height: 150%;
-		text-align: right;
 		letter-spacing: 0.045em;
 		margin-bottom: 3px;
+	}
+	&__info-wrap {
+
+		@media (min-width: 1270px) {
+			text-align: right;
+		}
+		
 	}
 	&__info-link {
 		font-weight: 300;
@@ -39,25 +70,44 @@
 		margin-right: 0;
 	}
 	&__contacts {
-		margin-right: 92px;
+		
+		// padding-right: 92px;
+
+		@media (max-width: 1065px) {
+			display: flex;
+    		justify-content: flex-end;
+			margin-right: 30px;
+		}	
+	}
+	&__contacts-wrap {
+		@include adaptiv-value("padding-left", 96, 30, 1);
+		@media (max-width: 680px) {
+			padding-left: 0;
+		}
 	}
 	&__contacts-phone {
+		padding-right: 8px;
 		font-weight: 500;
-		font-size: 26px;
+		@include adaptiv-value("font-size", 26, 14, 1);
 		line-height: 150%;
 		margin-bottom: 2px;
 		// padding-right: 28px;
 		color: inherit;
+
+		@media (max-width: 410px) {
+			display: none;
+		}
 	}
 	&__contacts-inner {
 		position: relative;
+		
 	}
 	&__contacts-allphones {
 		display: none;
 		z-index: 1;
 		position: absolute;
-		left: 51px;
-    	top: 48px;
+		left: 24%;
+    	top: 37px;
 		background: #FFFFFF;
 		border: 1px solid #E2EEF8;
 		box-shadow: 0px 6px 18px rgba(53, 124, 221, 0.08);
@@ -66,6 +116,20 @@
 		padding: 20px;
 		text-align: right;
 
+		
+		
+		@media (max-width: 1420px) {
+			left: 145px;
+		}
+		@media (max-width: 1350px) {
+			left: 23%;
+    		top: 40px;
+		}
+		@media (max-width: 1120px) {
+			left: 20%;
+		}
+	
+		
 		p:first-child {
 			position: relative;
 
@@ -77,12 +141,18 @@
 				background-image: url('../img/icons/rec.svg');
 				width: 16px;
 				height: 8px;
+
+				@media (max-width: 1000px) {
+					right: 0;
+					left: unset;
+				}
 			}
 		}
 
 		p {
+			white-space: nowrap;
 			font-weight: 500;
-			font-size: 18px;
+			@include adaptiv-value("font-size", 18, 12, 1);
 			line-height: 150%;
 			
 
@@ -98,12 +168,12 @@
 		display: block;
 	}
 	&__contacts-btn {
+		display: none;
 		width: 16px;
 		height: 16px;
 		border-radius: 50%;
 		border: 1px solid #357CDD;
 		position: relative;
-		display: inline-flex;
 
 		&:before {
 			content: '';
@@ -116,6 +186,10 @@
 			height: 4px;
 			width: 7px;
 		}
+
+		@media (min-width: 768px) {
+			display: inline-flex;
+		}
 	}
 	&__contacts-btn._active {
 
@@ -124,12 +198,19 @@
 		}
 	}
 	&__contacts-info {
+		display: none;
 		font-weight: 300;
 		font-size: 13px;
 		line-height: 150%;
 		position: relative;
 		padding-left: 17px;
-		margin-left: 32px;
+		
+		@media (min-width: 575px) {
+			display: block;
+		}
+		@media (min-width: 1350px) {
+			margin-left: 40px;
+		}
 
 		&::after {
 			content: '';
@@ -147,6 +228,7 @@
 }
 
 .menu {
+	position: relative;
 	&__body {}
 	&__list {}
 	&__item {}
@@ -161,48 +243,54 @@
 
 
 
-/*
+
 //Burger
 .icon-menu {
-	display: none;
-	@media (max-width: $md3+px) {
-		display: block;
+	
+	
+	// position: absolute;
+	// top: 50%;
+	// right: 0px;
+	// transform: translateY(-50%);
+	border: 1px solid #357CDD;
+	border-radius: 4px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 5;
+	span {
+		transition: all 0.3s ease 0s;
+		top: calc(50% - 1px);
+		left: 50%;
+		transform: translateX(-50%);
 		position: absolute;
-		top: 18px;
-		right: 10px;
-		width: 30px;
-		height: 18px;
-		cursor: pointer;
-		z-index: 5;
+		width: 14px;
+		height: 2px;
+		background-color: #357CDD;
+		&:first-child {
+			top: 7px;
+		}
+		&:last-child {
+			top: auto;
+			bottom: 7px;
+		}
+	}
+	&._active {
+		border: none;
 		span {
-			transition: all 0.3s ease 0s;
-			top: calc(50% - 1px);
-			left: 0px;
-			position: absolute;
 			width: 100%;
-			height: 2px;
-			background-color: #000;
+			left: 0px;
+			transform: scale(0);
 			&:first-child {
-				top: 0px;
+				transform: rotate(-45deg);
+				top: calc(50% - 1px);
 			}
 			&:last-child {
-				top: auto;
-				bottom: 0px;
-			}
-		}
-		&._active {
-			span {
-				transform: scale(0);
-				&:first-child {
-					transform: rotate(-45deg);
-					top: calc(50% - 1px);
-				}
-				&:last-child {
-					transform: rotate(45deg);
-					bottom: calc(50% - 1px);
-				}
+				transform: rotate(45deg);
+				bottom: calc(50% - 1px);
 			}
 		}
 	}
+	
 }
-*/
+
