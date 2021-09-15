@@ -229,8 +229,12 @@
 
 .menu {
 	position: relative;
-	&__body {}
-	&__list {}
+	&__body {
+		display: none;
+	}
+	&__list {
+		
+	}
 	&__item {}
 	&__link {}
 	&__icon {}

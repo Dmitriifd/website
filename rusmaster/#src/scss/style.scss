@@ -296,18 +296,25 @@ body {
 .spoller._init .spoller__title::after {
 	content: "";
 	width: 20px;
-	height: 1px;
+	height: 4px;
 	background-color: #fff;
 	position: absolute;
-	right: 10px;
-	top: 20px;
+	right: 34px;
+	top: 35px;
+	transform: translateY(-50%);
 	transition: transform 0.3s ease 0s;
 }
+
 .spoller._init .spoller__title::after {
+	top: 33px;
 	transform: rotate(-90deg);
 }
 .spoller._init .spoller__title._active::after {
-	transform: rotate(0deg);
+	transform: rotate(45deg);
+}
+.spoller._init .spoller__title._active::before {
+	top: 33px;
+	transform: rotate(-45deg);
 }
 .spoller__body {
 	background: #FFFFFF;
@@ -614,6 +621,193 @@ body {
 		}
 		flex: 1 1 calc(25% - 12px);
 	}
+
+
+}
+
+/* Info */
+
+.info {
+	position: relative;
+	&__content {
+		max-width: 1644px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+	&__dec {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 250%;
+		padding: 0 100px;
+		margin-bottom: 57px;
+	}
+	&__body {
+		
+	}
+	&__request {
+		position: relative;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		padding-right: 212px;
+		padding-left: 15px;
+		border: 10px solid #357CDD;
+		box-shadow: 0px 4px 30px rgba(65, 141, 246, 0.46);
+		
+	}
+	&__request-img {
+		position: absolute;
+		top: 27px;
+    	left: -155px;
+	}
+	&__request-title {
+		text-align: center;
+		font-weight: 500;
+		font-size: 26px;
+		line-height: 350%;
+	}
+	&__request-form {
+		
+		display: flex;
+		flex-direction: column;
+		max-width: 450px;
+		margin-left: auto;
+	}
+	&__request-input {
+		min-height: 75px;
+		background: #F0F6FB;
+		border-radius: 5px;
+		margin-bottom: 15px;
+		padding: 30px;
+	}
+	&__request-textarea {
+		min-height: 140px;
+		background: #F0F6FB;
+		border-radius: 5px;
+		margin-bottom: 15px;
+		padding: 30px;
+	}
+	textarea {
+		resize: none;
+	}
+	input::placeholder, textarea::placeholder {
+		font-size: 16px;
+		line-height: 170.5%;
+		color: #5F6C77;
+	}
+	&__request-btn {
+		min-height: 73px;
+		background: linear-gradient(180deg, #418DF6 0%, #1357B6 100%);
+		box-shadow: 0px 2px 0px #1951A0, 0px 10px 30px rgba(65, 141, 246, 0.46), inset 0px -1px 0px rgba(255, 255, 255, 0.15);
+		border-radius: 5px;
+		color: #fff;
+		text-align: center;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 170.5%;
+		margin-bottom: 21px;
+	}
+	&__request-label {
+		padding-left: 80px;
+		font-size: 12px;
+		line-height: 170.5%;
+		color: #5F6C77;
+		a {
+			color: #357cdd;
+		}
+	}
+	&__map {
+		padding: 80px 60px;
+		img {
+			position: absolute;
+			top: 718px;
+			left: 0;
+			width: 100%;
+			height: 600px;
+			z-index: 1;
+		}
+	}
+	&__map-contacts {
+		background: #F8F8F8;
+		box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		padding: 49px 65px 64px;
+		max-width: 450px;
+		margin-top: -10px;
+		h3 {
+			font-weight: bold;
+			font-size: 28px;
+			line-height: 170.5%;
+			margin-bottom: 16px;
+		}
+		p {
+			font-size: 20px;
+			line-height: 220%;
+		}
+		
+		a {
+			line-height: 220%;
+			text-decoration-line: underline;
+
+			color: #60A2FD;
+			margin-bottom: 24px;
+		}
+		address {
+			margin-top: 24px;
+			font-style: normal;
+			font-size: 20px;
+			line-height: 150%;
+		}
+	}
+	&__master {
+		border: 10px solid #357CDD;
+		box-shadow: 0px 4px 30px rgba(65, 141, 246, 0.46);
+		padding: 72px 95px 72px 89px;
+		margin-bottom: 61px;
+	}
+	&__master-form {
+		display: flex;
+	}
+	&__master-title {
+		font-weight: bold;
+		font-size: 37px;
+		line-height: 100%;
+		letter-spacing: -0.005em;
+		text-transform: uppercase;
+		margin-right: 80px;
+		span {
+			color: #357CDD;
+		}
+	}
+	&__master-input {
+		min-height: 75px;
+		width: 100%;
+		max-width: 330px;
+		background: #F0F6FB;
+		border-radius: 5px;
+		margin-bottom: 15px;
+		padding: 30px;
+		margin-right: 30px;
+	}
+	&__master-btn {
+		width: 100%;
+		max-width: 330px;
+		min-height: 73px;
+		background: linear-gradient(180deg, #418DF6 0%, #1357B6 100%);
+		box-shadow: 0px 2px 0px #1951A0, 0px 10px 30px rgba(65, 141, 246, 0.46), inset 0px -1px 0px rgba(255, 255, 255, 0.15);
+		border-radius: 5px;
+		color: #fff;
+		text-align: center;
+		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 170.5%;
+		padding: 15px 30px;
+		margin-bottom: 21px;
+	}
+
+
+
 
 
 }
