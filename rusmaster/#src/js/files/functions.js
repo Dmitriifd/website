@@ -117,7 +117,7 @@ function body_lock_add(delay) {
 			const el = lock_padding[index];
 			el.style.paddingRight = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 		}
-		body.style.paddingRight = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+		// body.style.paddingRight = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 		body.classList.add("_lock");
 
 		unlock = false;

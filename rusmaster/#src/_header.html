@@ -33,21 +33,44 @@
 					</p>
 				</div>
 			</div>
-			<div class="header__menu menu">
-				<nav class="menu__body">
-					<ul class="menu__list">
-						<li class="menu__item"><a class="menu__link">Главная</a></li>
-						<li class="menu__item"><a class="menu__link">Услуги</a></li>
-						<li class="menu__item"><a class="menu__link">Цены</a></li>
-						<li class="menu__item"><a class="menu__link">Ориентировочный прайс-лист</a></li>
-						<li class="menu__item"><a class="menu__link">Контакты</a></li>
-					</ul>
-				</nav>
-				<button type="button" class="menu__icon icon-menu">
+
+			<button type="button" class="menu__icon icon-menu">
 					<span></span>
 					<span></span>
 					<span></span>
 				</button>
+
+			<div class="header__menu menu">
+				<nav class="menu__body">
+					<button class="close-btn">
+						<img src="img/icons/burger-close.svg" alt="">
+					</button>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a title="home" class="menu__link">Главная</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link menu__arrow">Услуги</a>
+							<ul class="menu__sub-list">
+								<li class="menu__sub-item">
+									<a class="menu__sub-link" href="#">Подуслуга с ценами</a>
+								</li>
+								<li class="menu__sub-item">
+									<a class="menu__sub-link" href="#">Подуслуга с ценами подлинеее</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link menu__arrow">Цены</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Ориентировочный прайс-лист</a>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</div>
