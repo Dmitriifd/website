@@ -239,19 +239,29 @@
 		height: 100%;
 		overflow: auto;
 		top: 0;
-		right: -100%;
+		right: -200%;
 		transition: right .3s ease;
 		padding-top: 200px;
 		z-index: 10;
+
+		@media (max-width: 700px) {
+			width: 100%;
+			padding-top: 100px;
+		}
 	}
 	&__body._active {
 		right: 0;
 	}
 	&__list {
 		padding-left: 89px;
+		overflow-x: hidden;
+
+		@media (max-width: 700px) {
+			padding-left: 30px;
+		}
 	}
 	&__item {
-		
+	
 	}
 	&__link {
 		position: relative;
@@ -260,9 +270,14 @@
 		color: inherit;
 		padding-right: 32px;
 	}
-	&__arrow {
-		
+	&__arrow.menu__link--active  {
+		&::after {
+			transform: rotate(180deg);
+			top: 40%;
+		}
 	}
+
+	
 	&__arrow::after {
 		content: '';
 		position: absolute;
@@ -272,6 +287,7 @@
 		width: 10px;
 		height: 6px;
 		background-image: url('../img/icons/menu-arrow.svg');
+		transition: transform 0.3s ease;
 	}
 	&__link:hover {
 		color: #357CDD;
@@ -279,10 +295,6 @@
 		
 	}
 	&__sub-list {
-		height: 0;
-		opacity: 0;
-		visibility: hidden;
-		transition: height 0.3s ease;
 		
 		position: relative;
 		padding-left: 139px;
@@ -299,12 +311,12 @@
 			z-index: -1;
 		}
 	}
-	&__sub-list.active {
-		height: 100%;
-		width: 100%;
-		opacity: 1;
-		visibility: visible;
-	}
+	// &__sub-list.active {
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	opacity: 1;
+	// 	visibility: visible;
+	// }
 	&__sub-item {
 
 	}
@@ -387,3 +399,10 @@ a[title="home"]:hover {
 	
 }
 
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}

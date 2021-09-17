@@ -102,7 +102,7 @@ body {
 
 .hero {
 
-	margin-bottom: 100px;
+	@include adaptiv-value("margin-bottom", 100, 30, 1);
 	background-image: url('../img/bg.jpg');
 	background-repeat: no-repeat;
 	// background-position: center;
@@ -112,20 +112,25 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
+
+		@media (max-width: 1100px) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 	&__head {
-		padding-top: 78px;
-		margin-bottom: 34px;
+		@include adaptiv-value("padding-top", 78, 30, 1);
+		@include adaptiv-value("margin-bottom", 34, 20, 1);
 	}
 	&__title {
 		font-weight: 800;
-		font-size: 34px;
+		@include adaptiv-value("font-size", 34, 20, 1);
 		line-height: 150%;
 		text-transform: uppercase;
 		color: #418DF6;
 	}
 	&__desc {
-		font-size: 18px;
+		@include adaptiv-value("font-size", 18, 14, 1);
 		line-height: 150%;
 		max-width: 930px;
 	}
@@ -135,6 +140,16 @@ body {
 		background: #F8F8F8;
 		border-radius: 10px;
 		box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+
+		@media (max-width: 1350px) {
+			margin-left: 30px;
+		}
+		@media (max-width: 1100px) {
+			margin-left: 0;
+		}
+		@media (max-width: 500px) {
+			width: 100%;
+		}
 	}
 	&__form-body {
 		height: 100%;
@@ -142,15 +157,26 @@ body {
 		width: 438px;
 		background: #FFFFFF;
 		border-radius: 10px;
+
+		@media (max-width: 500px) {
+			width: 100%;
+		}
+		@media (max-width: 420px) {
+			padding: 15px;
+		}
 	}
 
 
 	&__form-title {
 		font-weight: 500;
-		font-size: 26px;
+		@include adaptiv-value("font-size", 26, 18, 1);
 		line-height: 170.5%;
 		margin-bottom: 18px;
 		text-align: center;
+
+		@media (max-width: 420px) {
+			margin-bottom: 10px;
+		}
 	}
 	&__form-desc {
 		line-height: 130%;
@@ -159,6 +185,10 @@ body {
 		max-width: 257px;
 		margin-left: auto;
 		margin-right: auto;
+
+		@media (max-width: 420px) {
+			margin-bottom: 20px;
+		}
 	}
 	&__form {
 		
@@ -170,6 +200,10 @@ body {
 		min-height: 75px;
 		padding: 20px 30px;
 		margin-bottom: 16px;
+
+		@media (max-width: 420px) {
+			min-height: 60px;
+		}
 	}
 	&__form-input::placeholder {
 		font-size: 16px;
@@ -197,6 +231,11 @@ body {
 		text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.15);
 		margin-bottom: 19px;
 		transition: all 0.3s ease;
+
+		@media (max-width: 420px) {
+			min-height: 60px;
+			font-weight: 500;
+		}
 	}
 	&__form-btn:hover {
 		background: linear-gradient(180deg, #ADD0FF 0%, #1357B6 100%);
@@ -213,6 +252,10 @@ body {
 			a {
 				color: #357CDD;
 			}
+		}
+
+		@media (max-width: 420px) {
+			margin-bottom: 20px;
 		}
 	}
 	&__form-info {
@@ -276,6 +319,14 @@ body {
 .spoller {
 	flex-basis: 810px;
 	margin: 0px 0px 30px 0px;
+
+	@media (max-width: 1100px) {
+		align-self: stretch;
+		flex-basis: auto;
+	}
+	@media (max-width: 420px) {
+		margin-bottom: 15px;
+	}
 }
 .spoller__item {
 	margin: 0px 0px 10px 0px;
@@ -289,11 +340,15 @@ body {
 	border-radius: 10px;
 	background: linear-gradient(180deg, #60A2FD 0%, #357CDD 100%);
 	font-weight: 500;
-	font-size: 20px;
+	@include adaptiv-value("font-size", 20, 16, 1);
 	line-height: 150%;
 	color: #FFFFFF;
 	padding: 10px;
 	position: relative;
+
+	@media (max-width: 520px) {
+		padding-right: 72px !important;
+	}
 }
 .spoller._init .spoller__title {
 	cursor: pointer;
@@ -375,13 +430,13 @@ body {
 	}
 	&__title {
 		font-weight: 800;
-		font-size: 34px;
+		@include adaptiv-value("font-size", 34, 18, 1);
 		line-height: 130%;
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
 		text-transform: uppercase;
-		margin-bottom: 59px;
+		@include adaptiv-value("margin-bottom", 59, 30, 1);
 		max-width: 640px;
 	}
 
@@ -394,7 +449,7 @@ body {
 	}
 	&__item-wrap {
 		text-align: center;
-		padding: 35px;
+		@include adaptiv-value("padding", 35, 20, 1);
 		background: #FFFFFF;
 		border-radius: 10px;
 		height: 100%;
@@ -404,9 +459,20 @@ body {
 		box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
 		border-radius: 10px;
 		padding: 6px;
-		margin: 0px 15px 30px;
+		margin: 0px 15px;
+		@include adaptiv-value("margin-bottom", 30, 15, 1);
 		flex: 0 1 calc(25% - 30px);
 		cursor: pointer;
+
+		@media (max-width: 1250px) {
+			flex: 0 1 calc(33.333% - 30px);
+		}
+		@media (max-width: 980px) {
+			flex: 0 1 calc(50% - 30px);
+		}
+		@media (max-width: 640px) {
+			flex: 0 1 calc(100% - 30px);
+		}
 	}
 	&__item:hover {
 		background: #D3E5F4;
@@ -440,13 +506,13 @@ body {
 
 
 	&__master {
-		margin-bottom: 150px;
+		@include adaptiv-value("margin-bottom", 150, 30, 1);
 	}
 	&__master-title {
 		font-weight: 800;
-		font-size: 34px;
+		@include adaptiv-value("font-size", 34, 18, 1);
 		line-height: 150%;
-		margin-bottom: 89px;
+		@include adaptiv-value("margin-bottom", 89, 30, 1);
 		text-align: center;
 		text-transform: uppercase;
 
@@ -456,10 +522,24 @@ body {
 		flex-wrap: wrap;
 		margin: 0 -15px;
 		position: relative;
+		@media (max-width: 1000px) {
+			gap: 30px;
+		}
+		@media (max-width: 680px) {
+			gap: 0;
+			row-gap: 30px;
+		}
 	}
 	&__master-item {
 		flex: 0 1 33.333%;
 		padding: 0 15px;
+
+		@media (max-width: 1000px) {
+			flex: 0 calc(50% - 30px);
+		}
+		@media (max-width: 680px) {
+			flex: 0 100%;
+		}
 	}
 	
 	
@@ -488,6 +568,10 @@ body {
 			transform: translateY(-50%);
 			left: -75px;
 			border-radius: 50%;
+
+			@media (max-width: 1150px) {
+				display: none;
+			}
 		}
 
 		&::before {
@@ -500,6 +584,10 @@ body {
 			transform: translateY(-50%);
 			right: -93px;
 			border-radius: 50%;
+
+			@media (max-width: 1150px) {
+				display: none;
+			}
 		}
 	}
 
@@ -514,6 +602,10 @@ body {
 			transform: translateY(-50%);
 			right: -81px;
 			border-radius: 50%;
+
+			@media (max-width: 1150px) {
+				display: none;
+			}
 		}
 	}
 
@@ -528,6 +620,10 @@ body {
 			transform: translateY(-50%);
 			left: -63px;
 			border-radius: 50%;
+
+			@media (max-width: 1150px) {
+				display: none;
+			}
 		}
 	}
 
@@ -544,6 +640,10 @@ body {
 		top: 39px;
     	left: 32.3%;
 		border-radius: 50%;
+
+		@media (max-width: 1150px) {
+				display: none;
+		}
 	}
 	&__master-circle--right {
 		position: absolute;
@@ -553,11 +653,15 @@ body {
 		top: 39px;
 		right: 31%;
 		border-radius: 50%;
+
+		@media (max-width: 1150px) {
+				display: none;
+			}
 	}
 
 	&__master-step {
 		font-weight: 900;
-		font-size: 34px;
+		@include adaptiv-value("font-size", 34, 18, 1);
 		line-height: 150%;
 		margin-bottom: 10px;
 		text-align: center;
@@ -566,7 +670,7 @@ body {
 	}
 	&__master-desc {
 		font-weight: bold;
-		font-size: 20px;
+		@include adaptiv-value("font-size", 20, 14, 1);
 		line-height: 150%;
 		max-width: 300px;
 		text-align: center;
@@ -580,14 +684,14 @@ body {
 
 .work {
 
-	margin-bottom: 110px;
+	@include adaptiv-value("margin-bottom", 110, 30, 1);
 
 	&__content {}
 	&__title {
 		font-weight: 800;
-		font-size: 34px;
+		@include adaptiv-value("font-size", 34, 18, 1);
 		line-height: 150%;
-		margin-bottom: 45px;
+		@include adaptiv-value("margin-bottom", 45, 30, 1);
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -616,23 +720,45 @@ body {
 
 
 	&__gallery {
-		margin-bottom: 45px;
+		@include adaptiv-value("margin-bottom", 45, 30, 1);
 	}
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		// gap: 13px;
 		margin: 0 -6px -12px;
+
+		@media (max-width: 1000px) {
+			justify-content: center;
+		}
+		@media (max-width: 540px) {
+			margin: 0 0 -15px;
+		}
 	}
 	&__item {
 		
 		padding: 0 6px 12px;
 		img {
 			max-width: 100%;
+
+			@media (max-width: 540px) {
+				display: block;
+				margin: 0 auto;
+			}	
 			
 		}
 		flex: 1 1 calc(25% - 12px);
 		
+		@media (max-width: 1000px) {
+			flex: 0 1 calc(33.333% - 12px);
+		}
+		@media (max-width: 820px) {
+			flex: 0 1 calc(50% - 12px);
+		}
+		@media (max-width: 540px) {
+			flex: 1 1 100%;
+			padding: 0 0 15px;
+		}
 
 	}
 	&__img {
@@ -682,10 +808,18 @@ body {
 	}
 	&__dec {
 		font-weight: 300;
-		font-size: 18px;
+		@include adaptiv-value("font-size", 18, 14, 1);
 		line-height: 250%;
 		padding: 0 100px;
 		margin-bottom: 57px;
+
+		@media (max-width: 1200px) {
+			padding: 0 30px;
+
+		}
+		@media (max-width: 768px) {
+			padding: 0 15px;
+		}
 	}
 	&__body {
 		
@@ -698,18 +832,51 @@ body {
 		padding-left: 15px;
 		border: 10px solid #357CDD;
 		box-shadow: 0px 4px 30px rgba(65, 141, 246, 0.46);
+		margin-bottom: 30px;
+
+		@media (max-width: 1570px) {
+			padding-right: 50px;
+		}
+		@media (max-width: 1400px) {
+			display: flex;
+			padding: 30px;
+			padding-left: 0;
+			border: none;
+		}
+		@media (max-width: 760px) {
+			padding-left: 0;
+			
+		}
+		@media (max-width: 700px) {
+			padding: 30px 15px;
+		}
 		
 	}
 	&__request-img {
 		position: absolute;
 		top: 27px;
     	left: -155px;
+		img {
+			max-width: 100%;
+		}
+
+		@media (max-width: 1400px) {
+			position: static;
+		}
+		@media (max-width: 700px) {
+			display: none;
+		}
 	}
 	&__request-title {
 		text-align: center;
 		font-weight: 500;
 		font-size: 26px;
 		line-height: 350%;
+
+		@media (max-width: 1400px) {
+			line-height: 100%;
+			margin-bottom: 20px;
+		}
 	}
 	&__request-form {
 		
@@ -717,6 +884,14 @@ body {
 		flex-direction: column;
 		max-width: 450px;
 		margin-left: auto;
+
+		@media (max-width: 1400px) {
+			margin-left: 30px;
+		}
+		@media (max-width: 700px) {
+			margin: 0 auto;
+			padding-right: 0;
+		}
 	}
 	&__request-input {
 		min-height: 75px;
@@ -724,6 +899,14 @@ body {
 		border-radius: 5px;
 		margin-bottom: 15px;
 		padding: 30px;
+
+		@media (max-width: 1100px) {
+			min-height: 60px;
+			padding: 20px;
+		}
+		@media (max-width: 480px) {
+			width: 100%;
+		}
 	}
 	&__request-textarea {
 		min-height: 140px;
@@ -731,6 +914,13 @@ body {
 		border-radius: 5px;
 		margin-bottom: 15px;
 		padding: 30px;
+
+		@media (max-width: 980px) {
+			min-height: 115px;
+		}
+		@media (max-width: 480px) {
+			width: 100%;
+		}
 	}
 	textarea {
 		resize: none;
@@ -753,6 +943,10 @@ body {
 		line-height: 170.5%;
 		margin-bottom: 21px;
 		transition: all 0.3s ease;
+
+		@media (max-width: 1100px) {
+			min-height: 60px;
+		}
 	}
 	&__request-btn:hover {
 		background: linear-gradient(180deg, #ADD0FF 0%, #1357B6 100%);
@@ -769,14 +963,14 @@ body {
 		}
 	}
 	&__map {
-		padding: 80px 60px;
+		position: relative;
+		padding: 80px 0;
+		background-image: url('../img/contacts/map.jpg');
 		img {
-			position: absolute;
-			top: 718px;
-			left: 0;
-			width: 100%;
-			height: 600px;
-			z-index: 1;
+			max-width: 100%;
+		}
+		@media (max-width: 550px) {
+			padding: 15px;
 		}
 	}
 	&__map-contacts {
@@ -786,14 +980,16 @@ body {
 		padding: 49px 65px 64px;
 		max-width: 450px;
 		margin-top: -10px;
+		margin-left: 30px;
+		z-index: 2;
 		h3 {
 			font-weight: bold;
-			font-size: 28px;
+			@include adaptiv-value("font-size", 28, 18, 1);
 			line-height: 170.5%;
 			margin-bottom: 16px;
 		}
 		p {
-			font-size: 20px;
+			@include adaptiv-value("font-size", 20, 14, 1);
 			line-height: 220%;
 		}
 		
@@ -805,30 +1001,58 @@ body {
 			margin-bottom: 24px;
 		}
 		address {
-			margin-top: 24px;
+			@include adaptiv-value("margin-top", 24, 14, 1);
 			font-style: normal;
-			font-size: 20px;
+			@include adaptiv-value("font-size", 20, 14, 1);
 			line-height: 150%;
 		}
+
+		@media (max-width: 550px) {
+			width: 100%;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		
 	}
 	&__master {
 		border: 10px solid #357CDD;
 		box-shadow: 0px 4px 30px rgba(65, 141, 246, 0.46);
 		padding: 72px 95px 72px 89px;
 		margin-bottom: 61px;
+		@media (max-width: 1400px) {
+			padding: 30px;
+			border: none;
+			margin-top: 50px;
+		}
+		
 	}
 	&__master-form {
 		display: flex;
+
+		@media (max-width: 1200px) {
+			flex-direction: column;
+		}
+	}
+	&__master-column {
+		@media (max-width: 1200px) {
+			margin: 0 auto;
+		}
 	}
 	&__master-title {
 		font-weight: bold;
-		font-size: 37px;
+		@include adaptiv-value("font-size", 37, 20, 1);
 		line-height: 100%;
 		letter-spacing: -0.005em;
 		text-transform: uppercase;
-		margin-right: 80px;
+		@include adaptiv-value("margin-right", 80, 30, 1);
+		white-space: nowrap;
 		span {
 			color: #357CDD;
+		}
+		@media (max-width: 1200px) {
+			margin-bottom: 30px;
+			text-align: center;
 		}
 	}
 	&__master-input {
@@ -840,6 +1064,14 @@ body {
 		margin-bottom: 15px;
 		padding: 30px;
 		margin-right: 30px;
+
+		@media (max-width: 1200px) {
+			margin-bottom: 20px;
+		}
+		@media (max-width: 420px) {
+			min-height: 60px;
+			padding: 20px;
+		}
 	}
 	&__master-btn {
 		width: 100%;
@@ -857,6 +1089,10 @@ body {
 		padding: 15px 30px;
 		margin-bottom: 21px;
 		transition: all 0.3s ease;
+
+		@media (max-width: 420px) {
+			min-height: 60px;
+		}
 	}
 
     &__master-btn:hover {
