@@ -1263,6 +1263,8 @@ body {
 		}
 		@media (max-width: 440px) {
 			min-height: 120px;
+			justify-content: flex-start;
+			
 		}
 
 	}
@@ -1270,7 +1272,8 @@ body {
 		margin-bottom: 21px;
 
 		@media (max-width: 440px) {
-			margin-bottom: 16px;
+			margin-bottom: 10px;
+			padding-top: 15px;
 			img {
 				width: 48px;
 				height: 48px;
@@ -1281,8 +1284,19 @@ body {
 		position: absolute;
 		top: 16px;
 		right: 16px;
+
+		@media (max-width: 411px) {
+			top: 10px;
+			right: 10px;
+		}
 	}
 	&__label-android {
+		img {
+			@media (max-width: 411px) {
+				width: 16px;
+				height: 16px;
+			}
+		}
 	}
 	&__item-text {
 		padding: 0 11px;
@@ -1292,8 +1306,18 @@ body {
 		text-align: center;
 
 		color: #939393;
+
+		@media (max-width: 411px) {
+			font-size: 13px;
+		}
 	}
 	&__label-apple {
+		img {
+			@media (max-width: 411px) {
+				width: 16px;
+				height: 16px;
+			}
+		}
 	}
 
 	&__desc {

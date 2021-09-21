@@ -10,11 +10,15 @@
         background: linear-gradient(195.2deg, #2e9adb 10.68%, #55b570 89.32%);
     }
 
-//====================================================================================================
+    &__inner {
+        background: url('../img/footer/dots.png');
+        background-size: contain;
+        background-position: center;
+    }
+
     &__content {
     }
     &__top {
-        
 
         @media (max-width: 680px) {
             background-color: #fff;

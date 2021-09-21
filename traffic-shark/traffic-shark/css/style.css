@@ -1230,6 +1230,12 @@ canvas {
   background-position: top -1px center, bottom 40px center;
 }
 
+.footer__inner {
+  background: url("../img/footer/dots.png");
+  background-size: contain;
+  background-position: center;
+}
+
 .footer__subtitle {
   padding-top: 50px;
   font-weight: 900;
@@ -3454,10 +3460,14 @@ canvas {
 @media (max-width: 440px) {
   .products__item {
     min-height: 120px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .products__item-img {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+    padding-top: 15px;
   }
 
   .products__item-img img {
@@ -3517,6 +3527,27 @@ canvas {
   .hero__info-link-r::after {
     top: 25px;
     right: 25px;
+  }
+}
+
+@media (max-width: 411px) {
+  .products__label {
+    top: 10px;
+    right: 10px;
+  }
+
+  .products__label-android img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .products__item-text {
+    font-size: 13px;
+  }
+
+  .products__label-apple img {
+    width: 16px;
+    height: 16px;
   }
 }
 
