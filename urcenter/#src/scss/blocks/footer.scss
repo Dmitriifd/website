@@ -1,5 +1,107 @@
-footer{}
-//====================================================================================================
+.footer {
+    border-top: 1px solid #DEE6EF;
+    &__content {
 
-//====================================================================================================
+    }
+    &__inner {
+        padding: 32px 0;
+        display: flex;
+        
+        align-items: center;
+
+        @media (max-width: 640px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__top {
+
+    }
+    &__logo {
+        margin-right: 48px;
+        @media (max-width: 640px) {
+            flex: 0 1 50%;
+            margin-bottom: 15px;
+        }
+    }
+    &__desc {
+        @media (max-width: 640px) {
+            flex: 1 1 50%;
+            margin-bottom: 15px;
+        }
+    }
+    &__social {
+         @media (min-width: 411px) {
+             margin-left: auto;
+         }
+    }
+    &__list {
+        display: flex;
+        @media (max-width: 880px) {
+            margin-left: 15px;
+        }
+        @media (max-width: 411px) {
+            margin-left: 0;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border: 1px solid #CFDAE7;
+        border-radius: 10px;
+        margin-left: 8px;
+        @media (max-width: 411px) {
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    &__link {
+        
+    }
+    &__bottom {
+        padding: 16px 0;
+        background: #E8EDF3;
+    }
+    &__copy {
+        font-size: 12px;
+        line-height: 20px;
+        color: #7A7A7A;
+        @media (max-width: 465px) {
+            margin-bottom: 15px;
+        }
+    }
+    &__links {
+        a {
+            display: inline-block;
+            font-size: 10px;
+            line-height: 20px;
+            color: #7A7A7A;
+            margin-left: 16px;
+            &:hover {
+                text-decoration: underline;
+            }
+              @media (max-width: 465px) {
+                  margin-left: 0;
+                  margin-right: 15px;
+              }
+        }
+        @media (max-width: 765px) {
+            text-align: right;
+        }
+        @media (max-width: 465px) {
+            text-align: left;
+        }
+    }
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 465px) {
+            flex-direction: column;
+        }
+    }
+}
+
 
