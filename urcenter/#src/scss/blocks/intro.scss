@@ -1,6 +1,18 @@
 .intro {
-    &__content {}
-    &__head {}
+    padding-bottom: 87px;
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url('../img/bg.png');
+        background-repeat: no-repeat;
+        background-position: top 51px right 157px;
+    }
+    &__head {
+
+    }
+    &__column {
+        flex: 0 1 50%;
+    }
     &__title {
         margin-top: 120px;
         margin-bottom: 16px;
@@ -16,11 +28,15 @@
         margin-bottom: 32px;
         max-width: 547px;
     }
-    &__button {}
+    &__button {
+
+    }
     &__stat {
         position: relative;
+        padding-left: 250px;
     }
     &__stat-info {
+        padding-left: 250px;
         position: absolute;
         top: 45px;
         left: 40px;
@@ -34,7 +50,33 @@
             color: #303030;
         }
     }
-    &__advantages {}
-    &__advantages-items {}
-    &__advantages-item {}
+    &__stat-inner {
+        width: 145px;
+        height: 145px;
+        border-radius: 50%;
+        background-color: #F4F7FA;
+    }
+    &__advantages {
+        flex-basis: auto;
+        margin-left: auto;
+    }
+    &__advantages-items {
+        display: flex;
+        column-gap: 32px;
+        padding: 32px 48px;
+        background: #F4F7FA;
+        box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+        border-radius: 10px;
+    }
+    &__advantages-item {
+        img {
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 500;
+            color: #303030;
+        }
+    }
 }
