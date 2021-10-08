@@ -463,6 +463,64 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
+@media (max-width: 1240px) {
+  .intro__stat {
+    padding-left: 200px;
+  }
+
+  .intro__stat-info {
+    padding-left: 200px;
+  }
+}
+
+@media (max-width: 1140px) {
+  ._no-webp .intro__content {
+    background-image: url("../img/bg-mobile.png"); }
+  .intro__content {
+    background-position: top 51px right;
+  }
+
+  .intro__head {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  .intro__title {
+    font-size: 36px;
+    margin-top: 80px;
+  }
+
+  .intro__button {
+    margin-bottom: 30px;
+  }
+
+  .intro__stat {
+    padding-left: 0;
+    -ms-flex-preferred-size: 150px;
+        flex-basis: 150px;
+  }
+
+  .intro__stat-info {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 920px) {
+  .intro__button {
+    margin-bottom: 16px;
+  }
+
+  .intro__stat {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 16px;
+  }
+
+  .intro__advantages {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 880px) {
   .footer__list {
     margin-left: 15px;
@@ -472,6 +530,22 @@ font-family: 'Roboto', sans-serif;
 @media (max-width: 765px) {
   .footer__links {
     text-align: right;
+  }
+}
+
+@media (max-width: 740px) {
+  .intro__title {
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 620px;
+  }
+
+  .intro__advantages-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
   }
 }
 
@@ -560,9 +634,10 @@ font-family: 'Roboto', sans-serif;
     -webkit-transition: left 0.3s ease 0s;
     -o-transition: left 0.3s ease 0s;
     transition: left 0.3s ease 0s;
-    background-color: transparent;
+    background-color: #F4F7FA;
     padding-top: 30px;
     padding-left: 30px;
+    z-index: 10;
   }
 
   .menu__list {
@@ -581,6 +656,10 @@ font-family: 'Roboto', sans-serif;
 
   .menu__link {
     font-size: 20px;
+  }
+
+  .intro__title {
+    margin-top: 48px;
   }
 }
 
@@ -647,6 +726,45 @@ font-family: 'Roboto', sans-serif;
   .footer__item:first-child {
     margin-left: 0;
   }
+
+  .intro__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .intro__head {
+    text-align: center;
+  }
+
+  .intro__desc {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .intro__button {
+    font-size: 12px;
+    padding: 13px 20px;
+  }
+
+  .intro__stat {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+
+  .intro__advantages-item img {
+    margin-bottom: 16px;
+  }
+
+  .intro__advantages-item p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 ._webp .intro__content { background-image: url(../img/bg.webp); }
+
+@media (max-width: 1140px) {
+
+  ._webp .intro__content { background-image: url(../img/bg-mobile.webp); }
+}

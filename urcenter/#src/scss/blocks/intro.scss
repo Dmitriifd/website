@@ -6,12 +6,25 @@
         background-image: url('../img/bg.png');
         background-repeat: no-repeat;
         background-position: top 51px right 157px;
+        @media (max-width: 1140px) {
+             background-image: url('../img/bg-mobile.png');
+            background-position: top 51px right;
+        }
+        @media (max-width: 411px) {
+            justify-content: center;
+        }
     }
     &__head {
-
+        @media (max-width: 1140px) {
+            flex-basis: 100%;
+        }
+         @media (max-width: 411px) {
+            text-align: center;
+        }
     }
     &__column {
         flex: 0 1 50%;
+        
     }
     &__title {
         margin-top: 120px;
@@ -21,19 +34,58 @@
         font-size: 48px;
         line-height: 55px;
         color: #262626;
+        @media (max-width: 1140px) {
+            font-size: 36px;
+            margin-top: 80px;
+        }
+        @media (max-width: 740px) {
+            font-size: 24px;
+            line-height: 30px;
+            max-width: 620px;
+        }
+        @media (max-width: 675px) {
+            margin-top: 48px;
+        }
     }
     &__desc {
         line-height: 150%;
         color: #303030;
         margin-bottom: 32px;
         max-width: 547px;
+        @media (max-width: 411px) {
+            font-size: 12px;
+            line-height: 18px;
+        }
     }
     &__button {
-
+        @media (max-width: 1140px) {
+            margin-bottom: 30px;
+        }
+        @media (max-width: 920px) {
+            margin-bottom: 16px;
+        }
+        @media (max-width: 411px) {
+            font-size: 12px;
+            padding: 13px 20px;
+        }
     }
     &__stat {
         position: relative;
         padding-left: 250px;
+        @media (max-width: 1240px) {
+            padding-left: 200px;
+        }
+        @media (max-width: 1140px) {
+            padding-left: 0;
+            flex-basis: 150px;
+        }
+        @media (max-width: 920px) {
+            flex-basis: 100%;
+            margin-bottom: 16px;
+        }
+        @media (max-width: 411px) {
+            flex-basis: auto;
+        }
     }
     &__stat-info {
         padding-left: 250px;
@@ -49,6 +101,12 @@
             line-height: 100%;
             color: #303030;
         }
+        @media (max-width: 1240px) {
+            padding-left: 200px;
+        }
+        @media (max-width: 1140px) {
+            padding-left: 0;
+        }
     }
     &__stat-inner {
         width: 145px;
@@ -59,6 +117,9 @@
     &__advantages {
         flex-basis: auto;
         margin-left: auto;
+        @media (max-width: 920px) {
+            margin-left: 0;
+        }
     }
     &__advantages-items {
         display: flex;
@@ -67,16 +128,27 @@
         background: #F4F7FA;
         box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
         border-radius: 10px;
+        @media (max-width: 740px) {
+            flex-direction: column;
+            gap: 24px;
+        }
     }
     &__advantages-item {
         img {
             margin-bottom: 8px;
+            @media (max-width: 411px) {
+                margin-bottom: 16px;
+            }
         }
         p {
             font-size: 16px;
             line-height: 26px;
             font-weight: 500;
             color: #303030;
+            @media (max-width: 411px) {
+                font-size: 14px;
+                line-height: 20px;
+            }
         }
     }
 }
