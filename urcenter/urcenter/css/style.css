@@ -405,6 +405,11 @@ body._lock {
   background-color: #F4F7FA;
 }
 
+.intro__stat-inner img {
+  -webkit-animation: rotate 30s linear infinite;
+          animation: rotate 30s linear infinite;
+}
+
 .intro__advantages {
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
@@ -426,7 +431,18 @@ body._lock {
 }
 
 .intro__advantages-item img {
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  -o-transition: transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
   margin-bottom: 8px;
+}
+
+.intro__advantages-item img:hover {
+  -webkit-transform: translateY(-7px);
+      -ms-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
 .intro__advantages-item p {
@@ -434,6 +450,30 @@ body._lock {
   line-height: 26px;
   font-weight: 500;
   color: #303030;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .page {
