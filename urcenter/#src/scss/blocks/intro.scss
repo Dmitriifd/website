@@ -1,0 +1,40 @@
+.intro {
+    &__content {}
+    &__head {}
+    &__title {
+        margin-top: 120px;
+        margin-bottom: 16px;
+        max-width: 733px;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 55px;
+        color: #262626;
+    }
+    &__desc {
+        line-height: 150%;
+        color: #303030;
+        margin-bottom: 32px;
+        max-width: 547px;
+    }
+    &__button {}
+    &__stat {
+        position: relative;
+    }
+    &__stat-info {
+        position: absolute;
+        top: 45px;
+        left: 40px;
+        text-align: center;
+        font-size: 12px;
+        span {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 100%;
+            color: #303030;
+        }
+    }
+    &__advantages {}
+    &__advantages-items {}
+    &__advantages-item {}
+}
