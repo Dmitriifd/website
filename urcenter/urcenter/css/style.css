@@ -294,7 +294,7 @@ body._lock {
 }
 
 .button:hover {
-  background: #3B1D8F;
+  background: #3247bd;
 }
 
 .menu__body._active {
@@ -333,7 +333,7 @@ body._lock {
 }
 
 .menu__link:hover {
-  color: #273895;
+  color: #3247bd;
 }
 
 .intro {
@@ -547,7 +547,17 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
+@media (max-width: 980px) {
+  .intro__content {
+    background-position: top 140px right 15px;
+  }
+}
+
 @media (max-width: 920px) {
+  .intro__title {
+    font-size: 30px;
+  }
+
   .intro__button {
     margin-bottom: 16px;
   }
@@ -785,6 +795,7 @@ font-family: 'Roboto', sans-serif;
   }
 
   .intro__content {
+    background-position: top 140px center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

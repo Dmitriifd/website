@@ -49,7 +49,7 @@
         transition: color 0.2s linear;
         font-weight: 500;
         &:hover {
-            color: #273895;
+            color: lighten(#273895, 10%);
         }
         @media (max-width: 675px) {
             font-size: 20px;

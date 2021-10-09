@@ -8,6 +8,6 @@
     color: #fff;
     transition: background 0.2s linear;
     &:hover {
-      background:  #3B1D8F;
+      background: lighten(#273895, 10%);
     }
 }
