@@ -1,0 +1,125 @@
+.team {
+    @include adaptiv-value("padding-bottom", 144, 30, 1);
+    &__content {
+        max-width: 1092px;
+    }
+    &__inner {
+        @include adaptiv-value("padding-top", 100, 30, 1);
+        display: flex;
+        margin-bottom: 48px;
+    }
+    &__info {
+        @include adaptiv-value("margin-right", 75, 30, 1);
+        img {
+            margin-bottom: 32px;
+        }
+    }
+    &__info-title {
+        max-width: 438px;
+        margin-bottom: 16px;
+    }
+    &__info-text {
+        line-height: 150%;
+        max-width: 406px;
+    }
+    &__advantages {
+    }
+    &__advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 435px;
+        column-gap: 25px;
+        row-gap: 17px;
+    }
+    &__advantages-item {
+        flex: 0 1 auto;
+        background: linear-gradient(236.29deg, #ffffff 29.99%, #f4f9ff 79.17%);
+        box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+        border-radius: 10px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+            font-weight: bold;
+            line-height: 100%;
+            margin-bottom: 11px;
+            background: linear-gradient(180deg, hsla(254, 84%, 49%, 1) 0%, hsla(254, 100%, 83%, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #7247ff;
+        }
+        span {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 100%;
+        }
+
+        &:nth-child(1) h3 {
+            
+            font-size: 48px;
+        }
+        &:nth-child(1) {
+            padding: 32px;
+        }
+        &:nth-child(2) h3 {
+            font-size: 36px;
+        }
+        &:nth-child(2) {
+            align-self: end;
+        }
+        &:nth-child(3) h3 {
+            font-size: 36px;
+        }
+        &:nth-child(3) {
+            margin-left: 32px;
+            align-self: start;
+        }
+        &:nth-child(4) h3 {
+            font-size: 16px;
+        }
+        &:nth-child(4) {
+            min-height: 171px;
+            min-width: 192px;
+            padding: 32px;
+        }
+    }
+    &__cards {
+    }
+    &__cards-title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #303030;
+        margin-bottom: 31px;
+    }
+    &__list {
+        display: flex;
+        gap: 16px;
+    }
+    &__card {
+        padding: 32px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 16px;
+        }
+    }
+    &__card-title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        color: #303030;
+        margin-bottom: 16px;
+    }
+    &__card-text {
+        line-height: 150%;
+        max-width: 279px;
+    }
+}

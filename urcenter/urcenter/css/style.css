@@ -478,6 +478,187 @@ body._lock {
   }
 }
 
+.team {
+  padding-bottom: 144px;
+}
+
+.team__content {
+  max-width: 1092px;
+}
+
+.team__inner {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.team__info {
+  margin-right: 75px;
+}
+
+.team__info img {
+  margin-bottom: 32px;
+}
+
+.team__info-title {
+  max-width: 438px;
+  margin-bottom: 16px;
+}
+
+.team__info-text {
+  line-height: 150%;
+  max-width: 406px;
+}
+
+.team__advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 435px;
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+  row-gap: 17px;
+}
+
+.team__advantages-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  background: -o-linear-gradient(213.71deg, #ffffff 29.99%, #f4f9ff 79.17%);
+  background: linear-gradient(236.29deg, #ffffff 29.99%, #f4f9ff 79.17%);
+  -webkit-box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+          box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+  border-radius: 10px;
+  padding: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team__advantages-item h3 {
+  font-weight: bold;
+  line-height: 100%;
+  margin-bottom: 11px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4514e6), to(#bda8ff));
+  background: -o-linear-gradient(top, #4514e6 0%, #bda8ff 100%);
+  background: linear-gradient(180deg, #4514e6 0%, #bda8ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #7247ff;
+}
+
+.team__advantages-item span {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.team__advantages-item:nth-child(1) h3 {
+  font-size: 48px;
+}
+
+.team__advantages-item:nth-child(1) {
+  padding: 32px;
+}
+
+.team__advantages-item:nth-child(2) h3 {
+  font-size: 36px;
+}
+
+.team__advantages-item:nth-child(2) {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.team__advantages-item:nth-child(3) h3 {
+  font-size: 36px;
+}
+
+.team__advantages-item:nth-child(3) {
+  margin-left: 32px;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.team__advantages-item:nth-child(4) h3 {
+  font-size: 16px;
+}
+
+.team__advantages-item:nth-child(4) {
+  min-height: 171px;
+  min-width: 192px;
+  padding: 32px;
+}
+
+.team__cards-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #303030;
+  margin-bottom: 31px;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.team__card {
+  padding: 32px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team__card img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.team__card-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  color: #303030;
+  margin-bottom: 16px;
+}
+
+.team__card-text {
+  line-height: 150%;
+  max-width: 279px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #303030;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -512,6 +693,18 @@ font-family: 'Roboto', sans-serif;
 
   .intro__stat-info {
     padding-left: calc(30px + 220 * ((100vw - 320px) / 990));
+  }
+
+  .team {
+    padding-bottom: calc(30px + 114 * ((100vw - 320px) / 990));
+  }
+
+  .team__inner {
+    padding-top: calc(30px + 70 * ((100vw - 320px) / 990));
+  }
+
+  .team__info {
+    margin-right: calc(30px + 45 * ((100vw - 320px) / 990));
   }
 }
 
