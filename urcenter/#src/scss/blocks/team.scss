@@ -2,6 +2,7 @@
     @include adaptiv-value("padding-bottom", 144, 30, 1);
     &__content {
         max-width: 1092px;
+        position: relative;
     }
     &__inner {
         @include adaptiv-value("padding-top", 100, 30, 1);
@@ -40,6 +41,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        transition: transform 0.3s linear;
         h3 {
             font-weight: bold;
             line-height: 100%;
@@ -56,7 +58,6 @@
         }
 
         &:nth-child(1) h3 {
-            
             font-size: 48px;
         }
         &:nth-child(1) {
@@ -83,6 +84,9 @@
             min-width: 192px;
             padding: 32px;
         }
+        &:hover {
+            transform: translateX(10px);
+        }
     }
     &__cards {
     }
@@ -100,15 +104,18 @@
     }
     &__card {
         padding: 32px;
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
-        // align-items: center;
+        transition: transform 0.3s linear;
         img {
             display: block;
             margin: 0 auto;
             margin-bottom: 16px;
+        }
+        &:hover {
+            transform: scale(1.05);
         }
     }
     &__card-title {
@@ -121,5 +128,90 @@
     &__card-text {
         line-height: 150%;
         max-width: 279px;
+    }
+}
+
+/* Animation */
+
+.shape-1 {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    z-index: -1;
+    animation: animationFramesOne 20s infinite linear;
+}
+.shape-2 {
+    position: absolute;
+    top: 258px;
+    right: 515px;
+    z-index: -1;
+    animation: animationFramesTwo 20s infinite linear;
+}
+.shape-3 {
+    position: absolute;
+    top: 312px;
+    right: 327px;
+    z-index: -1;
+    animation: animationFramesThree 20s infinite linear;
+}
+@keyframes animationFramesOne {
+    0% {
+        -webkit-transform: translate(0px, 0px);
+    }
+    20% {
+        -webkit-transform: translate(73px, -1px);
+    }
+    40% {
+        -webkit-transform: translate(141px, 72px);
+    }
+    60% {
+        -webkit-transform: translate(83px, 122px);
+    }
+    80% {
+        -webkit-transform: translate(-40px, 72px);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px);
+    }
+}
+@keyframes animationFramesTwo {
+    0% {
+        -webkit-transform: translate(0px, 0px) scale(1);
+    }
+    20% {
+        -webkit-transform: translate(73px, -1px) scale(0.9);
+    }
+    40% {
+        -webkit-transform: translate(141px, 72px) scale(1);
+    }
+    60% {
+        -webkit-transform: translate(83px, 122px) scale(1.2);
+    }
+    80% {
+        -webkit-transform: translate(-40px, 72px) scale(1.1);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px) scale(1);
+    }
+}
+@keyframes animationFramesThree {
+    0% {
+        -webkit-transform: translate(0px, 0px) rotate(0deg) scale(1);
+    }
+
+    20% {
+        -webkit-transform: translate(73px, -1px) scale(0.9);
+    }
+    40% {
+        -webkit-transform: translate(141px, 72px) scale(1);
+    }
+    60% {
+        -webkit-transform: translate(83px, 122px) scale(1.2);
+    }
+    80% {
+        -webkit-transform: translate(-40px, 72px) scale(1.1);
+    }
+    100% {
+        -webkit-transform: translate(0px, 0px) scale(1);
     }
 }

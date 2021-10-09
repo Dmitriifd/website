@@ -37,7 +37,7 @@ $mainColor: #404040;
 @import "null";
 body {
 	color: $mainColor;
-	background: #F4F7FA;
+	background: #f4f7fa;
 	&._lock {
 		overflow: hidden;
 	}
