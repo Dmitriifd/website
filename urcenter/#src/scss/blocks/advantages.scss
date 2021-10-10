@@ -1,4 +1,5 @@
 .advantages {
+    @include adaptiv-value("padding-bottom", 144, 72, 1);
     &__content {
         max-width: 1125px;
     }
