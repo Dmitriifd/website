@@ -1,16 +1,118 @@
 .advantages {
     &__content {
+        max-width: 1125px;
+    }
+    &__title {
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    &__items {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 70px;
+       
+    }
+    &__item {
         
     }
-    &__title {}
-    &__items {}
-    &__item {}
-    &__actions {}
-    &__actions-title {}
-    &__actions-btn {}
-    &__item-title {}
-    &__cards {}
-    &__card {}
-    &__card-title {}
-    &__card-desc {}
+    &__sirius {
+        display: inline-block;
+    }
+    &__desc {
+        max-width: 438px;
+        p {
+            line-height: 150%;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__info {
+        margin-left: 32px;
+        max-width: 327px;
+        ul {
+            li {
+                padding-left: 24px;
+                background-image: url('../img/advantages/arrow.svg');
+                background-repeat: no-repeat;
+                margin-bottom: 24px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__body {
+        display: inline-block;
+        position: relative;
+    }
+    &__actions {
+        position: absolute;
+        top: -15px;
+        right: -45px;
+        display: inline-block;
+        background: linear-gradient(326.06deg, #F0EBFF 11.53%, #FFFFFF 74.32%);
+        box-shadow: 0px 13.5277px 39.7872px rgba(187, 166, 255, 0.78);
+        border-radius: 11.9362px;
+        padding: 20px;
+    }
+    &__actions-title {
+        font-size: 12px;
+        line-height: 16px;
+        color: #000000;
+        margin-bottom: 6px;
+        font-weight: 500;
+    }
+    &__actions-btn {
+        display: inline-block;
+        background: linear-gradient(326.06deg, #2641D1 11.53%, #3333A3 74.32%);
+        border-radius: 7.95745px;
+        padding: 16px 22px;
+        
+        color: #fff;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 500;
+        text-align: center;
+        &:hover {
+            background: linear-gradient(326.06deg, #344aca 11.53%, #3b3bd3 74.32%);
+        }
+    }
+    &__item-title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 44px;
+        margin-bottom: 8px;
+        letter-spacing: 0.17em;
+        color: #34449C;
+    }
+    &__cards {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        gap: 19px;
+        margin-top: -70px;
+    }
+    &__card {
+        flex: 0 1 236px;
+        background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
+        box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
+        border-radius: 20px;
+        padding: 36px 32px 32px;
+        img {
+            margin-bottom: 16px;
+        }
+    }
+    &__card-title {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+          max-width: 172px;
+    }
+    &__card-desc {
+        line-height: 150%;
+        max-width: 172px;
+    }
 }
