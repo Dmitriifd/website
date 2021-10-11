@@ -44,7 +44,14 @@
         background: #FFFFFF;
         border-radius: 20px;
         padding: 48px 187px 48px 110px;
-        
+        ul {
+            
+            li {
+                list-style:disc;
+                line-height: 20px;
+                margin-left: 18px;
+            }
+        }
     }
     &__item-img {
         width: 220px;
@@ -73,6 +80,10 @@
     }
     &__item-text.gray {
         color: #B7B6B6;
+    }
+    &__item-text.bold {
+        margin-top: 16px;
+        font-weight: 500;
     }
     &__items-button {
         align-self: flex-start;
