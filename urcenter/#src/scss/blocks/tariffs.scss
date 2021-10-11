@@ -53,6 +53,9 @@
 }
 
 .tariff-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #FFFFFF;
     border-radius: 20px;
     padding: 48px;

@@ -1,0 +1,21 @@
+.forecasts {
+    @include adaptiv-value("margin-bottom", 144, 72, 1);
+    
+    padding: 98px 0;
+    background-color: #273895;
+    &__content {
+        max-width: 1280px;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+       
+    }
+    &__title {
+        margin-right: 106px;
+        color: #FFFFFF;
+        max-width: 406px;
+    }
+    &__stats {}
+}
+

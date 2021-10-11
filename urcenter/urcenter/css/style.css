@@ -812,10 +812,11 @@ body.ie ._ibg img {
   font-weight: bold;
   line-height: 100%;
   margin-bottom: 11px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4514e6), to(#bda8ff));
-  background: -o-linear-gradient(top, #4514e6 0%, #bda8ff 100%);
-  background: linear-gradient(180deg, #4514e6 0%, #bda8ff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#4614E8), to(#BCA7FF));
+  background: -o-linear-gradient(top, #4614E8 0%, #BCA7FF 100%);
+  background: linear-gradient(180deg, #4614E8 0%, #BCA7FF 100%);
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #7247ff;
 }
@@ -1344,6 +1345,16 @@ body.ie ._ibg img {
 }
 
 .tariff-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #FFFFFF;
   border-radius: 20px;
   padding: 48px;
@@ -1709,6 +1720,55 @@ body.ie ._ibg img {
   margin-top: 16px;
 }
 
+.forecasts {
+  margin-bottom: 144px;
+  padding: 98px 0;
+  background-color: #273895;
+}
+
+.forecasts__content {
+  max-width: 1280px;
+}
+
+.forecasts__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forecasts__title {
+  margin-right: 106px;
+  color: #FFFFFF;
+  max-width: 406px;
+}
+
+.stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stats__item-title {
+  background: -o-linear-gradient(355.23deg, #4614E8 -5.87%, #BCA7FF 56%);
+  background: linear-gradient(94.77deg, #4614E8 -5.87%, #BCA7FF 56%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.stats__item-desc {
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -1771,6 +1831,10 @@ font-family: 'Roboto', sans-serif;
 
   .steps {
     padding-bottom: calc(72px + 72 * ((100vw - 320px) / 990));
+  }
+
+  .forecasts {
+    margin-bottom: calc(72px + 72 * ((100vw - 320px) / 990));
   }
 }
 

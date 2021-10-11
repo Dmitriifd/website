@@ -1,0 +1,23 @@
+.stats {
+    display: flex;
+    &__item {
+
+    }
+    &__item-title {
+        background: linear-gradient(94.77deg, #4614E8 -5.87%, #BCA7FF 56%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        margin-bottom: 16px;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 150%;
+        text-align: center;
+    }
+    &__item-desc {
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+}
+
+
