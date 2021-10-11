@@ -37,6 +37,7 @@
     ul {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
         max-width: 625px;
         margin: 0 auto;
         column-gap: 24px;
@@ -117,6 +118,7 @@
             transition: all 0.3s linear;
         }
         &:hover {
+            color: darken(#2741D0, 10%);
             &::after {
                 right: 0;
             }
