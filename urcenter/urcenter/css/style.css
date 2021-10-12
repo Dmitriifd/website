@@ -1344,6 +1344,12 @@ body.ie ._ibg img {
   margin: 0 auto;
 }
 
+.tariff-card.free .tariff-card__link {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .tariff-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1406,6 +1412,8 @@ body.ie ._ibg img {
 }
 
 .tariff-card__link {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   display: inline-block;
   font-weight: 500;
   font-size: 16px;
@@ -1444,6 +1452,7 @@ body.ie ._ibg img {
 .tariff-card__btn {
   max-width: 220px;
   display: block;
+  text-align: center;
   font-weight: 400;
 }
 

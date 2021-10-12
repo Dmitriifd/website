@@ -50,6 +50,9 @@
     .tariff-card__btn {
         margin: 0 auto;
     }
+    .tariff-card__link {
+        align-self: center;
+    }
 }
 
 .tariff-card {
@@ -100,6 +103,7 @@
         margin-bottom: 16px;
     }
     &__link {
+        align-self: flex-start;
         display: inline-block;
         font-weight: 500;
         font-size: 16px;
@@ -128,8 +132,9 @@
         }
     }
     &__btn {
-       max-width: 220px;
+        max-width: 220px;
         display: block;
+        text-align: center;
         font-weight: 400; 
     }
     &__price {
