@@ -1749,6 +1749,23 @@ body.ie ._ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-right: -20px;
+}
+
+.stats__item {
+  text-align: center;
+  margin-right: 20px;
+  max-width: 202px;
+}
+
+.stats__item:last-child {
+  margin-right: 0;
 }
 
 .stats__item-title {
@@ -1761,7 +1778,6 @@ body.ie ._ibg img {
   font-weight: bold;
   font-size: 32px;
   line-height: 150%;
-  text-align: center;
 }
 
 .stats__item-desc {

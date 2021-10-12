@@ -1,7 +1,15 @@
 .stats {
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: -20px;
     &__item {
-
+        text-align: center;
+        margin-right: 20px;
+        max-width: 202px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
     &__item-title {
         background: linear-gradient(94.77deg, #4614E8 -5.87%, #BCA7FF 56%);
@@ -12,7 +20,7 @@
         font-weight: bold;
         font-size: 32px;
         line-height: 150%;
-        text-align: center;
+        
     }
     &__item-desc {
         line-height: 20px;
