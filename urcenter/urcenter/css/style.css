@@ -1785,8 +1785,13 @@ body.ie ._ibg img {
   color: #FFFFFF;
 }
 
-.supervisor__content {
-  max-width: 995px;
+.supervisor {
+  padding-bottom: 171px;
+}
+
+.supervisor__body {
+  position: relative;
+  padding-left: 100px;
 }
 
 .supervisor__inner {
@@ -1795,7 +1800,48 @@ body.ie ._ibg img {
   display: flex;
 }
 
+.supervisor__info {
+  max-width: 470px;
+  padding-top: 60px;
+}
+
+.supervisor__pos {
+  line-height: 20px;
+}
+
+.supervisor__exp {
+  font-weight: 500;
+  display: inline-block;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
+.supervisor__name {
+  margin-bottom: 16px;
+}
+
+.supervisor__item {
+  list-style: disc;
+  margin-left: 18px;
+  line-height: 20px;
+}
+
+.supervisor__desc {
+  line-height: 20px;
+}
+
+.supervisor__desc.last {
+  margin-top: 16px;
+}
+
+.supervisor__info-btn {
+  margin-top: 32px;
+}
+
 .supervisor__quote {
+  position: absolute;
+  bottom: -40px;
+  left: 287px;
   background: -webkit-gradient(linear, left top, right top, color-stop(-4.05%, #F0EBFF), color-stop(34.42%, #FFFFFF));
   background: -o-linear-gradient(left, #F0EBFF -4.05%, #FFFFFF 34.42%);
   background: linear-gradient(90deg, #F0EBFF -4.05%, #FFFFFF 34.42%);
@@ -1818,6 +1864,10 @@ body.ie ._ibg img {
   font-size: 32px;
   line-height: 16px;
   color: #303030;
+}
+
+.supervisor-img {
+  padding-right: 96px;
 }
 
 .supervisor-img img {
@@ -1848,6 +1898,22 @@ font-family: 'Roboto', sans-serif;
     font-size: 12px;
     line-height: 20px;
     color: #303030;
+  }
+}
+
+@media (min-width: 1200px) {
+  .supervisor__info-btn {
+    width: 256px;
+    height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1890,6 +1956,10 @@ font-family: 'Roboto', sans-serif;
 
   .forecasts {
     margin-bottom: calc(72px + 72 * ((100vw - 320px) / 990));
+  }
+
+  .supervisor {
+    padding-bottom: calc(149px + 22 * ((100vw - 320px) / 990));
   }
 }
 

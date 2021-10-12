@@ -1,16 +1,60 @@
 .supervisor {
+    @include adaptiv-value("padding-bottom", 171, 149, 1);
     &__content {
-        max-width: 995px;
+        
     }
     &__body {
-        
+        position: relative;
+        padding-left: 100px;
     }
     &__inner {
         display: flex;
     }
-    &__info {}
-    &__info-btn {}
+    &__info {
+        max-width: 470px;
+        padding-top: 60px;
+    }
+    
+    &__pos {
+        line-height: 20px;
+    }
+    &__exp {
+        font-weight: 500;
+        display: inline-block;
+        line-height: 20px;
+        margin-bottom: 32px;
+    }
+    &__name {
+        margin-bottom: 16px;
+    }
+    &__list {
+        
+    }
+    &__item {
+        list-style: disc;
+        margin-left: 18px;
+        line-height: 20px;
+    }
+    &__desc {
+        line-height: 20px;
+        &.last {
+            margin-top: 16px;
+        }
+    }
+    &__info-btn {
+        margin-top: 32px;
+        @media (min-width: 1200px) {
+            width: 256px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
     &__quote {
+        position: absolute;
+        bottom: -40px;
+        left: 287px;
         background: linear-gradient(90deg, #F0EBFF -4.05%, #FFFFFF 34.42%);
 
         box-shadow: 0px 13.5277px 39.7872px rgba(187, 166, 255, 0.2);
@@ -18,7 +62,7 @@
         padding: 32px;
         max-width: 360px;
         blockquote {
-           font-size: 12px;
+            font-size: 12px;
             line-height: 16px;
             font-style: italic;
             color: #303030;
@@ -33,6 +77,8 @@
 }
 
 .supervisor-img {
+    // flex: 0 1 auto;
+    padding-right: 96px;
     img {
         border-radius: 20px;
     }
