@@ -882,9 +882,10 @@ body.ie ._ibg img {
 }
 
 .team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
 }
 
@@ -1233,9 +1234,10 @@ body.ie ._ibg img {
 }
 
 .advantages__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
   position: relative;
   z-index: 1;
   gap: 19px;
@@ -1511,7 +1513,7 @@ body.ie ._ibg img {
 
 .partners__header {
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center right;
   position: relative;
   height: 100%;
@@ -1543,16 +1545,8 @@ body.ie ._ibg img {
 }
 
 .partners__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  display: -ms-grid;
+  display: grid;
   gap: 16px;
 }
 
@@ -1910,6 +1904,12 @@ font-family: 'Roboto', sans-serif;
     font-size: 12px;
     line-height: 20px;
     color: #303030;
+  }
+}
+
+@media (min-width: 1160px) {
+  .partners__header {
+    background-size: contain;
   }
 }
 

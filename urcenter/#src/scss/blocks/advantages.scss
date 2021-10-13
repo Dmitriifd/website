@@ -89,7 +89,8 @@
         color: #34449C;
     }
     &__cards {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
         position: relative;
         z-index: 1;
         gap: 19px;
