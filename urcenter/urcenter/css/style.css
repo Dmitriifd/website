@@ -608,12 +608,6 @@ body.ie ._ibg img {
   background-position: top 51px right 157px;
 }
 
-.intro__column {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-}
-
 .intro__title {
   margin-top: 120px;
   margin-bottom: 16px;
@@ -1897,6 +1891,20 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
+@media (min-width: 731px) {
+  .intro__advantages-item:nth-child(1) {
+    width: 149px;
+  }
+
+  .intro__advantages-item:nth-child(2) {
+    width: 224px;
+  }
+
+  .intro__advantages-item:nth-child(3) {
+    width: 179px;
+  }
+}
+
 @media (min-width: 850px) {
   .header__desc {
     display: block;
@@ -2014,6 +2022,13 @@ font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 920px) {
+  .intro__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
   .intro__title {
     font-size: 30px;
   }
@@ -2046,21 +2061,58 @@ font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 740px) {
+  .intro__head {
+    text-align: center;
+  }
+
   .intro__title {
     font-size: 24px;
     line-height: 30px;
     max-width: 620px;
   }
 
+  .intro__desc {
+    max-width: 100%;
+  }
+
+  .intro__stat {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .intro__advantages-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .intro__advantages-item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
     margin-bottom: 24px;
   }
 
   .intro__advantages-item:last-child {
     margin-bottom: 0;
+  }
+
+  .intro__advantages-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2256,13 +2308,6 @@ font-family: 'Roboto', sans-serif;
 
   .intro__content {
     background-position: top 140px center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
-  .intro__head {
-    text-align: center;
   }
 
   .intro__desc {
