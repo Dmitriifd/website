@@ -529,6 +529,19 @@ body.ie ._ibg img {
           justify-content: space-between;
 }
 
+.vk-icon {
+  width: 18px;
+  height: 12px;
+  -webkit-transition: fill 0.3s;
+  -o-transition: fill 0.3s;
+  transition: fill 0.3s;
+  fill: #273895;
+}
+
+.footer__link:hover .vk-icon {
+  fill: #FE9E45;
+}
+
 .logo {
   height: 63px;
   width: 199px;
@@ -669,8 +682,6 @@ body.ie ._ibg img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-column-gap: 32px;
      -moz-column-gap: 32px;
           column-gap: 32px;
@@ -1891,7 +1902,7 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
-@media (min-width: 731px) {
+@media (min-width: 740px) {
   .intro__advantages-item:nth-child(1) {
     width: 149px;
   }

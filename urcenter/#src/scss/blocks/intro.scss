@@ -145,7 +145,7 @@
     }
     &__advantages-items {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         column-gap: 32px;
         padding: 32px 48px;
         background: #F4F7FA;
@@ -192,7 +192,7 @@
           align-items: center;
           flex-direction: column;
         }
-        @media (min-width: 731px) {
+        @media (min-width: 740px) {
             &:nth-child(1) {
                 width: 149px;
             }
