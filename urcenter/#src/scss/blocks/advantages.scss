@@ -8,19 +8,35 @@
         text-align: center;
     }
     &__items {
-        display: inline-flex;
-        align-items: center;
+        display: flex;
         margin-left: 70px;
-       
+        @media (max-width: 993px) {
+            flex-wrap: wrap;
+        }
+        @media (max-width: 680px) {
+            margin-left: 0;
+        }
     }
     &__item {
-        
+        flex: 1 1 33.333%;
+
+        @media (max-width: 680px) {
+            flex: 1 1 auto;
+        }
+    }
+    &__item:nth-child(1) {
+        @media (max-width: 680px) {
+            text-align: center;
+        }
     }
     &__sirius {
-        display: inline-block;
+        @media (max-width: 680px) {
+            align-self: center;
+        }
     }
     &__desc {
         max-width: 438px;
+        padding-top: 25px;
         p {
             line-height: 150%;
             margin-bottom: 30px;
@@ -28,20 +44,40 @@
                 margin-bottom: 0;
             }
         }
+        @media (max-width: 993px) {
+            max-width: 100%;
+        }
     }
     &__info {
         margin-left: 32px;
         max-width: 327px;
+        padding-top: 55px;
         ul {
             li {
                 padding-left: 24px;
-                background-image: url('../img/advantages/arrow.svg');
+                background-image: url("../img/advantages/arrow.svg");
                 background-repeat: no-repeat;
                 margin-bottom: 24px;
                 &:last-child {
                     margin-bottom: 0;
                 }
+                @media (max-width: 993px) {
+                    flex: 1 1 calc(50% - 15px);
+                }
+                @media (max-width: 680px) {
+                    flex: 0 1 100%;
+                }
             }
+            @media (max-width: 993px) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+        }
+        @media (max-width: 993px) {
+            max-width: 100%;
+            margin-left: 0;
+            flex: 1 1 100%;
         }
     }
     &__body {
@@ -70,7 +106,7 @@
         background: linear-gradient(326.06deg, #2641D1 11.53%, #3333A3 74.32%);
         border-radius: 7.95745px;
         padding: 16px 22px;
-        
+
         color: #fff;
         font-size: 12px;
         line-height: 14px;
@@ -83,7 +119,7 @@
     &__item-title {
         font-weight: bold;
         font-size: 16px;
-        line-height: 44px;
+        line-height: 100%;
         margin-bottom: 8px;
         letter-spacing: 0.17em;
         color: #34449C;
@@ -95,9 +131,19 @@
         z-index: 1;
         gap: 19px;
         margin-top: -70px;
+
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 1140px) {
+            margin-top: 32px;
+        }
+        @media (max-width: 560px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
     &__card {
-        flex: 0 1 236px;
+        
         background: linear-gradient(236.29deg, #FFFFFF 29.99%, #F4F9FF 79.17%);
         box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
         border-radius: 20px;
@@ -105,16 +151,32 @@
         img {
             margin-bottom: 16px;
         }
+
+
     }
     &__card-title {
         margin-bottom: 16px;
         font-size: 16px;
         line-height: 20px;
         font-weight: 500;
-          max-width: 172px;
+        max-width: 172px;
     }
     &__card-desc {
         line-height: 150%;
         max-width: 172px;
+
+        @media (max-width: 1200px) {
+            max-width: 100%;
+        }
     }
+}
+
+.advantages__sirius-img {
+    position: relative;
+}
+.advantages-sirius {
+    position: absolute;
+    top: 110px;
+    left: 25px;
+    width: 171px;
 }

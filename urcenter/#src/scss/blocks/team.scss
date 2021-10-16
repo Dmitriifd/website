@@ -1,5 +1,5 @@
 .team {
-    @include adaptiv-value("padding-bottom", 144, 30, 1);
+    @include adaptiv-value("padding-bottom", 144, 72, 1);
     &__content {
         max-width: 1092px;
         position: relative;
