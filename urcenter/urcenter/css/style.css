@@ -938,33 +938,6 @@ body.ie ._ibg img {
 
 /* Animation */
 
-.shape-1 {
-  position: absolute;
-  top: 15px;
-  right: 40px;
-  z-index: -1;
-  -webkit-animation: animationFramesOne 20s infinite linear;
-          animation: animationFramesOne 20s infinite linear;
-}
-
-.shape-2 {
-  position: absolute;
-  top: 258px;
-  right: 515px;
-  z-index: -1;
-  -webkit-animation: animationFramesTwo 20s infinite linear;
-          animation: animationFramesTwo 20s infinite linear;
-}
-
-.shape-3 {
-  position: absolute;
-  top: 312px;
-  right: 327px;
-  z-index: -1;
-  -webkit-animation: animationFramesThree 20s infinite linear;
-          animation: animationFramesThree 20s infinite linear;
-}
-
 @-webkit-keyframes animationFramesOne {
   0% {
     -webkit-transform: translate(0px, 0px);
@@ -1921,6 +1894,35 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
+@media (min-width: 768px) {
+  .shape-1 {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+    z-index: -1;
+    -webkit-animation: animationFramesOne 20s infinite linear;
+            animation: animationFramesOne 20s infinite linear;
+  }
+
+  .shape-2 {
+    position: absolute;
+    top: 258px;
+    right: 515px;
+    z-index: -1;
+    -webkit-animation: animationFramesTwo 20s infinite linear;
+            animation: animationFramesTwo 20s infinite linear;
+  }
+
+  .shape-3 {
+    position: absolute;
+    top: 312px;
+    right: 327px;
+    z-index: -1;
+    -webkit-animation: animationFramesThree 20s infinite linear;
+            animation: animationFramesThree 20s infinite linear;
+  }
+}
+
 @media (min-width: 850px) {
   .header__desc {
     display: block;
@@ -1954,6 +1956,10 @@ font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 1310px) {
+  .intro {
+    padding-bottom: calc(72px + 15 * ((100vw - 320px) / 990));
+  }
+
   .intro__stat {
     padding-left: calc(30px + 220 * ((100vw - 320px) / 990));
   }
@@ -2070,6 +2076,15 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
+@media (max-width: 875px) {
+  .team__list {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 343px));
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 868px) {
   .team__inner {
     -ms-flex-wrap: wrap;
@@ -2099,6 +2114,20 @@ font-family: 'Roboto', sans-serif;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .shape-1 {
+    display: none;
+  }
+
+  .shape-2 {
+    display: none;
+  }
+
+  .shape-3 {
+    display: none;
   }
 }
 
@@ -2326,6 +2355,9 @@ font-family: 'Roboto', sans-serif;
 
 @media (max-width: 480px) {
   .team__advantages-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 16px;
   }
 

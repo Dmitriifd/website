@@ -9,7 +9,7 @@
         display: flex;
         margin-bottom: 48px;
         @media (max-width: 868px) {
-            flex-wrap:wrap;
+            flex-wrap: wrap;
             justify-content: center;
         }
     }
@@ -50,13 +50,14 @@
     &__advantages-list {
         display: flex;
         flex-wrap: wrap;
-        
+
         column-gap: 25px;
         row-gap: 17px;
         @media (min-width: 480px) {
             width: 435px;
         }
         @media (max-width: 480px) {
+            justify-content: center;
             gap: 16px;
         }
     }
@@ -78,7 +79,6 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             color: #7247ff;
-            
         }
         span {
             font-weight: bold;
@@ -133,7 +133,7 @@
                 }
             }
             @media (max-width: 480px) {
-                 font-size: 30px;
+                font-size: 30px;
                 padding: 16px;
                 margin-left: 0;
             }
@@ -152,15 +152,14 @@
             }
             @media (max-width: 480px) {
                 padding: 16px;
-                
+
                 min-width: auto;
-                 min-height: auto;
+                min-height: auto;
             }
         }
         &:hover {
             transform: translateX(10px);
         }
-       
     }
     &__cards {
     }
@@ -176,6 +175,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
+        @media (max-width: 875px) {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 343px));
+            justify-content: center;
+        }
     }
     &__card {
         padding: 32px;
@@ -208,27 +211,42 @@
 
 /* Animation */
 
-.shape-1 {
-    position: absolute;
-    top: 15px;
-    right: 40px;
-    z-index: -1;
-    animation: animationFramesOne 20s infinite linear;
+@media (max-width: 768px) {
+    .shape-1 {
+        display: none;
+    }
+    .shape-2 {
+        display: none;
+    }
+    .shape-3 {
+        display: none;
+    }
 }
-.shape-2 {
-    position: absolute;
-    top: 258px;
-    right: 515px;
-    z-index: -1;
-    animation: animationFramesTwo 20s infinite linear;
+
+@media (min-width: 768px) {
+    .shape-1 {
+        position: absolute;
+        top: 15px;
+        right: 40px;
+        z-index: -1;
+        animation: animationFramesOne 20s infinite linear;
+    }
+    .shape-2 {
+        position: absolute;
+        top: 258px;
+        right: 515px;
+        z-index: -1;
+        animation: animationFramesTwo 20s infinite linear;
+    }
+    .shape-3 {
+        position: absolute;
+        top: 312px;
+        right: 327px;
+        z-index: -1;
+        animation: animationFramesThree 20s infinite linear;
+    }
 }
-.shape-3 {
-    position: absolute;
-    top: 312px;
-    right: 327px;
-    z-index: -1;
-    animation: animationFramesThree 20s infinite linear;
-}
+
 @keyframes animationFramesOne {
     0% {
         -webkit-transform: translate(0px, 0px);
