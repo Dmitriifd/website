@@ -1885,6 +1885,12 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
+@media (min-width: 640px) {
+  .supervisor-img img {
+    max-width: 100%;
+  }
+}
+
 @media (min-width: 740px) {
   .intro__advantages-item:nth-child(1) {
     width: 149px;
@@ -2077,6 +2083,28 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
+@media (max-width: 1120px) {
+  .supervisor__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 32px;
+  }
+
+  .supervisor__quote {
+    left: auto;
+    right: 221px;
+  }
+
+  .supervisor__quote {
+    right: 150px;
+  }
+}
+
 @media (max-width: 1100px) {
   .partners__header {
     background-position: 0;
@@ -2199,6 +2227,12 @@ font-family: 'Roboto', sans-serif;
 
   .intro__advantages {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .supervisor__quote {
+    right: 75px;
   }
 }
 
@@ -2397,6 +2431,14 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
+@media (max-width: 700px) {
+  .supervisor__quote {
+    right: 0;
+    padding: 16px;
+    max-width: 240px;
+  }
+}
+
 @media (max-width: 687px) {
   .steps__items {
     -ms-grid-columns: 1fr;
@@ -2591,6 +2633,16 @@ font-family: 'Roboto', sans-serif;
             flex: 1 1 50%;
     margin-bottom: 15px;
   }
+
+  .supervisor-img img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 620px) {
+  .supervisor__body {
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 560px) {
@@ -2650,6 +2702,10 @@ font-family: 'Roboto', sans-serif;
 
   .stats {
     gap: 10px;
+  }
+
+  .supervisor-img img {
+    width: 203px;
   }
 }
 
@@ -2754,6 +2810,24 @@ font-family: 'Roboto', sans-serif;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 440px) {
+  .supervisor__exp {
+    font-size: 12px;
+  }
+
+  .supervisor__name {
+    font-size: 24px;
+  }
+
+  .supervisor__desc {
+    font-size: 12px;
+  }
+
+  .supervisor__info-btn {
+    font-size: 12px;
   }
 }
 
