@@ -1625,7 +1625,7 @@ body.ie ._ibg img {
 }
 
 .steps__item {
-  background: #FFFFFF;
+  background: #ffffff;
   -webkit-box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
           box-shadow: 0px 4px 100px rgba(208, 218, 227, 0.57);
   border-radius: 20px;
@@ -2095,6 +2095,39 @@ font-family: 'Roboto', sans-serif;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
   }
+
+  .steps__items {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[12];
+    grid-template-rows: repeat(12, 1fr);
+        grid-template-areas: "step1 step3" "step1 step3" "step1 step3" "step1 step3" "step2 step3" "step2 step3" "step2 step3" "step2 step3" "result result" "result result" "result result" "result result";
+  }
+
+  .step-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+  }
+
+  .step-2 {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+  }
+
+  .step-3 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 8;
+    -ms-grid-column: 2;
+  }
+
+  .result {
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
 }
 
 @media (max-width: 980px) {
@@ -2308,6 +2341,39 @@ font-family: 'Roboto', sans-serif;
 
   .tariff-card {
     width: 100%;
+  }
+}
+
+@media (max-width: 687px) {
+  .steps__items {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: (-webkit-max-content)[4];
+    -ms-grid-rows: (max-content)[4];
+    grid-template-rows: repeat(4, -webkit-max-content);
+    grid-template-rows: repeat(4, max-content);
+        grid-template-areas: "step1" "step2" "step3" "result";
+  }
+  .step-1 {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .step-2 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .step-3 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+  }
+  .result {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
   }
 }
 
@@ -2659,6 +2725,18 @@ font-family: 'Roboto', sans-serif;
 
   .partners__header {
     background-position: -260px;
+  }
+
+  .steps__item {
+    padding: 24px;
+  }
+
+  .steps__item:nth-child(3) {
+    padding: 24px;
+  }
+
+  .steps__item:nth-child(4) {
+    padding: 24px;
   }
 }
 
