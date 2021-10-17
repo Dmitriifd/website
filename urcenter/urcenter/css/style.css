@@ -2010,6 +2010,26 @@ font-family: 'Roboto', sans-serif;
   }
 }
 
+@media (max-width: 1250px) {
+  .forecasts__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 30px;
+  }
+
+  .forecasts__title {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .forecasts {
+    padding: 75px 40px;
+  }
+}
+
 @media (max-width: 1200px) {
   .advantages__cards {
     -ms-grid-columns: (1fr)[2];
@@ -2060,6 +2080,21 @@ font-family: 'Roboto', sans-serif;
 @media (max-width: 1100px) {
   .partners__header {
     background-position: 0;
+  }
+}
+
+@media (max-width: 998px) {
+  .forecasts__title {
+    font-size: 24px;
+  }
+
+  .forecasts {
+    padding: 75px 30px;
+  }
+
+  .stats__item-title {
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 
@@ -2239,6 +2274,24 @@ font-family: 'Roboto', sans-serif;
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+  }
+}
+
+@media (max-width: 830px) {
+  .stats__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin-right: 0;
+  }
+
+  .stats {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
   }
 }
 
@@ -2580,6 +2633,24 @@ font-family: 'Roboto', sans-serif;
   .partners__item-img {
     width: 190px;
   }
+
+  .forecasts__title {
+    font-size: 20px;
+  }
+
+  .stats__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 46%;
+            flex: 0 1 46%;
+  }
+
+  .stats__item-desc {
+    font-size: 12px;
+  }
+
+  .stats {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 517px) {
@@ -2737,6 +2808,10 @@ font-family: 'Roboto', sans-serif;
 
   .steps__item:nth-child(4) {
     padding: 24px;
+  }
+
+  .forecasts {
+    padding: 75px 20px;
   }
 }
 

@@ -9,15 +9,42 @@
     &__inner {
         display: flex;
         align-items: center;
+
+        @media (max-width: 1250px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 30px;
+        }
        
     }
     &__title {
         margin-right: 106px;
         color: #FFFFFF;
         max-width: 406px;
+
+        @media (max-width: 1250px) {
+            text-align: center;
+           margin-right: 0;
+        }
+        @media (max-width: 998px) {
+            font-size: 24px;
+        }
+        @media (max-width: 520px) {
+            font-size: 20px;
+        }
     }
     &__stats {
         
+    }
+
+    @media (max-width: 1250px) {
+          padding: 75px 40px;
+    }
+    @media (max-width: 998px) {
+          padding: 75px 30px;
+    }
+    @media (max-width: 430px) {
+          padding: 75px 20px;
     }
 }
 
