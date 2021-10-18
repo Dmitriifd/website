@@ -495,6 +495,13 @@ body.ie ._ibg img {
   border: 1px solid #CFDAE7;
   border-radius: 10px;
   margin-left: 8px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer__item:hover {
+  border: 1px solid #273895;
 }
 
 .footer__bottom {
@@ -527,19 +534,6 @@ body.ie ._ibg img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.vk-icon {
-  width: 18px;
-  height: 12px;
-  -webkit-transition: fill 0.3s;
-  -o-transition: fill 0.3s;
-  transition: fill 0.3s;
-  fill: #273895;
-}
-
-.footer__link:hover .vk-icon {
-  fill: #FE9E45;
 }
 
 .logo {
