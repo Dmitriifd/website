@@ -303,8 +303,88 @@ body._lock {
 	}
 }
 */
-footer {
+.footer {
   background-color: #323232;
+}
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 75px;
+  padding-bottom: 31px;
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 653px;
+}
+.footer__menu-title {
+  font-family: "Intro";
+  font-size: 18px;
+  line-height: 125%;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.footer__menu-link {
+  font-size: 14px;
+  line-height: 200%;
+  color: #ffffff;
+}
+.footer__subscriptiion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 1 360px;
+}
+.footer__form {
+  max-width: 360px;
+  width: 100%;
+}
+.footer__form h3 {
+  font-size: 16px;
+  line-height: 170%;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer__form input {
+  background-color: transparent;
+  padding: 5px 0;
+  border-bottom: 1px solid #FFFFFF;
+  width: 100%;
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+.footer__social li {
+  margin-left: 16px;
+}
+.footer__bottom {
+  border-top: 1px solid #717171;
+  padding-top: 22px;
+  padding-bottom: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__phone {
+  font-family: "Intro";
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 130%;
+}
+.footer__phone a {
+  color: #ffffff;
+}
+.footer__copyright {
+  font-size: 13px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.footer__copyright span {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+  color: #ffffff;
 }
 
 .title {
@@ -321,8 +401,4 @@ footer {
 
 .page {
   flex: 1 1 auto;
-}
-
-.font {
-  font-family: "Intro-Book";
 }
