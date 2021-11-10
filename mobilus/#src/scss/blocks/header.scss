@@ -39,6 +39,7 @@
 	&__center {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 		padding: 12px 0;
 	}
 	&__logo {
@@ -121,11 +122,36 @@
 
 
 .menu {
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		min-width: 200vw;
+		left: -50%;
+		top: 0;
+		border-top: 1px solid #D6DCE1;
+	}
 	&__icon {}
 	&__body {}
-	&__list {}
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
 	&__item {}
-	&__link {}
+	&__item-create {
+		img {
+			margin-right: 10px;
+		}
+	}
+	&__link {
+		color: inherit;
+		font-family: 'Intro';
+		font-size: 14px;
+		line-height: 160%;
+		text-transform: uppercase;
+	}
 }
 
 

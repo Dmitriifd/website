@@ -166,6 +166,7 @@ body._lock {
 .header__center {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 12px 0;
 }
 .header__logo {
@@ -230,6 +231,33 @@ body._lock {
   line-height: 150%;
   color: #000000;
 }
+.menu {
+  position: relative;
+}
+.menu::after {
+  content: "";
+  position: absolute;
+  min-width: 200vw;
+  left: -50%;
+  top: 0;
+  border-top: 1px solid #D6DCE1;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu__item-create img {
+  margin-right: 10px;
+}
+.menu__link {
+  color: inherit;
+  font-family: "Intro";
+  font-size: 14px;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
 /*
 //Burger
 .icon-menu {
