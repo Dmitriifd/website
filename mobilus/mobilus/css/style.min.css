@@ -402,6 +402,18 @@ body._lock {
   padding-left: 13px;
 }
 @media (min-width: 968px) {
+  .footer__container::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #717171;
+    bottom: 80px;
+    left: 0;
+  }
+}
+@media (min-width: 968px) {
   .footer {
     padding-top: 75px;
     padding-bottom: 47px;
@@ -413,6 +425,7 @@ body._lock {
   grid-template-rows: repeat(5, auto);
   grid-template-areas: "product info" "company social" "phone phone" "form form" "logo copyright";
   row-gap: 37px;
+  column-gap: 15px;
 }
 @media (min-width: 560px) {
   .footer__body {

@@ -4,6 +4,23 @@
     padding-bottom: 25px;
     padding-left: 13px;
 
+    &__container {
+
+        @media (min-width: 968px) {
+            &::after {
+                content: "";
+                position: relative;
+                display: block;
+                height: 1px;
+                width: 100%;
+                background-color: #717171;
+                bottom: 80px;
+                left: 0;
+            }
+        }
+
+    }
+
     @media (min-width: 968px) {
         padding-top: 75px;
         padding-bottom: 47px;
@@ -19,6 +36,7 @@
             "form form"
             "logo copyright";
         row-gap: 37px;
+        column-gap: 15px;
 
         @media (min-width: 560px) {
             grid-template-columns: repeat(3, 1fr);
@@ -29,7 +47,7 @@
                 "form form form"
                 "logo logo copyright";
         }
-         @media (min-width: 968px) {
+        @media (min-width: 968px) {
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, auto);
             grid-template-areas:
@@ -78,20 +96,18 @@
             @media (min-width: 560px) {
                 margin-bottom: 0;
                 margin-left: 16px;
-                
             }
         }
 
         @media (min-width: 560px) {
             display: flex;
-            
         }
     }
     &__phone {
         padding-top: 60px;
         border-top: 1px solid #717171;
 
-         @media (min-width: 968px) {
+        @media (min-width: 968px) {
             padding-top: 0;
             border: none;
         }
@@ -141,8 +157,6 @@
 }
 .footer-info {
     grid-area: info;
-
-    
 }
 .footer-company {
     grid-area: company;
@@ -161,7 +175,7 @@
 .footer-phone {
     grid-area: phone;
 
-     @media (min-width: 968px) {
+    @media (min-width: 968px) {
         align-self: center;
         justify-self: center;
     }
@@ -187,5 +201,4 @@
     @media (min-width: 380px) {
         margin-left: auto;
     }
-    
 }
