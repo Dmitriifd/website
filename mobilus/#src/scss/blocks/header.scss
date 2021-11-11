@@ -1,19 +1,22 @@
 .header {
 	&__container {
-
 	}
 	&__top {
-		
-		background-color: #3B3B3B;
-		
+		background-color: #3b3b3b;
+		position: relative;
+		z-index: 5;
+		@media (max-width: 620px) {
+			display: none;
+		}
 	}
-	&__top-list {}
+	&__top-list {
+	}
 	&__top-phone {
-		font-family: 'Intro';
+		font-family: "Intro";
 		font-weight: bold;
 		font-size: 12px;
 		line-height: 150%;
-		color: #FFFFFF;
+		color: #ffffff;
 	}
 	&__top-content {
 		display: flex;
@@ -31,7 +34,7 @@
 				a {
 					font-size: 13px;
 					line-height: 150%;
-					color: #DADADA;
+					color: #dadada;
 				}
 			}
 		}
@@ -41,9 +44,21 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 12px 0;
+		position: relative;
+		z-index: 5;
 	}
 	&__logo {
 		margin-right: 76px;
+
+		@media (max-width: 870px) {
+			margin-right: 50px;
+		}
+		@media (max-width: 780px) {
+			margin-right: 30px;
+		}
+		@media (max-width: 320px) {
+			margin-right: 20px;
+		}
 	}
 	&__search {
 		max-width: 454px;
@@ -53,12 +68,22 @@
 
 		input {
 			width: 100%;
-			background: #F3F3F3;
+			background: #f3f3f3;
 			border-radius: 4px;
 			padding: 15px;
 		}
 		button {
 			margin-left: -35px;
+		}
+
+		@media (max-width: 870px) {
+			margin-right: 50px;
+		}
+		@media (max-width: 780px) {
+			margin-right: 30px;
+		}
+		@media (max-width: 560px) {
+			display: none;
 		}
 	}
 	&__actions {
@@ -75,7 +100,7 @@
 		}
 		a > img {
 			display: block;
-			
+
 			margin-bottom: 10px;
 		}
 		.header__cart {
@@ -85,7 +110,6 @@
 				margin-bottom: 0;
 			}
 		}
-		
 	}
 	&__actions-wrap {
 		display: flex;
@@ -93,19 +117,25 @@
 		a {
 			font-size: 11px;
 			line-height: 150%;
-			color: #676F77;
+			color: #676f77;
+		}
+
+		@media (max-width: 780px) {
+			margin-right: 30px;
+		}
+		@media (max-width: 720px) {
+			display: none;
 		}
 	}
 	&__compare {
-		
 	}
-	&__favorites {}
+	&__favorites {
+	}
 	&__login {
-		
 	}
 	&__cart {
 		white-space: nowrap;
-		border: 1px solid #B6BEC6;
+		border: 1px solid #b6bec6;
 		border-radius: 4px;
 		padding: 12px 19px;
 		span {
@@ -114,32 +144,60 @@
 			color: #000000;
 		}
 	}
-	&__bottom {
+	&__cart-wrap {
 
+		@media (max-width: 720px) {
+			margin-right: 60px;
+		}
 	}
-	&__menu {}
+	&__bottom {
+	}
+	&__menu {
+	}
 }
-
 
 .menu {
 	position: relative;
-
+	padding: 15px 0;
 	&::after {
-		content: '';
+		content: "";
 		position: absolute;
 		min-width: 200vw;
 		left: -50%;
 		top: 0;
-		border-top: 1px solid #D6DCE1;
+		border-top: 1px solid #d6dce1;
 	}
-	&__icon {}
-	&__body {}
+	&__icon {
+	}
+	&__body {
+		transition: left 0.3s ease 0s;
+		@media (max-width: 720px) {
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: -100%;
+			overflow: auto;
+			z-index: 2;
+		}
+	}
+	&__body._active {
+		left: 0;
+		background: #ffffff;
+	}
 	&__list {
 		display: flex;
 		align-items: center;
 		justify-content: space-around;
+
+		@media (max-width: 720px) {
+			padding: 30px;
+			padding-top: 120px;
+			display: block;
+		}
 	}
-	&__item {}
+	&__item {
+	}
 	&__item-create {
 		img {
 			margin-right: 10px;
@@ -147,24 +205,24 @@
 	}
 	&__link {
 		color: inherit;
-		font-family: 'Intro';
+		font-family: "Intro";
 		font-size: 14px;
 		line-height: 160%;
 		text-transform: uppercase;
+
+		@media (max-width: 780px) {
+			font-size: 12px;
+		}
 	}
 }
 
-
-
-/*
-//Burger
 .icon-menu {
 	display: none;
-	@media (max-width: $md3+px) {
+	@media (max-width: 720px) {
+		position: fixed;
+
 		display: block;
-		position: absolute;
-		top: 18px;
-		right: 10px;
+		right: 15px;
 		width: 30px;
 		height: 18px;
 		cursor: pointer;
@@ -200,4 +258,3 @@
 		}
 	}
 }
-*/
