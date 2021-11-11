@@ -197,6 +197,10 @@
 		}
 	}
 	&__item {
+
+		@media (max-width: 720px) {
+			margin-bottom: 18px;
+		}
 	}
 	&__item-create {
 		img {
@@ -212,6 +216,9 @@
 
 		@media (max-width: 780px) {
 			font-size: 12px;
+		}
+		@media (max-width: 720px) {
+			font-size: 16px;
 		}
 	}
 }
