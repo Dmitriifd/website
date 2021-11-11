@@ -1,94 +1,216 @@
-.footer {
-    background-color: #323232;
+// .footer {
+//     background-color: #323232;
 
-    &__container {
-    }
+//     &__container {
+//     }
+//     &__body {
+//         display: flex;
+//         justify-content: space-between;
+//         padding-top: 75px;
+//         padding-bottom: 31px;
+//     }
+//     &__menu {
+//         display: flex;
+//         justify-content: space-between;
+//         flex: 0 1 653px;
+//     }
+//     &__menu-column {
+//     }
+//     &__menu-title {
+//         font-family: "Intro";
+//         font-size: 18px;
+//         line-height: 125%;
+//         color: #ffffff;
+//         margin-bottom: 15px;
+//     }
+//     &__menu-list {
+//     }
+//     &__menu-item {
+//     }
+//     &__menu-link {
+//         font-size: 14px;
+//         line-height: 200%;
+//         color: #ffffff;
+//     }
+//     &__subscriptiion {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         flex: 0 1 360px;
+//          margin-left: 30px;
+
+//     }
+//     &__form {
+//         max-width: 360px;
+//         width: 100%;
+//         h3 {
+//             font-size: 16px;
+//             line-height: 170%;
+//             color: #ffffff;
+//             margin-bottom: 20px;
+//         }
+//         input {
+//             background-color: transparent;
+//             padding: 5px 0;
+//             border-bottom: 1px solid #FFFFFF;
+//             width: 100%;
+//         }
+//     }
+//     &__social {
+//         display: flex;
+//         align-items: center;
+//         li {
+//             margin-left: 16px;
+//         }
+//     }
+//     &__bottom {
+//         border-top: 1px solid #717171;
+//         padding-top: 22px;
+//         padding-bottom: 47px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//     }
+//     &__logo {
+//     }
+//     &__phone {
+//         font-family: "Intro";
+//         font-weight: bold;
+//         font-size: 25px;
+//         line-height: 130%;
+//         a {
+//             color: #ffffff;
+//         }
+//     }
+//     &__copyright {
+//         font-size: 13px;
+//         line-height: 150%;
+//         color: #ffffff;
+//         span {
+//             font-weight: bold;
+//             font-size: 18px;
+//             line-height: 125%;
+//             color: #ffffff;
+//         }
+//     }
+// }
+
+.footer {
+    background: #323232;
+    padding-top: 47px;
+    padding-bottom: 25px;
+    padding-left: 13px;
     &__body {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 75px;
-        padding-bottom: 31px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "product info"
+            "company social"
+            "phone phone"
+            "form form"
+            "logo copyright";
+            row-gap: 37px;
     }
-    &__menu {
-        display: flex;
-        justify-content: space-between;
-        flex: 0 1 653px;
+    &__column {
     }
-    &__menu-column {
-    }
-    &__menu-title {
+    &__title {
         font-family: "Intro";
         font-size: 18px;
         line-height: 125%;
         color: #ffffff;
         margin-bottom: 15px;
     }
-    &__menu-list {
+    &__list {
     }
-    &__menu-item {
+    &__item {
     }
-    &__menu-link {
-        font-size: 14px;
-        line-height: 200%;
+    &__link {
+        font-size: 12px;
+        line-height: 220%;
         color: #ffffff;
     }
-    &__subscriptiion {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex: 0 1 360px;
-    }
-    &__form {
-        max-width: 360px;
-        width: 100%;
-        h3 {
-            font-size: 16px;
-            line-height: 170%;
-            color: #ffffff;
-            margin-bottom: 20px;
-        }
-        input {
-            background-color: transparent;
-            padding: 5px 0;
-            border-bottom: 1px solid #FFFFFF;
-            width: 100%;
-        }
-    }
     &__social {
-        display: flex;
-        align-items: center;
         li {
-            margin-left: 16px;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
-    }
-    &__bottom {
-        border-top: 1px solid #717171;
-        padding-top: 22px;
-        padding-bottom: 47px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    &__logo {
     }
     &__phone {
+        padding-top: 60px;
+        border-top: 1px solid #717171;
+    }
+    &__phone-link {
         font-family: "Intro";
         font-weight: bold;
         font-size: 25px;
         line-height: 130%;
-        a {
-            color: #ffffff;
+        color: #ffffff;
+    }
+    &__form {
+        input {
+            width: 90%;
+            padding: 5px;
+            background: transparent;
+            border-bottom: 1px solid #ffffff;
         }
+    }
+    &__form-title {
+        font-size: 16px;
+        line-height: 170%;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+    &__logo {
     }
     &__copyright {
         font-size: 13px;
         line-height: 150%;
         color: #ffffff;
+
         span {
             font-weight: bold;
             font-size: 18px;
             line-height: 125%;
-            color: #ffffff;
         }
     }
 }
+
+.footer-product {
+    grid-area: product;
+}
+.footer-info {
+    grid-area: info;
+}
+.footer-company {
+    grid-area: company;
+}
+.footer-social {
+    grid-area: social;
+    padding-right: 27px;
+    margin-left: auto;
+}
+.footer-phone {
+    grid-area: phone;
+}
+.footer-form {
+    grid-area: form;
+    margin-bottom: 15px;
+}
+.footer-logo {
+    grid-area: logo;
+}
+.footer-copy {
+    grid-area: copyright;
+}
+
+            

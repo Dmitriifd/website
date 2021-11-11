@@ -226,10 +226,10 @@
 .icon-menu {
 	display: none;
 	@media (max-width: 720px) {
-		position: fixed;
+		position: absolute;
 
 		display: block;
-		right: 15px;
+		right: 0;
 		width: 30px;
 		height: 18px;
 		cursor: pointer;
