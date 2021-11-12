@@ -253,6 +253,7 @@ body._lock {
 @media (max-width: 720px) {
   .header__search {
     margin-bottom: 28px;
+    max-width: 100%;
   }
 }
 .header__actions {
