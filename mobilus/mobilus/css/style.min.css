@@ -221,6 +221,11 @@ body._lock {
     margin-right: 30px;
   }
 }
+@media (max-width: 720px) {
+  .header__search {
+    margin-bottom: 28px;
+  }
+}
 .header__actions {
   display: flex;
   justify-content: space-between;
@@ -268,6 +273,11 @@ body._lock {
   .header__actions-wrap a {
     display: grid;
     justify-items: center;
+  }
+}
+@media (min-width: 620px) and (max-width: 720px) {
+  .header__actions-wrap {
+    margin-top: 20px;
   }
 }
 .header__cart {

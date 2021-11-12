@@ -82,8 +82,8 @@
 		@media (max-width: 780px) {
 			margin-right: 30px;
 		}
-		@media (max-width: 560px) {
-			// display: none;
+		@media (max-width: 720px) {
+			margin-bottom: 28px;
 		}
 	}
 	&__actions {
@@ -133,6 +133,9 @@
 				justify-items: center;
 				
 			}
+		}
+		@media (min-width: 620px) and (max-width: 720px) {
+			margin-top: 20px;
 		}
 	}
 	&__compare {
