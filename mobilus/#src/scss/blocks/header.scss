@@ -10,6 +10,22 @@
 		}
 	}
 	&__top-list {
+
+		li a {
+			font-size: 16px;
+			line-height: 170%;
+			color: #3B3B3B;
+		}
+
+		@media (max-width: 620px) {
+			display: flex;
+			flex-wrap: wrap;
+
+			li {
+				flex: 0 1 50%;
+			}
+			margin-bottom: 34px;
+		}
 	}
 	&__top-phone {
 		font-family: "Intro";
@@ -17,6 +33,18 @@
 		font-size: 12px;
 		line-height: 150%;
 		color: #ffffff;
+
+		@media (max-width: 620px) {
+			font-family: 'Intro';
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 150%;
+			color: #000000;
+			// text-align: center;
+		}
+		@media (max-width: 375px) {
+			font-size: 26px;
+		}
 	}
 	&__top-content {
 		display: flex;
@@ -204,7 +232,7 @@
 		justify-content: space-around;
 
 		@media (max-width: 720px) {
-			
+			margin-bottom: 47px;
 			display: block;
 		}
 	}
