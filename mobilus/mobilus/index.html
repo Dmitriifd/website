@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-	 <head>
+ <head>
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-	<body>
-		<div class="wrapper">
-			<header class="header">
+
+<body>
+	<div class="wrapper">
+		<header class="header">
 	<div class="header__top">
 		<div class="header__top-content _container">
 			<ul class="header__top-list" data-da=".menu__body--mobile, 620, 3">
@@ -104,12 +106,54 @@
 				</nav>
 			</div>
 		</div>
+		
 	</div>
+	
 </header>
-			<main class="page">
-				
-			</main>
-			<footer class="footer">
+		<main class="page">
+			<section class="hero">
+				<div class="swiper-container hero__slider">
+					<div class="swiper-wrapper hero__slider-wrapper">
+						
+						<div class="swiper-slide hero__slider-slide">
+							<img src="img/slide/slide.jpg" alt="Слайд" class="hero__slider-image" />
+							<div class="hero__slider-text">
+								<h3 class="hero__slider-title">Акция лета 2021 – на все чехлы iphone</h3>
+								<span class="hero__slider-num">1+1=3</span>
+							</div>
+						</div>
+						<div class="swiper-slide hero__slider-slide">
+							<img src="img/slide/slide.jpg" alt="Слайд" class="hero__slider-image" />
+							<div class="hero__slider-text">
+								<h3 class="hero__slider-title">Акция лета 2021 – на все чехлы iphone</h3>
+								<span class="hero__slider-num">1+1=3</span>
+							</div>
+						</div>
+						<div class="swiper-slide hero__slider-slide">
+							<img src="img/slide/slide.jpg" alt="Слайд" class="hero__slider-image" />
+							<div class="hero__slider-text">
+								<h3 class="hero__slider-title">Акция лета 2021 – на все чехлы iphone</h3>
+								<span class="hero__slider-num">1+1=3</span>
+							</div>
+						</div>
+						<div class="swiper-slide hero__slider-slide">
+							<img src="img/slide/slide.jpg" alt="Слайд" class="hero__slider-image" />
+							<div class="hero__slider-text">
+								<h3 class="hero__slider-title">Акция лета 2021 – на все чехлы iphone</h3>
+								<span class="hero__slider-num">1+1=3</span>
+							</div>
+						</div>
+					</div>
+					
+					<button class="hero__slider-button hero__slider-button--prev"></button>
+					<button class="hero__slider-button hero__slider-button--next"></button>
+					
+					<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			
+		</main>
+		<footer class="footer">
 	<div class="footer__container _container">
 		<div class="footer__body">
 			<div class="footer__column footer-product">
@@ -220,8 +264,8 @@
 		</div>
 	</div>
 </footer>
-		</div>
-		<div class="popup popup_popup">
+	</div>
+	<div class="popup popup_popup">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close"></div>
@@ -244,9 +288,11 @@
 	</div>
 </div>
 
-		<!-- Swiper -->
+	<!-- Swiper -->
 <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
 <script src="js/vendors.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="js/app.min.js"></script>
-	</body>
+</body>
+
 </html>

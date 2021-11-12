@@ -394,6 +394,11 @@ body._lock {
     font-size: 16px;
   }
 }
+@media (max-width: 720px) {
+  .menu {
+    padding: 0;
+  }
+}
 
 .icon-menu {
   display: none;
@@ -650,4 +655,125 @@ body._lock {
 
 .page {
   flex: 1 1 auto;
+}
+
+.hero__slider {
+  width: 100%;
+  position: relative;
+}
+
+.hero__slider-slide {
+  width: 100%;
+}
+
+.hero__slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}
+
+.hero__slider-button--next {
+  right: 100px;
+  background-image: url("../../img/icons/right-arrow.svg");
+}
+@media (max-width: 1120px) {
+  .hero__slider-button--next {
+    right: 30px;
+  }
+}
+@media (max-width: 968px) {
+  .hero__slider-button--next {
+    display: none;
+  }
+}
+
+.hero__slider-button--prev {
+  left: 100px;
+  background-image: url("../../img/icons/left-arrow.svg");
+}
+@media (max-width: 1120px) {
+  .hero__slider-button--prev {
+    left: 30px;
+  }
+}
+@media (max-width: 968px) {
+  .hero__slider-button--prev {
+    display: none;
+  }
+}
+
+.hero__slider-image {
+  width: 100%;
+  height: 462px;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 1px;
+}
+@media (min-width: 1120px) {
+  .hero__slider-image {
+    max-height: 480px;
+  }
+}
+
+.hero__slider-text {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+@media (max-width: 680px) {
+  .hero__slider-text {
+    left: 6%;
+  }
+}
+
+.hero__slider-title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+  max-width: 472px;
+  color: #ffffff;
+}
+@media (max-width: 1158px) {
+  .hero__slider-title {
+    font-size: calc(32px + 16 * ((100vw - 320px) / 838));
+  }
+}
+
+.hero__slider-num {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 160%;
+  color: #ffffff;
+}
+@media (max-width: 1158px) {
+  .hero__slider-num {
+    font-size: calc(50px + 22 * ((100vw - 320px) / 838));
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 30px !important;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0;
+  background-color: #ffffff;
+  height: 2px;
+  width: 56px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  border-radius: 0;
+  width: 56px;
+  height: 3px;
 }
