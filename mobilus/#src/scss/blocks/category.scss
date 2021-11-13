@@ -1,0 +1,67 @@
+.category {
+    padding-top: 56px;
+    &__content {
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 130%;
+        margin-bottom: 50px;
+    }
+    &__inner {
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -4px;
+    }
+    &__card {
+        flex: 0 1 calc(33.333% - 8px);
+        margin: 4px;
+        min-height: 184px;
+        background-color: #F2F2F2;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        border-radius: 4px;
+        padding: 0 30px 15px;
+        display: flex;
+        align-items: flex-end;
+    }
+    &__card-title {
+       max-width: 118px;
+    }
+    &__card-link {
+        font-family: 'Intro';
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+        color: inherit;
+    }
+    &__card-img {
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #f2f2f2;
+        border-radius: 4px;
+        margin-top: 8px;
+        padding: 45px 28px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 90px;
+        img {
+           
+            margin-bottom: 17px;
+        }
+    }
+    &__item-title {
+        font-family: 'Intro';
+        font-size: 18px;
+        line-height: 125%;
+    }
+}
