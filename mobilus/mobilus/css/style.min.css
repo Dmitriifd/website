@@ -686,7 +686,7 @@ body._lock {
     background-position: top right;
   }
 }
-@media (max-width: 740px) {
+@media (max-width: 640px) {
   .category__card {
     flex: 0 1 calc(100% - 8px);
   }
