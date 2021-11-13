@@ -713,6 +713,9 @@ body._lock {
   font-size: 18px;
   line-height: 125%;
 }
+.category__item-link {
+  color: inherit;
+}
 
 .info {
   padding-top: 115px;
