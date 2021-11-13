@@ -653,6 +653,46 @@ body._lock {
   background-color: #ffe6e6;
 }
 
+.info {
+  padding-top: 115px;
+  padding-bottom: 125px;
+}
+.info__title {
+  margin-bottom: 45px;
+  font-size: 32px;
+  line-height: 130%;
+}
+.info__items {
+  display: flex;
+  margin: 0 -12px;
+}
+.info__item {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 64px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 32px;
+  margin: 0 12px;
+  flex: 0 1 33.333%;
+}
+.info__item-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.info__item-top img {
+  margin-right: 24px;
+}
+.info__item-title {
+  font-family: "Intro";
+  font-size: 18px;
+  line-height: 125%;
+}
+.info__text {
+  font-size: 13px;
+  line-height: 150%;
+  color: #676F77;
+}
+
 .page {
   flex: 1 1 auto;
 }
