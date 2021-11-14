@@ -658,6 +658,12 @@ body._lock {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 859px) {
+  .tabs__nav {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
 
 .tabs__item-wrap {
   display: flex;
