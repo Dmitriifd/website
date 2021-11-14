@@ -1,11 +1,10 @@
 .card {
     
     border-radius: 6px;
-    margin-top: 50px;
     max-width: 264px;
     min-height: 449px;
     overflow: hidden;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
     position: relative;
     &__header {
         
@@ -44,7 +43,7 @@
         }
     }
     &__img-link {
-        
+
     }
     &__body {
         margin-bottom: 19px;

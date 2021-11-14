@@ -201,3 +201,48 @@ body {
   width: 56px;
   height: 3px;
 }
+
+// new Slider
+
+.new__slider {
+	overflow: hidden;
+	padding: 55px 15px;
+	position: relative;
+}
+
+.new__slider-button {
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background-color: #000;
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	z-index: 100;
+}
+
+.new__slider-button--prev {
+	left: 0;
+	background-image: url('../img/card/left-arrow.svg');
+	
+}
+.new__slider-button--next {
+	right: 0;
+	background-image: url('../img/card/right-arrow.svg');
+}
+
+.new__slider-pagination .swiper-pagination-bullet {
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #D0D0D0;
+}
+
+.new__slider-pagination .swiper-pagination-bullet-active {
+	background-color: #E7430B;
+}
+
+
+
