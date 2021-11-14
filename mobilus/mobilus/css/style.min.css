@@ -692,6 +692,95 @@ body._lock {
   line-height: 130%;
 }
 
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 88px rgba(76, 81, 96, 0.16);
+  border-radius: 6px;
+  margin-top: 50px;
+  max-width: 264px;
+  min-height: 449px;
+  overflow: hidden;
+}
+.card__img {
+  height: 260px;
+  margin-bottom: 17px;
+  text-align: center;
+  padding: 8px 0;
+}
+.card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.card__body {
+  margin-bottom: 19px;
+  padding-left: 16px;
+  padding-right: 19px;
+}
+.card__title {
+  font-family: "Intro";
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 5px;
+  max-width: 182px;
+}
+.card__text {
+  font-size: 14px;
+  line-height: 160%;
+  color: #676F77;
+}
+.card__footer {
+  padding: 0px 16px 19px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__price {
+  flex: 2;
+}
+.card__price span {
+  display: inline-block;
+  font-family: "Intro";
+  font-size: 12px;
+  line-height: 125%;
+  color: #B6BEC6;
+  margin-bottom: 3px;
+  text-decoration: line-through;
+}
+.card__price p {
+  font-family: "Intro";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 125%;
+}
+.card__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 3;
+}
+.card__button-cart {
+  background: #E4E8EC;
+  border-radius: 4px;
+  padding: 9px 20px;
+  transition: all 0.3s linear;
+}
+.card__button-cart svg {
+  transition: all 0.3s linear;
+  fill: #676F77;
+}
+.card__button-cart:hover {
+  background: #ED6109;
+}
+.card__button-cart:hover svg {
+  fill: #fff;
+}
+
+.card-containder {
+  display: flex;
+  gap: 30px;
+}
+
 .category {
   padding-top: 56px;
 }
