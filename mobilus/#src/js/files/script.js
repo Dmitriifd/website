@@ -103,10 +103,16 @@ const newSlider = new Swiper('.new__slider', {
         260: {
             slidesPerView: 1,
         },
+        320: {
+            slidesPerView: 1.2,
+            centeredSlides: true,
+        },
         520: {
+            centeredSlides: false,
             slidesPerView: 2,
         },
         740: {
+            centeredSlides: false,
             slidesPerView: 2,
         },
         860: {

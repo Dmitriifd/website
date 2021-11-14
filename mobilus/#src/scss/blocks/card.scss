@@ -7,6 +7,10 @@
     transition: all 0.2s linear;
     position: relative;
     margin: 0 auto;
+
+    @media (max-width: 380px) {
+        box-shadow: 0px 12px 88px rgb(76 81 96 / 16%);
+    }
     &__header {
         
     }
@@ -130,7 +134,9 @@
 }
 
 .card:hover {
-    background: #FFFFFF;
-    box-shadow: 0px 12px 88px rgba(76, 81, 96, 0.16);
     transform: scale(1.03);
+    @media (min-width: 400px) {
+        background: #FFFFFF;
+        box-shadow: 0px 12px 88px rgba(76, 81, 96, 0.16);
+    }
 }

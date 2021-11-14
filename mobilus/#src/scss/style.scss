@@ -208,6 +208,10 @@ body {
 	overflow: hidden;
 	padding: 55px 15px;
 	position: relative;
+
+	@media (max-width: 380px) {
+		overflow: visible;
+	}
 }
 
 .new__slider-button {
@@ -221,16 +225,24 @@ body {
 	transform: translateY(-50%);
 	position: absolute;
 	z-index: 100;
+
+	
 }
 
 .new__slider-button--prev {
 	left: 0;
 	background-image: url('../img/card/left-arrow.svg');
+	@media (max-width: 580px) {
+		display: none;
+	}
 	
 }
 .new__slider-button--next {
 	right: 0;
 	background-image: url('../img/card/right-arrow.svg');
+	@media (max-width: 580px) {
+		display: none;
+	}
 }
 
 .new__slider-pagination .swiper-pagination-bullet {
