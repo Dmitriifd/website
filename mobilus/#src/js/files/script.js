@@ -59,7 +59,7 @@ const newSlider = new Swiper('.new__slider', {
     loop: true,
 
     // Скорость прокрутки
-    speed: 2000,
+    speed: 500,
 
     // Переключение клавишами
     keyboard: {
@@ -99,16 +99,22 @@ const newSlider = new Swiper('.new__slider', {
     // },
 
     // Брейк поинты (адаптив)
-    // breakpoints: {
-    //     320: {
-    //         slidesPerView: 1,
-    //     },
-    //     480: {
-    //         slidesPerView: 2,
-    //     },
-    //     992: {
-    //         slidesPerView: 3,
-    //     }
-    // },
+    breakpoints: {
+        260: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        740: {
+            slidesPerView: 2,
+        },
+        860: {
+            slidesPerView: 3,
+        },
+        1080: {
+            slidesPerView: 4,
+        }
+    },
 
 })
