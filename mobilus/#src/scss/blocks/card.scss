@@ -1,11 +1,11 @@
 .card {
-    background: #FFFFFF;
-    box-shadow: 0px 12px 88px rgba(76, 81, 96, 0.16);
+    
     border-radius: 6px;
     margin-top: 50px;
     max-width: 264px;
     min-height: 449px;
     overflow: hidden;
+    transition: all 0.3s linear;
 
     &__header {
         
@@ -111,5 +111,7 @@
 }
 
 .card:hover {
-    
+    background: #FFFFFF;
+    box-shadow: 0px 12px 88px rgba(76, 81, 96, 0.16);
+    transform: scale(1.03);
 }
