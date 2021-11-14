@@ -743,6 +743,9 @@ body._lock {
   margin-bottom: 5px;
   max-width: 182px;
 }
+.card__link {
+  color: inherit;
+}
 .card__text {
   font-size: 14px;
   line-height: 160%;

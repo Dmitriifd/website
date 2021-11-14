@@ -43,6 +43,9 @@
             object-fit: contain;
         }
     }
+    &__img-link {
+        
+    }
     &__body {
         margin-bottom: 19px;
         padding-left: 16px;
@@ -54,6 +57,9 @@
         line-height: 150%;
         margin-bottom: 5px;
         max-width: 182px;
+    }
+    &__link {
+        color: inherit;
     }
     &__text {
         font-size: 14px;
