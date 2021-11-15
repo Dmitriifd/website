@@ -1,0 +1,45 @@
+.category-header {
+    padding: 45px 0;
+    border-bottom: 1px solid #c9d0d7;
+}
+
+.category-head {
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        font-family: 'Intro';
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 130%;
+        margin-right: 27px;
+    }
+    &__count {
+        font-size: 13px;
+        line-height: 150%;
+        color: #676F77;
+    }
+}
+.brand-list {
+    display: flex;
+    align-items: center;
+
+    &__item {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 300%;
+        transition: color 0.3s linear;
+        color: inherit;
+
+        &:hover {
+            color: #F77D0C;
+        }
+    }
+}
