@@ -705,7 +705,7 @@ body._lock {
 }
 @media (max-width: 380px) {
   .card {
-    box-shadow: 0px 12px 88px rgba(76, 81, 96, 0.16);
+    box-shadow: 0px 10px 50px rgba(76, 81, 96, 0.16);
   }
 }
 .card__labels {
@@ -816,7 +816,7 @@ body._lock {
 @media (min-width: 400px) {
   .card:hover {
     background: #FFFFFF;
-    box-shadow: 0px 12px 88px rgba(76, 81, 96, 0.16);
+    box-shadow: 0px 10px 50px rgba(76, 81, 96, 0.16);
   }
 }
 
@@ -1141,7 +1141,6 @@ body._lock {
 .new__slider {
   overflow: hidden;
   padding: 55px 15px;
-  position: relative;
 }
 @media (max-width: 380px) {
   .new__slider {
@@ -1156,10 +1155,25 @@ body._lock {
   height: 48px;
   border-radius: 50%;
   background-color: #000;
-  top: 50%;
-  transform: translateY(-50%);
+}
+
+.new__slider-arrows {
+  display: grid;
+  grid-template-columns: repeat(2, 48px);
+  column-gap: 8px;
   position: absolute;
-  z-index: 100;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: calc(100% - 48px);
+  left: 24px;
+  z-index: 2;
+  justify-content: space-between;
+}
+@media (min-width: 1200px) {
+  .new__slider-arrows {
+    width: calc(100% + 48px);
+    left: -24px;
+  }
 }
 
 .new__slider-button--prev {
@@ -1186,9 +1200,13 @@ body._lock {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #D0D0D0;
+  background-color: #d0d0d0;
 }
 
 .new__slider-pagination .swiper-pagination-bullet-active {
-  background-color: #E7430B;
+  background-color: #e7430b;
+}
+
+.new-slider {
+  position: relative;
 }
