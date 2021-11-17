@@ -257,6 +257,9 @@ textarea.input {
   display: block;
   margin-bottom: 15px;
 }
+.checkbox:last-child {
+  margin-bottom: 0px;
+}
 .checkbox__input {
   position: absolute;
   width: 0;
@@ -608,7 +611,7 @@ textarea.input {
 .noUi-target {
   height: 4px;
   background-color: #eaeaea;
-  margin: 0px 11px 50px;
+  margin: 0px 11px 0;
   position: relative;
 }
 .noUi-target::before, .noUi-target::after {
@@ -1794,6 +1797,9 @@ textarea.input {
   margin-left: 73px;
 }
 
+.filter__content {
+  padding-bottom: 15px;
+}
 .filter__section {
   border-top: 1px solid #dedede;
 }
@@ -1801,6 +1807,9 @@ textarea.input {
   border: none;
 }
 
+.section-filter {
+  padding-bottom: 40px;
+}
 .section-filter__title {
   display: flex;
   align-items: center;
@@ -1819,12 +1828,21 @@ textarea.input {
   width: 30px;
   height: 30px;
   background: url("../../img/icons/filter-arrow.svg") center no-repeat;
+  transform: rotate(180deg);
+  transition: transform 0.2s linear;
 }
+.section-filter__title._active::after {
+  transform: rotate(0);
+}
+.section-filter:first-child {
+  padding-bottom: 45px;
+}
+
 .price-filter__values {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 26px;
+  padding-bottom: 26px;
 }
 
 .values-price-filter__input input {

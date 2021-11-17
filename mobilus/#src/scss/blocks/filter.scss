@@ -1,5 +1,6 @@
 .filter {
     &__content {
+        padding-bottom: 15px;
     }
     &__body {
     }
@@ -23,17 +24,33 @@
         margin-bottom: 14px;
         padding-top: 12px;
         position: relative;
+       
 
-        &::after {
+         &::after {
             content: "";
             border-radius: 50%;
             flex: 0 0 30px;
             width: 30px;
             height: 30px;
             background: url('../../img/icons/filter-arrow.svg') center no-repeat;
+            transform: rotate(180deg);
+            transition: transform 0.2s linear;
         }
+
+       
+        
+    }
+    &__title._active {
+         &::after {
+             transform: rotate(0);
+             
+         }
     }
     &__body {
+    }
+    padding-bottom: 40px;
+    &:first-child {
+        padding-bottom: 45px;
     }
 }
 .price-filter {
@@ -43,7 +60,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 26px;
+        padding-bottom: 26px;
     }
 }
 
