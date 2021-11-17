@@ -134,7 +134,7 @@ textarea {
 	}
 }
 .input {
-	border-radius: 0 !important;
+	// border-radius: 0 !important;
 	width: 100%;
 	display: block;
 	padding: 0px 20px;
@@ -152,6 +152,8 @@ textarea.input {
 //<CHECK (chk+tab)>====================================================================================================
 .checkbox {
 	position: relative;
+	display: block;
+	margin-bottom: 15px;
 	// .checkbox__input
 	&__input {
 		position: absolute;
@@ -160,32 +162,45 @@ textarea.input {
 		opacity: 0;
 		visibility: hidden;
 		&:checked + .checkbox__text:before {
-			background: #fff url("../img/icons/check.svg") center no-repeat;
+			background: url("../../img/icons/check.svg") no-repeat;
+			background-position: center;
+		}
+	}
+	&__input {
+		&:checked + .checkbox__text {
+			span {
+				color: #000000;
+			}
 		}
 	}
 	// .checkbox__text
 	&__text {
-		display: inline-flex;
-		align-items: center;
+		display: flex;
 		position: relative;
 		font-size: 16px;
-		color: #ffffff;
-		letter-spacing: -0.3px;
-		line-height: calc(20 / 16);
+		color: #000000;
 		cursor: pointer;
 		&:before {
 			content: "";
-			align-self: flex-start;
-			margin: 0px 14px 0px 0px;
-			flex: 0 0 20px;
+			display: inline-block;
+			margin: 0px 11px 0px 0px;
 			left: 0;
 			top: 0;
-			width: 20px;
-			height: 18px;
-			background: #fff;
-			border: 1px solid #a7a9ac;
+			width: 16px;
+			height: 16px;
+			background: transparent;
+			border: 1px solid #b6bec6;
+			border-radius: 3px;
+		}
+
+		span {
+			font-family: "Intro";
+			font-size: 13px;
+			line-height: 150%;
+			color: #676f77;
 		}
 	}
+
 	a {
 		color: #fff;
 		text-decoration: underline;

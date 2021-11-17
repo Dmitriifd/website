@@ -1,6 +1,7 @@
 .category-header {
     padding: 45px 0;
     border-bottom: 1px solid #c9d0d7;
+    margin-bottom: 39px;
 }
 
 .category-head {
@@ -19,6 +20,7 @@
         font-size: 13px;
         line-height: 150%;
         color: #676F77;
+        
     }
 }
 .brand-list {
@@ -42,4 +44,17 @@
             color: #F77D0C;
         }
     }
+}
+
+.page__inner {
+    display: flex;
+}
+
+.page__sidebar {
+    flex: 0 0 214px;
+}
+
+.page__content {
+    flex: 1 1 auto;
+    margin-left: 73px;
 }
