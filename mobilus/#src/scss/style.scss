@@ -333,3 +333,47 @@ body {
 		padding: 10px 12px;
 	}
 }
+
+// sorting
+
+.sorting {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-bottom: 59px;
+
+	
+}
+
+.select {
+	width: 206px;
+	
+	margin-left: 20px;
+}
+
+// ----------------------------------------------------------------
+
+.page__inner {
+    display: flex;
+}
+
+.page__sidebar {
+    flex: 0 0 214px;
+}
+
+.page__content {
+    flex: 1 1 auto;
+    margin-left: 73px;
+	padding-bottom: 119px;
+}
+
+.page__content-inner {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 99px;
+}
+
+.page__content-inner {
+	display: flex;
+	flex-wrap: wrap;
+}
