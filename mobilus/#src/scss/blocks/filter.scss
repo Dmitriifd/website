@@ -47,11 +47,10 @@
          }
     }
     &__body {
+        padding-bottom: 40px;
     }
-    padding-bottom: 40px;
-    &:first-child {
-        padding-bottom: 45px;
-    }
+    
+    
 }
 .price-filter {
     &__slider {
@@ -89,4 +88,10 @@
     img {
         margin-left: 15px;
     }
+}
+
+.page__content-inner {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 99px;
 }

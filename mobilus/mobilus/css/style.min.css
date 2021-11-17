@@ -1393,7 +1393,6 @@ textarea.input {
   overflow: hidden;
   transition: all 0.2s linear;
   position: relative;
-  margin: 0 auto;
 }
 @media (max-width: 380px) {
   .card {
@@ -1807,9 +1806,6 @@ textarea.input {
   border: none;
 }
 
-.section-filter {
-  padding-bottom: 40px;
-}
 .section-filter__title {
   display: flex;
   align-items: center;
@@ -1834,8 +1830,8 @@ textarea.input {
 .section-filter__title._active::after {
   transform: rotate(0);
 }
-.section-filter:first-child {
-  padding-bottom: 45px;
+.section-filter__body {
+  padding-bottom: 40px;
 }
 
 .price-filter__values {
@@ -1861,6 +1857,12 @@ textarea.input {
 }
 .filter__btn img {
   margin-left: 15px;
+}
+
+.page__content-inner {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 99px;
 }
 
 .page {
@@ -2059,4 +2061,56 @@ textarea.input {
 
 .new-slider {
   position: relative;
+}
+
+.show-more {
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  color: #676f77;
+  font-family: "Intro";
+  border: 1px solid #d6dce1;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  padding: 10px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  justify-content: center;
+}
+
+.pagination__arrow {
+  width: 12px;
+  height: 12px;
+  padding: 10px;
+  cursor: pointer;
+  background: url("../img/icons/pagination-arowl.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+.pagination__arrow:last-child {
+  transform: rotate(-180deg);
+}
+
+.pagination__list {
+  display: flex;
+  margin: 0 35px;
+}
+
+.pagination__item {
+  font-family: "Intro";
+  font-size: 16px;
+  line-height: 125%;
+  color: #676f77;
+  padding: 0 17px;
+}
+.pagination__item._active {
+  border: 1px solid #F77D0C;
+  border-radius: 4px;
+  padding: 10px 12px;
 }
