@@ -95,7 +95,8 @@ body {
 @import "blocks/info";
 @import "blocks/breadcrumbs";
 @import "blocks/category-header";
-@import "blocks/filter.scss";
+@import "blocks/filter";
+@import "blocks/product";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
@@ -376,4 +377,8 @@ body {
 .page__content-inner {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.breadcrumbs__product {
+	margin-top: 30px;
 }
