@@ -125,4 +125,26 @@ const newSlider = new Swiper('.new__slider', {
         }
     },
 
-})
+});
+
+const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: 'vertical',
+    navigation: {
+        nextEl: ".product__slider-arrow--next",
+        prevEl: ".product__slider-arrow--prev",
+    },
+});
+const swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    
+   
+    thumbs: {
+        swiper: swiper,
+    },
+});

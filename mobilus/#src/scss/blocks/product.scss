@@ -9,11 +9,12 @@
     }
     &__content {
         display: flex;
-        min-height: 600px;
+        margin-bottom: 38px;
     }
     &__slider {
         flex: 0 1 596px;
         margin-right: 74px;
+        position: relative;
     }
     &__desc {
         flex: 1 1 auto;
@@ -169,4 +170,11 @@
 
 .col-right {
     width: 60%;
+}
+
+.product__slider {
+    min-width: 0;
+    display: flex;
+   flex-direction:row-reverse;
+   column-gap: 24px;
 }

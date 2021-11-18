@@ -329,7 +329,7 @@ body {
 	padding: 0 17px;
 
 	&._active {
-		border: 1px solid #F77D0C;
+		border: 1px solid #f77d0c;
 		border-radius: 4px;
 		padding: 10px 12px;
 	}
@@ -342,36 +342,34 @@ body {
 	align-items: center;
 	justify-content: flex-end;
 	padding-bottom: 59px;
-
-	
 }
 
 .select {
 	width: 206px;
-	
+
 	margin-left: 20px;
 }
 
 // ----------------------------------------------------------------
 
 .page__inner {
-    display: flex;
+	display: flex;
 }
 
 .page__sidebar {
-    flex: 0 0 214px;
+	flex: 0 0 214px;
 }
 
 .page__content {
-    flex: 1 1 auto;
-    margin-left: 73px;
+	flex: 1 1 auto;
+	margin-left: 73px;
 	padding-bottom: 119px;
 }
 
 .page__content-inner {
-    display: flex;
-    gap: 24px;
-    padding-bottom: 99px;
+	display: flex;
+	gap: 24px;
+	padding-bottom: 99px;
 }
 
 .page__content-inner {
@@ -381,4 +379,88 @@ body {
 
 .breadcrumbs__product {
 	margin-top: 30px;
+}
+
+// ----------------------------------------------------------------
+// .swiper-slide {
+// 	text-align: center;
+// 	font-size: 18px;
+// 	background: #fff;
+
+// 	/* Center slide text vertically */
+
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.swiper {
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.swiper-slide {
+	background-size: cover;
+	background-position: center;
+}
+
+.mySwiper2 {
+	height: 100%;
+	width: 100%;
+}
+
+.mySwiper {
+	
+	box-sizing: border-box;
+	align-self: center;
+}
+
+.mySwiper .swiper-slide {
+	width: 75px;
+	height: 75px;
+	opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+	opacity: 1;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+.product__slider-arrow--prev {
+	pointer-events: auto;
+	position: absolute;
+	left: 22px;
+	top: 100px;
+	background-image: url("../img/product/arr-1.svg");
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 16px;
+	z-index: 2;
+}
+
+.product__slider-arrow--next {
+	pointer-events: auto;
+	position: absolute;
+	bottom: 100px;
+	left: 22px;
+	background-image: url("../img/product/arr-2.svg");
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 16px;
+	z-index: 2;
 }
