@@ -1910,9 +1910,6 @@ textarea.input {
 .product .colors-button:active, .product .colors-button:focus {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.24);
 }
-.product-actions {
-  margin-bottom: 40px;
-}
 .product-actions__price-wrap {
   display: flex;
   align-items: center;
@@ -1946,6 +1943,7 @@ textarea.input {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 .product-actions__button {
   font-size: 13px;
@@ -1965,6 +1963,43 @@ textarea.input {
 }
 .product-actions__button--cart img {
   margin-right: 14px;
+}
+
+.product__table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 33px;
+}
+
+.product__table-button {
+  font-family: "Intro";
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 160%;
+}
+.product__table-button img {
+  margin-right: 15px;
+}
+
+.product__table td {
+  padding: 20px 0 5px;
+}
+
+.product__table tr {
+  border-bottom: 1px solid #E4E9ED;
+}
+
+.product__table-value {
+  text-align: right;
+}
+
+.col-left {
+  width: 40%;
+}
+
+.col-right {
+  width: 60%;
 }
 
 .page {

@@ -71,8 +71,8 @@
 
 
 .product-actions {
-    margin-bottom: 40px;
     
+
     &__column {}
     &__price-wrap {
         display: flex;
@@ -108,6 +108,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 40px;
     }
     &__button {
         font-size: 13px;
@@ -128,4 +129,44 @@
             margin-right: 14px;
         }
     }
+}
+
+.product__table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 33px;
+}
+
+.product__table-button {
+    font-family: 'Intro';
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 160%;
+    img {
+        margin-right: 15px;
+    }
+}
+
+.product__table td {
+    padding: 20px 0 5px;
+}
+.product__table tr {
+    border-bottom: 1px solid #E4E9ED;
+}
+
+.product__table-label {
+
+}
+
+.product__table-value {
+    text-align: right;
+}
+
+.col-left {
+    width: 40%;
+}
+
+.col-right {
+    width: 60%;
 }
