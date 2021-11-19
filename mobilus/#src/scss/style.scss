@@ -279,7 +279,7 @@ body {
 }
 
 .new-slider__title {
-	font-family: 'Intro';
+	font-family: "Intro";
 	font-weight: bold;
 	font-size: 32px;
 	line-height: 130%;
@@ -403,15 +403,11 @@ body {
 // 	align-items: center;
 // }
 
-
-
 .swiper {
 	height: 300px;
 	margin-left: auto;
 	margin-right: auto;
 }
-
-
 
 .mySwiper2 {
 	height: 100%;
@@ -419,7 +415,6 @@ body {
 }
 
 .mySwiper {
-	
 	box-sizing: border-box;
 	align-self: center;
 }
@@ -433,7 +428,6 @@ body {
 .mySwiper .swiper-slide-thumb-active {
 	opacity: 1;
 }
-
 
 .product__slider-arrow--prev {
 	pointer-events: auto;
@@ -457,4 +451,113 @@ body {
 	width: 30px;
 	height: 16px;
 	z-index: 2;
+}
+
+// cart modal
+
+.cart-modal {
+	width: 456px;
+	min-height: 570px;
+	background: #ffffff;
+	box-shadow: 0px 12px 88px rgba(76, 81, 96, 0.16);
+	border-radius: 4px;
+	padding: 24px;
+	overflow: auto;
+	transition: opacity 0.3s;
+	position: absolute;
+	top: 100%;
+	right: 22px;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 11;
+
+	&__form {
+	}
+	&__title {
+		font-family: "Intro";
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 130%;
+		margin-bottom: 23px;
+	}
+	&__list {
+		margin-bottom: 30px;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 20px 0;
+		border-bottom: 1px solid #e9ecee;
+	}
+	&__img {
+		border: 1px solid #e9ecee;
+		border-radius: 4px;
+		margin-right: 16px;
+		width: 64px;
+		height: 64px;
+		img {
+			max-width: 100%;
+		}
+	}
+	&__info {
+	}
+	&__code {
+		font-size: 11px;
+		line-height: 150%;
+		color: #676f77;
+	}
+	&__link {
+		font-size: 14px;
+		line-height: 160%;
+		margin-bottom: 4px;
+		color: inherit;
+	}
+	&__price {
+		font-size: 14px;
+		line-height: 160%;
+	}
+	&__close {
+		margin-left: auto;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		border: 1px solid #676f77;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&__total {
+		font-family: "Intro";
+		font-weight: bold;
+		font-size: 25px;
+		line-height: 130%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 23px;
+		span {
+			font-family: "Intro-Book";
+			display: inline-block;
+			font-size: 16px;
+			line-height: 170%;
+			margin-right: 16px;
+		}
+	}
+	&__button {
+		text-align: center;
+		background: linear-gradient(90deg, #ee6409 0%, #f77d0c 100%);
+		border-radius: 4px;
+		padding: 11px 40px;
+		width: 100%;
+		color: #fff;
+		font-size: 16px;
+		line-height: 170%;
+		margin-bottom: 19px;
+	}
+}
+
+.cart-modal__basket {
+	display: block;
+	text-align: center;
 }

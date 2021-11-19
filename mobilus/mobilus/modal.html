@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
  <head>
-	<title>Контакты</title>
+	<title>Корзина</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -162,7 +162,57 @@
 	
 </header>
 		<main class="page">
-			
+			<div class="page__container _container">
+				<div class="cart-modal">
+					<form class="cart-modal__form">
+						<h3 class="cart-modal__title">Корзина</h3>
+						<ul class="cart-modal__list">
+							<li class="cart-modal__item">
+								<div class="cart-modal__img">
+									<img src="img/cart/img-1.jpg" alt="">
+								</div>
+								<div class="cart-modal__info">
+									<p class="cart-modal__code">1063462</p>
+									<div class="cart-modal__link">Чехол силиконовый Iphone 12</div>
+									<p class="cart-modal__price">560 ₽</p>
+								</div>
+								<button type="button" class="cart-modal__close">
+									<img src="img/cart/delete.svg" alt="">
+								</button>
+							</li>
+							<li class="cart-modal__item">
+								<div class="cart-modal__img">
+									<img src="img/cart/img-2.jpg" alt="">
+								</div>
+								<div class="cart-modal__info">
+									<p class="cart-modal__code">1063462</p>
+									<div class="cart-modal__link">Колонка переносная JBL Charge 4</div>
+									<p class="cart-modal__price">560 ₽</p>
+								</div>
+								<button type="button" class="cart-modal__close">
+									<img src="img/cart/delete.svg" alt="">
+								</button>
+							</li>
+							<li class="cart-modal__item">
+								<div class="cart-modal__img">
+									<img src="img/cart/img-3.jpg" alt="">
+								</div>
+								<div class="cart-modal__info">
+									<p class="cart-modal__code">1063462</p>
+									<div class="cart-modal__link">Защитное стекло Iphone 8</div>
+									<p class="cart-modal__price">560 ₽</p>
+								</div>
+								<button type="button" class="cart-modal__close">
+									<img src="img/cart/delete.svg" alt="">
+								</button>
+							</li>
+						</ul>
+						<p class="cart-modal__total"><span>Итого:</span> 7 345 ₽</p>
+						<button class="cart-modal__button" type="submit">Оформить заказ</button>
+					</form>
+					<a href="#" class="cart-modal__link cart-modal__basket">Перейти в корзину</a>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 	<div class="footer__container _container">

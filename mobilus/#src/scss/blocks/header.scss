@@ -185,9 +185,17 @@
 		}
 	}
 	&__cart-wrap {
-
+		position: relative;
+		padding-bottom: 5px;
 		@media (max-width: 720px) {
 			margin-right: 60px;
+		}
+
+		&:hover {
+			.cart-modal {
+				opacity: 1;
+				pointer-events: auto;
+			}
 		}
 	}
 	&__bottom {
