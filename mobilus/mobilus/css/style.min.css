@@ -439,12 +439,12 @@ textarea.input {
   width: 88px;
   height: 40px;
   display: flex;
-  border: 1px solid rgba(166, 166, 166, 0.45);
 }
 .quantity__button {
   flex: 0 0 30px;
   position: relative;
   cursor: pointer;
+  order: 3;
 }
 .quantity__button::before, .quantity__button::after {
   content: "";
@@ -453,9 +453,9 @@ textarea.input {
   left: 50%;
   transition: all 0.3s ease 0s;
   margin: 0px 0px 0px -4.5px;
-  background-color: #a6a6a6;
-  width: 9px;
-  height: 1px;
+  background-color: #757C83;
+  width: 10px;
+  height: 2px;
 }
 @media (min-width: 991.98px) {
   .quantity__button:hover::before, .quantity__button:hover::after {
@@ -465,13 +465,17 @@ textarea.input {
 .quantity__button_plus::before {
   transform: rotate(-90deg);
 }
+.quantity__button_minus {
+  order: 1;
+}
 .quantity__input {
   flex: 1 1 auto;
+  order: 2;
 }
 .quantity__input input {
   height: 100%;
-  color: #a6a6a6;
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 125%;
   width: 100%;
   text-align: center;
 }
@@ -2089,6 +2093,82 @@ textarea.input {
 border-bottom: 1px solid #B6BEC6;
 border-bottom: 3px solid #EE6409;
 */
+.cart {
+  padding-bottom: 120px;
+}
+.cart__header {
+  margin-bottom: 11px;
+  display: flex;
+  align-items: center;
+}
+.cart__header-title {
+  font-family: "Intro";
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+  margin-right: 70px;
+}
+.cart__header-button {
+  border: 1px solid #676F77;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 170%;
+  padding: 11px 40px;
+}
+.cart__body-button {
+  display: block;
+  font-size: 13px;
+  line-height: 150%;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+.cart__body-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E9ECEE;
+}
+.cart__img {
+  margin-right: 40px;
+  flex: 0 1 64px;
+}
+.cart__head {
+  display: flex;
+  flex-direction: column;
+}
+.cart__product-code {
+  font-size: 11px;
+  line-height: 150%;
+  color: #676F77;
+}
+.cart__product-link {
+  color: inherit;
+  font-size: 14px;
+  line-height: 160%;
+}
+.cart__price {
+  margin-left: auto;
+}
+.cart__price p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 160%;
+}
+.cart__count {
+  margin-left: 94px;
+}
+.cart__button-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #676F77;
+  flex: 0 1 20px;
+  margin-left: 102px;
+}
+
 .page {
   flex: 1 1 auto;
 }

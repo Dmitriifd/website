@@ -356,12 +356,12 @@ textarea.input {
 	width: 88px;
 	height: 40px;
 	display: flex;
-	border: 1px solid rgba(166, 166, 166, 0.45);
 	// .quantity__button
 	&__button {
 		flex: 0 0 30px;
 		position: relative;
 		cursor: pointer;
+		order: 3;
 		&::before,
 		&::after {
 			content: "";
@@ -370,9 +370,9 @@ textarea.input {
 			left: 50%;
 			transition: all 0.3s ease 0s;
 			margin: 0px 0px 0px -4.5px;
-			background-color: #a6a6a6;
-			width: 9px;
-			height: 1px;
+			background-color: #757C83;
+			width: 10px;
+			height: 2px;
 		}
 		@media (min-width: $md2+px) {
 			&:hover {
@@ -390,15 +390,17 @@ textarea.input {
 		}
 		// .quantity__button_minus
 		&_minus {
+			order: 1;
 		}
 	}
 	// .quantity__input
 	&__input {
 		flex: 1 1 auto;
+		order: 2;
 		input {
 			height: 100%;
-			color: #a6a6a6;
-			font-size: 12px;
+			font-size: 18px;
+			line-height: 125%;
 			width: 100%;
 			text-align: center;
 		}

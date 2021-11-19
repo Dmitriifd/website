@@ -1,0 +1,81 @@
+.cart {
+    padding-bottom: 120px;
+    &__header {
+        margin-bottom: 11px;
+        display: flex;
+        align-items: center;
+    }
+    &__header-title {
+        font-family: 'Intro';
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 120%;
+        margin-right: 70px;
+    }
+    &__header-button {
+        border: 1px solid #676F77;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 170%;
+        padding: 11px 40px;
+    }
+    &__body {}
+    &__footer {}
+    &__body-button {
+        display: block;
+        font-size: 13px;
+        line-height: 150%;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+    &__body-row {
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #E9ECEE;
+    }
+   
+    &__img {
+        margin-right: 40px;
+        flex: 0 1 64px;
+    }
+    &__head {
+        display: flex;
+        flex-direction: column;
+    }
+    &__product-code {
+        font-size: 11px;
+        line-height: 150%;
+        color: #676F77;
+        
+    }
+    &__product-link {
+        color: inherit;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    &__price {
+        margin-left: auto;
+        p {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 160%;
+        }
+    }
+    &__count {
+       margin-left: 94px;
+    }
+    &__button-delete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #676F77;
+        flex: 0 1 20px;
+        margin-left: 102px;
+    }
+
+
+}
