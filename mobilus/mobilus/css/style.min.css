@@ -1847,6 +1847,9 @@ textarea.input {
   margin-left: 15px;
 }
 
+.product {
+  padding-bottom: 100px;
+}
 .product__title {
   font-family: "Intro";
   font-weight: bold;
@@ -2031,7 +2034,7 @@ textarea.input {
   }
 }
 
-.tabs__item-wrap {
+.product-tabs__item-wrap {
   display: flex;
   align-items: center;
   column-gap: 35px;
@@ -2056,7 +2059,7 @@ textarea.input {
 }
 
 .product-tabs__body {
-  padding: 60px 0;
+  padding: 60px 0 5px;
 }
 
 .product-tabs__content {
@@ -2282,6 +2285,14 @@ border-bottom: 3px solid #EE6409;
 
 .new-slider {
   position: relative;
+}
+
+.new-slider__title {
+  font-family: "Intro";
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 130%;
+  margin-top: 50px;
 }
 
 .show-more {
