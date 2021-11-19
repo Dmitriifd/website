@@ -1847,9 +1847,6 @@ textarea.input {
   margin-left: 15px;
 }
 
-.product {
-  padding-bottom: 150px;
-}
 .product__title {
   font-family: "Intro";
   font-weight: bold;
@@ -2062,9 +2059,27 @@ textarea.input {
   padding: 60px 0;
 }
 
-.tabs__title {
-  font-size: 40px;
+.product-tabs__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-tabs__title {
+  font-family: "Intro";
+  font-weight: bold;
+  font-size: 25px;
   line-height: 130%;
+  margin-bottom: 16px;
+}
+
+.product-tabs__spec {
+  flex: 1 1 auto;
+  margin-right: 120px;
+}
+
+.product-tabs__banner {
+  flex: 0 1 456px;
+  align-self: center;
 }
 
 /* 
