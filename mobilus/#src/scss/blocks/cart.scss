@@ -6,21 +6,19 @@
         align-items: center;
     }
     &__header-title {
-        font-family: 'Intro';
+        font-family: "Intro";
         font-weight: bold;
         font-size: 48px;
         line-height: 120%;
         margin-right: 70px;
     }
     &__header-button {
-        border: 1px solid #676F77;
-        border-radius: 4px;
-        font-size: 16px;
-        line-height: 170%;
-        padding: 11px 40px;
     }
-    &__body {}
-    &__footer {}
+    &__body {
+        margin-bottom: 68px;
+    }
+    &__footer {
+    }
     &__body-button {
         display: block;
         font-size: 13px;
@@ -31,13 +29,19 @@
     &__body-row {
         display: flex;
         align-items: center;
+        padding-top: 20px;
         padding-bottom: 20px;
-        border-bottom: 1px solid #E9ECEE;
+        border-bottom: 1px solid #e9ecee;
     }
-   
+
     &__img {
         margin-right: 40px;
-        flex: 0 1 64px;
+        width: 64px;
+        height: 64px;
+
+        img {
+            max-width: 100%;
+        }
     }
     &__head {
         display: flex;
@@ -46,8 +50,7 @@
     &__product-code {
         font-size: 11px;
         line-height: 150%;
-        color: #676F77;
-        
+        color: #676f77;
     }
     &__product-link {
         color: inherit;
@@ -63,7 +66,7 @@
         }
     }
     &__count {
-       margin-left: 94px;
+        margin-left: 94px;
     }
     &__button-delete {
         display: flex;
@@ -72,10 +75,55 @@
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        border: 1px solid #676F77;
+        border: 1px solid #676f77;
         flex: 0 1 20px;
         margin-left: 102px;
     }
 
+    &__footer {
+        display: flex;
+        align-items: center;
+    }
+    &__footer-button {
+    }
+    &__footer-wrap {
+        margin-left: auto;
+    }
+    &__footer-title {
+        font-family: 'Intro';
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 130%;
+        margin-bottom: 3px;
+    }
+    &__footer-subtitle {
+        font-size: 13px;
+        line-height: 150%;
+    }
+    &__footer-total__price {
+        font-family: 'Intro';
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 130%;
+        margin-left: 48px;
+        
+    }
+}
 
+.cart-button {
+    border: 1px solid #676f77;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 170%;
+    padding: 11px 40px;
+    max-width: 245px;
+    width: 100%;
+}
+
+.cart-button--order {
+    background: linear-gradient(90deg, #ee6409 0%, #f77d0c 100%);
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    margin-left: 48px;
 }
