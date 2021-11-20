@@ -38,4 +38,8 @@
             content: none;
         }
     }
+
+    @media (max-width: 720px) {
+        margin-bottom: 30px;
+    }
 }

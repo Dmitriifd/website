@@ -328,6 +328,10 @@ body {
 .pagination__list {
 	display: flex;
 	margin: 0 35px;
+
+	@media (max-width: 460px) {
+		margin: 0 15px;
+	}
 }
 
 .pagination__item {
@@ -342,6 +346,10 @@ body {
 		border-radius: 4px;
 		padding: 10px 12px;
 	}
+
+	@media (max-width: 460px) {
+		padding: 0 10px;
+	}
 }
 
 // sorting
@@ -351,13 +359,18 @@ body {
 	align-items: center;
 	justify-content: flex-end;
 	padding-bottom: 59px;
+
+	@media (max-width: 460px) {
+		padding-bottom: 35px;
+	}
+
+	p {
+		@media (max-width: 460px) {
+			display: none;
+		}
+	}
 }
 
-.select {
-	width: 206px;
-
-	margin-left: 20px;
-}
 
 // ----------------------------------------------------------------
 
@@ -367,28 +380,119 @@ body {
 
 .page__sidebar {
 	flex: 0 0 214px;
+
+	@media (max-width: 720px) {
+		display: none;
+	}
 }
 
 .page__content {
 	flex: 1 1 auto;
 	margin-left: 73px;
 	padding-bottom: 119px;
+
+	@media (max-width: 1080px) {
+		margin-left: 50px;
+	}
+
+	@media (max-width: 720px) {
+		margin-left: 0;
+	}
 }
 
 .page__content-inner {
 	display: flex;
 	gap: 24px;
 	padding-bottom: 99px;
+
+	@media (max-width: 1080px) {
+		gap: 15px;
+		padding-bottom: 70px;
+	}
+	@media (max-width: 920px) {
+		justify-content: center;
+	}
 }
 
 .page__content-inner {
 	display: flex;
+	// justify-content: space-between;
 	flex-wrap: wrap;
+}
+
+.page-card {
+	flex: 1 1 calc(33.333% - 24px);
+	@media (max-width: 1080px) {
+		flex: 1 1 calc(33.333% - 15px);
+	}
+	@media (max-width: 920px) {
+		flex: 1 1 calc(50% - 15px);
+	}
+}
+
+.page-card {
+	&__header {}
+	&__labels {}
+	&__label {}
+	&__img {
+
+		@media (max-width: 460px) {
+			margin-bottom: 0;
+		}
+	}
+	&__link {}
+	&__body {}
+	&__title {}
+	&__text {
+		@media (max-width: 1080px) {
+			font-size: 13px;
+		}
+	}
+	&__footer {
+		@media (max-width: 460px) {
+			flex-direction: column;
+			align-items: stretch;
+		}
+	}
+	&__price {
+		span {
+			@media (max-width: 1080px) {
+				font-size: 11px;
+			}
+			@media (max-width: 460px) {
+				order: 2;
+			}
+		}
+		p {
+			@media (max-width: 1080px) {
+				font-size: 14px;
+			}
+			@media (max-width: 460px) {
+				order: 1;
+				font-size: 16px;
+			}
+		}
+		@media (max-width: 460px) {
+			display: flex;
+			align-items: center;
+			column-gap: 8px;
+			margin-bottom: 13px;
+
+		}
+	}
+	&__buttons {}
+	&__button {}
+	&__button-cart {
+		@media (max-width: 1080px) {
+			padding: 4px 12px;
+		}
+	}
 }
 
 .breadcrumbs__product {
 	margin-top: 30px;
 }
+
 
 // ----------------------------------------------------------------
 // .swiper-slide {
