@@ -104,11 +104,12 @@
 			margin-left: -35px;
 		}
 
-		@media (max-width: 870px) {
+		@media (max-width: 1020px) {
 			margin-right: 50px;
 		}
-		@media (max-width: 780px) {
-			margin-right: 30px;
+
+		@media (max-width: 800px) {
+			margin-right: 20px;
 		}
 		@media (max-width: 720px) {
 			margin-bottom: 28px;
@@ -221,7 +222,7 @@
 		transition: left 0.3s ease 0s;
 		@media (max-width: 720px) {
 			position: fixed;
-			height: calc(100% - 73px);
+			height: calc(100% - 76px);
 			width: 100%;
 			bottom: 0;
 			left: -100%;
@@ -229,6 +230,9 @@
 			z-index: 12;
 			padding: 30px;
 			padding-top: 24px;
+		}
+		@media (min-width: 621px) and (max-width: 720px){
+			height: calc(100% - 108px);
 		}
 	}
 	&__body._active {

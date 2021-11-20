@@ -937,14 +937,14 @@ textarea.input {
 .header__search button {
   margin-left: -35px;
 }
-@media (max-width: 870px) {
+@media (max-width: 1020px) {
   .header__search {
     margin-right: 50px;
   }
 }
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .header__search {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 }
 @media (max-width: 720px) {
@@ -1049,7 +1049,7 @@ textarea.input {
 @media (max-width: 720px) {
   .menu__body {
     position: fixed;
-    height: calc(100% - 73px);
+    height: calc(100% - 76px);
     width: 100%;
     bottom: 0;
     left: -100%;
@@ -1057,6 +1057,11 @@ textarea.input {
     z-index: 12;
     padding: 30px;
     padding-top: 24px;
+  }
+}
+@media (min-width: 621px) and (max-width: 720px) {
+  .menu__body {
+    height: calc(100% - 108px);
   }
 }
 .menu__body._active {
