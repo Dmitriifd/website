@@ -11,8 +11,16 @@
         font-size: 48px;
         line-height: 120%;
         margin-right: 70px;
+
+        @media (max-width: 780px) {
+            font-size: 32px;
+        }
     }
     &__header-button {
+
+        @media (max-width: 548px) {
+            display: none;
+        }
     }
     &__body {
         margin-bottom: 68px;
@@ -32,6 +40,13 @@
         padding-top: 20px;
         padding-bottom: 20px;
         border-bottom: 1px solid #e9ecee;
+
+        @media (max-width: 780px) {
+            flex-wrap: wrap;
+        }
+        @media (max-width: 400px) {
+            gap: 10px;
+        }
     }
 
     &__img {
@@ -42,10 +57,15 @@
         img {
             max-width: 100%;
         }
+
+        @media (max-width: 400px) {
+            margin-right: 15px;
+        }
     }
     &__head {
         display: flex;
         flex-direction: column;
+        margin-right: 20px;
     }
     &__product-code {
         font-size: 11px;
@@ -63,10 +83,15 @@
             font-weight: 700;
             font-size: 14px;
             line-height: 160%;
+            white-space: nowrap;
         }
     }
     &__count {
         margin-left: 94px;
+
+        @media (max-width: 400px) {
+            margin-left: 70px;
+        }
     }
     &__button-delete {
         display: flex;
@@ -78,35 +103,79 @@
         border: 1px solid #676f77;
         flex: 0 1 20px;
         margin-left: 102px;
+
+        @media (max-width: 400px) {
+            margin-left: 70px;
+        }
     }
 
     &__footer {
         display: flex;
         align-items: center;
+
+        @media (max-width: 960px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 30px;
+        }
+        @media (max-width: 636px) {
+            flex-wrap: wrap-reverse;
+        }
+        @media (max-width: 589px) {
+             gap: 30px; 
+         }
     }
     &__footer-button {
     }
     &__footer-wrap {
         margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 636px) {
+            margin-left: 0;
+            order: 1;
+        }
+         
     }
     &__footer-title {
-        font-family: 'Intro';
+        font-family: "Intro";
         font-weight: bold;
         font-size: 20px;
         line-height: 130%;
         margin-bottom: 3px;
     }
     &__footer-subtitle {
+        font-family: "Intro-Book";
+        display: block;
         font-size: 13px;
         line-height: 150%;
     }
     &__footer-total__price {
-        font-family: 'Intro';
+        font-family: "Intro";
         font-weight: bold;
         font-size: 32px;
         line-height: 130%;
         margin-left: 48px;
-        
+        white-space: nowrap;
+
+        @media (max-width: 400px) {
+            margin-left: 30px;
+        }
+    }
+
+    &__row-inner {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 738px) {
+            margin-left: 0;
+        }
+    }
+    &__footer-head {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -118,6 +187,13 @@
     padding: 11px 40px;
     max-width: 245px;
     width: 100%;
+    margin-right: 20px;
+
+    @media (max-width: 589px) {
+        margin-right: 0;
+        max-width: 100%;
+    }
+
 }
 
 .cart-button--order {
@@ -126,4 +202,14 @@
     color: #fff;
     border: none;
     margin-left: 48px;
+
+    @media (max-width: 960px) {
+        margin-left: 30px;
+    }
+     @media (max-width: 589px) {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    
 }

@@ -2208,6 +2208,16 @@ border-bottom: 3px solid #EE6409;
   line-height: 120%;
   margin-right: 70px;
 }
+@media (max-width: 780px) {
+  .cart__header-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 548px) {
+  .cart__header-button {
+    display: none;
+  }
+}
 .cart__body {
   margin-bottom: 68px;
 }
@@ -2225,6 +2235,16 @@ border-bottom: 3px solid #EE6409;
   padding-bottom: 20px;
   border-bottom: 1px solid #e9ecee;
 }
+@media (max-width: 780px) {
+  .cart__body-row {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 400px) {
+  .cart__body-row {
+    gap: 10px;
+  }
+}
 .cart__img {
   margin-right: 40px;
   width: 64px;
@@ -2233,9 +2253,15 @@ border-bottom: 3px solid #EE6409;
 .cart__img img {
   max-width: 100%;
 }
+@media (max-width: 400px) {
+  .cart__img {
+    margin-right: 15px;
+  }
+}
 .cart__head {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 .cart__product-code {
   font-size: 11px;
@@ -2254,9 +2280,15 @@ border-bottom: 3px solid #EE6409;
   font-weight: 700;
   font-size: 14px;
   line-height: 160%;
+  white-space: nowrap;
 }
 .cart__count {
   margin-left: 94px;
+}
+@media (max-width: 400px) {
+  .cart__count {
+    margin-left: 70px;
+  }
 }
 .cart__button-delete {
   display: flex;
@@ -2269,12 +2301,42 @@ border-bottom: 3px solid #EE6409;
   flex: 0 1 20px;
   margin-left: 102px;
 }
+@media (max-width: 400px) {
+  .cart__button-delete {
+    margin-left: 70px;
+  }
+}
 .cart__footer {
   display: flex;
   align-items: center;
 }
+@media (max-width: 960px) {
+  .cart__footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 636px) {
+  .cart__footer {
+    flex-wrap: wrap-reverse;
+  }
+}
+@media (max-width: 589px) {
+  .cart__footer {
+    gap: 30px;
+  }
+}
 .cart__footer-wrap {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 636px) {
+  .cart__footer-wrap {
+    margin-left: 0;
+    order: 1;
+  }
 }
 .cart__footer-title {
   font-family: "Intro";
@@ -2284,6 +2346,8 @@ border-bottom: 3px solid #EE6409;
   margin-bottom: 3px;
 }
 .cart__footer-subtitle {
+  font-family: "Intro-Book";
+  display: block;
   font-size: 13px;
   line-height: 150%;
 }
@@ -2293,6 +2357,26 @@ border-bottom: 3px solid #EE6409;
   font-size: 32px;
   line-height: 130%;
   margin-left: 48px;
+  white-space: nowrap;
+}
+@media (max-width: 400px) {
+  .cart__footer-total__price {
+    margin-left: 30px;
+  }
+}
+.cart__row-inner {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 738px) {
+  .cart__row-inner {
+    margin-left: 0;
+  }
+}
+.cart__footer-head {
+  display: flex;
+  align-items: center;
 }
 
 .cart-button {
@@ -2303,6 +2387,13 @@ border-bottom: 3px solid #EE6409;
   padding: 11px 40px;
   max-width: 245px;
   width: 100%;
+  margin-right: 20px;
+}
+@media (max-width: 589px) {
+  .cart-button {
+    margin-right: 0;
+    max-width: 100%;
+  }
 }
 
 .cart-button--order {
@@ -2311,6 +2402,17 @@ border-bottom: 3px solid #EE6409;
   color: #fff;
   border: none;
   margin-left: 48px;
+}
+@media (max-width: 960px) {
+  .cart-button--order {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 589px) {
+  .cart-button--order {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
 
 .page {
