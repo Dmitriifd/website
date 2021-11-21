@@ -214,6 +214,13 @@
     color: #000000;
     cursor: pointer;
     padding-bottom: 10px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        
+    }
 }
 
 .product-tabs__item._active {
@@ -223,7 +230,16 @@
     color: #000000;
     padding-left: 15px;
     padding-right: 15px;
-    border-bottom: 2px solid #E7430B;
+    position: relative;
+
+    &::after {
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+        background-color: #E7430B;
+        transition: width 0.3s linear;
+    }
 }
 
 .product-tabs__body {

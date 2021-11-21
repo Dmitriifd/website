@@ -2151,6 +2151,11 @@ textarea.input {
   cursor: pointer;
   padding-bottom: 10px;
 }
+.product-tabs__item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+}
 
 .product-tabs__item._active {
   font-family: "Intro";
@@ -2159,7 +2164,15 @@ textarea.input {
   color: #000000;
   padding-left: 15px;
   padding-right: 15px;
-  border-bottom: 2px solid #E7430B;
+  position: relative;
+}
+.product-tabs__item._active::after {
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #E7430B;
+  transition: width 0.3s linear;
 }
 
 .product-tabs__body {
