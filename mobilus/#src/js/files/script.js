@@ -147,6 +147,8 @@ const swiper2 = new Swiper(".mySwiper2", {
     thumbs: {
         swiper: swiper,
     },
+
+    
 });
 
 // Модальное окно

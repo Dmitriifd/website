@@ -1,13 +1,13 @@
-@use "sass:math";
+@use 'sass:math';
 //<МИКСИНЫ>===============================================================================================
-@import "lib/mixins";
+@import 'lib/mixins';
 //</МИКСИНЫ>===============================================================================================
 
 //<ШРИФТЫ>===============================================================================================
 
 //<Подключаем шрифты>=======================================================================================
 //&display=swap&subset=cyrillic-ext
-@import "fonts";
+@import 'fonts';
 //</Подключаем шрифты>=======================================================================================
 
 //<Иконочные шрифты>==========================================================================================
@@ -15,7 +15,7 @@
 //</Иконочные шрифты>==========================================================================================
 
 //<Шрифт по умолчанию>==========================================================================================
-$fontFamily: "Intro-Book";
+$fontFamily: 'Intro-Book';
 $fontSize: 14;
 //</Шрифт по умолчанию>==========================================================================================
 
@@ -35,7 +35,7 @@ $mainColor: #000;
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
-@import "lib/null";
+@import 'lib/null';
 body {
 	color: $mainColor;
 	&._lock {
@@ -75,7 +75,7 @@ body {
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-@import "lib/forms";
+@import 'lib/forms';
 // @import "lib/ui";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
@@ -84,20 +84,20 @@ body {
 //@import "lightgallery";
 //@import "pagging";
 // @import "lib/popup";
-@import "vendors/nouislider";
-@import "blocks/header";
-@import "blocks/footer";
-@import "home";
-@import "blocks/new";
-@import "blocks/tabs";
-@import "blocks/card";
-@import "blocks/category";
-@import "blocks/info";
-@import "blocks/breadcrumbs";
-@import "blocks/category-header";
-@import "blocks/filter";
-@import "blocks/product";
-@import "blocks/cart";
+@import 'vendors/nouislider';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'home';
+@import 'blocks/new';
+@import 'blocks/tabs';
+@import 'blocks/card';
+@import 'blocks/category';
+@import 'blocks/info';
+@import 'blocks/breadcrumbs';
+@import 'blocks/category-header';
+@import 'blocks/filter';
+@import 'blocks/product';
+@import 'blocks/cart';
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
@@ -134,7 +134,7 @@ body {
 }
 .hero__slider-button--next {
 	right: 100px;
-	background-image: url("../../img/icons/right-arrow.svg");
+	background-image: url('../../img/icons/right-arrow.svg');
 
 	@media (max-width: 1120px) {
 		right: 30px;
@@ -145,7 +145,7 @@ body {
 }
 .hero__slider-button--prev {
 	left: 100px;
-	background-image: url("../../img/icons/left-arrow.svg");
+	background-image: url('../../img/icons/left-arrow.svg');
 
 	@media (max-width: 1120px) {
 		left: 30px;
@@ -175,14 +175,14 @@ body {
 }
 .hero__slider-title {
 	font-weight: bold;
-	@include adaptiv-value("font-size", 48, 32, 1);
+	@include adaptiv-value('font-size', 48, 32, 1);
 	line-height: 120%;
 	max-width: 472px;
 	color: #ffffff;
 }
 .hero__slider-num {
 	font-weight: bold;
-	@include adaptiv-value("font-size", 72, 50, 1);
+	@include adaptiv-value('font-size', 72, 50, 1);
 	line-height: 160%;
 	color: #ffffff;
 }
@@ -250,14 +250,14 @@ body {
 
 .new__slider-button--prev {
 	left: 0;
-	background-image: url("../img/card/left-arrow.svg");
+	background-image: url('../img/card/left-arrow.svg');
 	@media (max-width: 580px) {
 		display: none;
 	}
 }
 .new__slider-button--next {
 	right: 0;
-	background-image: url("../img/card/right-arrow.svg");
+	background-image: url('../img/card/right-arrow.svg');
 	@media (max-width: 580px) {
 		display: none;
 	}
@@ -279,7 +279,7 @@ body {
 }
 
 .new-slider__title {
-	font-family: "Intro";
+	font-family: 'Intro';
 	font-weight: bold;
 	font-size: 32px;
 	line-height: 130%;
@@ -292,7 +292,7 @@ body {
 	line-height: 160%;
 	text-align: center;
 	color: #676f77;
-	font-family: "Intro";
+	font-family: 'Intro';
 	border: 1px solid #d6dce1;
 	width: 100%;
 	border-radius: 4px;
@@ -315,7 +315,7 @@ body {
 	height: 12px;
 	padding: 10px;
 	cursor: pointer;
-	background: url("../img/icons/pagination-arowl.svg");
+	background: url('../img/icons/pagination-arowl.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 12px;
@@ -335,7 +335,7 @@ body {
 }
 
 .pagination__item {
-	font-family: "Intro";
+	font-family: 'Intro';
 	font-size: 16px;
 	line-height: 125%;
 	color: #676f77;
@@ -370,7 +370,6 @@ body {
 		}
 	}
 }
-
 
 // ----------------------------------------------------------------
 
@@ -431,18 +430,23 @@ body {
 }
 
 .page-card {
-	&__header {}
-	&__labels {}
-	&__label {}
+	&__header {
+	}
+	&__labels {
+	}
+	&__label {
+	}
 	&__img {
-
 		@media (max-width: 460px) {
 			margin-bottom: 0;
 		}
 	}
-	&__link {}
-	&__body {}
-	&__title {}
+	&__link {
+	}
+	&__body {
+	}
+	&__title {
+	}
 	&__text {
 		@media (max-width: 1080px) {
 			font-size: 13px;
@@ -477,11 +481,12 @@ body {
 			align-items: center;
 			column-gap: 8px;
 			margin-bottom: 13px;
-
 		}
 	}
-	&__buttons {}
-	&__button {}
+	&__buttons {
+	}
+	&__button {
+	}
 	&__button-cart {
 		@media (max-width: 1080px) {
 			padding: 4px 12px;
@@ -492,7 +497,6 @@ body {
 .breadcrumbs__product {
 	margin-top: 30px;
 }
-
 
 // ----------------------------------------------------------------
 // .swiper-slide {
@@ -511,6 +515,10 @@ body {
 	height: 300px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.swiper-slide img {
+	max-width: 100%;
 }
 
 .mySwiper2 {
@@ -533,29 +541,7 @@ body {
 	opacity: 1;
 }
 
-.product__slider-arrow--prev {
-	pointer-events: auto;
-	position: absolute;
-	left: 22px;
-	top: 100px;
-	background-image: url("../img/product/arr-1.svg");
-	background-repeat: no-repeat;
-	width: 30px;
-	height: 16px;
-	z-index: 2;
-}
 
-.product__slider-arrow--next {
-	pointer-events: auto;
-	position: absolute;
-	bottom: 100px;
-	left: 22px;
-	background-image: url("../img/product/arr-2.svg");
-	background-repeat: no-repeat;
-	width: 30px;
-	height: 16px;
-	z-index: 2;
-}
 
 // cart modal
 
@@ -578,7 +564,7 @@ body {
 	&__form {
 	}
 	&__title {
-		font-family: "Intro";
+		font-family: 'Intro';
 		font-style: normal;
 		font-weight: bold;
 		font-size: 20px;
@@ -632,7 +618,7 @@ body {
 		justify-content: center;
 	}
 	&__total {
-		font-family: "Intro";
+		font-family: 'Intro';
 		font-weight: bold;
 		font-size: 25px;
 		line-height: 130%;
@@ -641,7 +627,7 @@ body {
 		align-items: center;
 		margin-bottom: 23px;
 		span {
-			font-family: "Intro-Book";
+			font-family: 'Intro-Book';
 			display: inline-block;
 			font-size: 16px;
 			line-height: 170%;
@@ -666,23 +652,22 @@ body {
 	text-align: center;
 }
 
-// Modal 
+// Modal
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    display: none;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-	
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
 }
 
 .modal__dialog {
-    max-width: 500px;
-    margin: 40px auto;
+	max-width: 500px;
+	margin: 40px auto;
 
 	@media (max-width: 540px) {
 		margin: 40px 15px;
@@ -690,65 +675,64 @@ body {
 }
 
 .modal__content {
-    position: relative;
-    width: 100%;
-    padding: 100px 40px 40px;
-    background-color: #fff;
-    box-shadow: 0px 4px 88px rgba(76, 81, 96, 0.16);
+	position: relative;
+	width: 100%;
+	padding: 100px 40px 40px;
+	background-color: #fff;
+	box-shadow: 0px 4px 88px rgba(76, 81, 96, 0.16);
 	border-radius: 6px;
-    height: 100%;
-    overflow-y: auto;
+	height: 100%;
+	overflow-y: auto;
 }
 
 .modal__close {
-    position: absolute;
-    top: 28px;
-    right: 28px;
-    font-size: 30px;
-    color: #000;
-    opacity: .5;
-    font-weight: 700;
-    border: none;
-    background-color: transparent;
-    cursor: pointer
+	position: absolute;
+	top: 28px;
+	right: 28px;
+	font-size: 30px;
+	color: #000;
+	opacity: 0.5;
+	font-weight: 700;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
 }
 
 .modal__title {
-    text-align: center;
-    font-size: 22px;
-    text-transform: uppercase
+	text-align: center;
+	font-size: 22px;
+	text-transform: uppercase;
 }
 
 .modal__input {
-    display: block;
-    margin: 20px auto 20px auto;
-    width: 280px;
-    height: 50px;
-    background: #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
-    border: none;
-    font-size: 18px;
-    text-align: center;
-    padding: 0 20px;
-    outline: 0
+	display: block;
+	margin: 20px auto 20px auto;
+	width: 280px;
+	height: 50px;
+	background: #fff;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	border: none;
+	font-size: 18px;
+	text-align: center;
+	padding: 0 20px;
+	outline: 0;
 }
 
 .modal .btn {
-    display: block;
-    width: 280px;
-    margin: 0 auto
+	display: block;
+	width: 280px;
+	margin: 0 auto;
 }
 
 .show {
-    display: block;
+	display: block;
 }
 
 .hide {
-    display: none;
+	display: none;
 }
 
 .modal__items {
-
 	@media (max-width: 720px) {
 		display: flex;
 		flex-wrap: wrap;
