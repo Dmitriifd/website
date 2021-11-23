@@ -15,6 +15,10 @@
 			font-size: 16px;
 			line-height: 170%;
 			color: #3B3B3B;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 
 		@media (max-width: 620px) {
@@ -82,9 +86,6 @@
 			margin-right: 50px;
 		}
 		@media (max-width: 780px) {
-			margin-right: 30px;
-		}
-		@media (max-width: 320px) {
 			margin-right: 20px;
 		}
 	}
@@ -148,10 +149,14 @@
 			font-size: 11px;
 			line-height: 150%;
 			color: #676f77;
+			transition: color 0.2s ease;
+			&:hover {
+				color: #EE6409;
+			}
 		}
 
 		@media (max-width: 780px) {
-			margin-right: 30px;
+			margin-right: 20px;
 		}
 		@media (max-width: 720px) {
 			margin-right: 0;
@@ -219,7 +224,7 @@
 	&__icon {
 	}
 	&__body {
-		transition: left 0.3s ease 0s;
+		transition: all 0.3s ease;
 		@media (max-width: 720px) {
 			position: fixed;
 			height: calc(100% - 76px);
@@ -230,6 +235,7 @@
 			z-index: 12;
 			padding: 30px;
 			padding-top: 24px;
+			background: #ffffff;
 		}
 		@media (min-width: 621px) and (max-width: 720px){
 			height: calc(100% - 108px);
@@ -237,7 +243,6 @@
 	}
 	&__body._active {
 		left: 0;
-		background: #ffffff;
 	}
 	&__list {
 		display: flex;
@@ -266,6 +271,11 @@
 		font-size: 14px;
 		line-height: 160%;
 		text-transform: uppercase;
+		transition: color 0.2s ease;
+
+		&:hover {
+			color: #EE6409;
+		}
 
 		@media (max-width: 780px) {
 			font-size: 12px;

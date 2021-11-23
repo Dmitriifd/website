@@ -78,6 +78,9 @@
         @media (min-width: 720px) {
             font-size: 14px;
         }
+        &:hover {
+            text-decoration: underline;
+        }
     }
     &__social {
         li {
@@ -89,6 +92,7 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 24px;
+            transition: all 0.3s ease;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -97,6 +101,10 @@
                 margin-bottom: 0;
                 margin-left: 16px;
             }
+        }
+        
+        li:hover {
+            border: 1px solid #EE6409;
         }
 
         @media (min-width: 560px) {

@@ -852,6 +852,9 @@ textarea.input {
   line-height: 170%;
   color: #3B3B3B;
 }
+.header__top-list li a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 620px) {
   .header__top-list {
     display: flex;
@@ -922,11 +925,6 @@ textarea.input {
 }
 @media (max-width: 780px) {
   .header__logo {
-    margin-right: 30px;
-  }
-}
-@media (max-width: 320px) {
-  .header__logo {
     margin-right: 20px;
   }
 }
@@ -993,10 +991,14 @@ textarea.input {
   font-size: 11px;
   line-height: 150%;
   color: #676f77;
+  transition: color 0.2s ease;
+}
+.header__actions-wrap a:hover {
+  color: #EE6409;
 }
 @media (max-width: 780px) {
   .header__actions-wrap {
-    margin-right: 30px;
+    margin-right: 20px;
   }
 }
 @media (max-width: 720px) {
@@ -1052,7 +1054,7 @@ textarea.input {
   border-top: 1px solid #d6dce1;
 }
 .menu__body {
-  transition: left 0.3s ease 0s;
+  transition: all 0.3s ease;
 }
 @media (max-width: 720px) {
   .menu__body {
@@ -1065,6 +1067,7 @@ textarea.input {
     z-index: 12;
     padding: 30px;
     padding-top: 24px;
+    background: #ffffff;
   }
 }
 @media (min-width: 621px) and (max-width: 720px) {
@@ -1074,7 +1077,6 @@ textarea.input {
 }
 .menu__body._active {
   left: 0;
-  background: #ffffff;
 }
 .menu__list {
   display: flex;
@@ -1101,6 +1103,10 @@ textarea.input {
   font-size: 14px;
   line-height: 160%;
   text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+.menu__link:hover {
+  color: #EE6409;
 }
 @media (max-width: 780px) {
   .menu__link {
@@ -1223,6 +1229,9 @@ textarea.input {
     font-size: 14px;
   }
 }
+.footer__link:hover {
+  text-decoration: underline;
+}
 .footer__social li {
   width: 32px;
   height: 32px;
@@ -1232,6 +1241,7 @@ textarea.input {
   justify-content: center;
   align-items: center;
   margin-bottom: 24px;
+  transition: all 0.3s ease;
 }
 .footer__social li:last-child {
   margin-bottom: 0;
@@ -1241,6 +1251,9 @@ textarea.input {
     margin-bottom: 0;
     margin-left: 16px;
   }
+}
+.footer__social li:hover {
+  border: 1px solid #EE6409;
 }
 @media (min-width: 560px) {
   .footer__social {
@@ -2538,7 +2551,7 @@ textarea.input {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
+  z-index: 4;
   width: 60px;
   height: 60px;
   border: none;
@@ -2630,6 +2643,7 @@ textarea.input {
 .swiper-pagination {
   position: absolute;
   bottom: 30px !important;
+  z-index: 4;
 }
 
 .swiper-pagination-bullet {
