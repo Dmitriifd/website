@@ -15,7 +15,7 @@
 //</Иконочные шрифты>==========================================================================================
 
 //<Шрифт по умолчанию>==========================================================================================
-$fontFamily: "";
+$fontFamily: "Rubik";
 $fontSize: 16;
 //</Шрифт по умолчанию>==========================================================================================
 
@@ -23,14 +23,14 @@ $fontSize: 16;
 
 //<ПЕРЕМЕННЫЕ>==========================================================================================================
 $minWidth: 320px;
-$maxWidth: 1920;
+$maxWidth: 1440;
 $maxWidthContainer: 1170;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
 
-$mainColor: #000;
+$mainColor: #4f5665;
 
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
@@ -38,6 +38,7 @@ $mainColor: #000;
 @import "lib/null";
 body {
 	color: $mainColor;
+	background-color: #F6F6F6;
 	&._lock {
 		overflow: hidden;
 	}
@@ -60,16 +61,17 @@ body {
 ._container {
 	max-width: $maxWidthContainer + px;
 	margin: 0 auto;
-	@media (max-width: $md1 + px) {
-		max-width: 970px;
-	}
-	@media (max-width: $md2+px) {
-		max-width: 750px;
-	}
-	@media (max-width: $md3+px) {
-		max-width: none;
-		padding: 0 10px;
-	}
+	padding: 0 15px;
+	// @media (max-width: $md1 + px) {
+	// 	max-width: 970px;
+	// }
+	// @media (max-width: $md2+px) {
+	// 	max-width: 750px;
+	// }
+	// @media (max-width: $md3+px) {
+	// 	max-width: none;
+	// 	padding: 0 10px;
+	// }
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
@@ -84,6 +86,8 @@ body {
 //@import "pagging";
 // @import "lib/popup";
 @import "blocks/header";
+@import "blocks/hero";
+
 @import "blocks/footer";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -95,3 +99,33 @@ body {
 //===================================================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
+
+.btn {
+	background-color: #f53838;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 25px;
+	color: #ffffff;
+	padding: 18px 78px;
+	position: relative;
+	transition: background-color 0.2s linear;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: calc(100% - 40px);
+		transform: translateX(-50%);
+		width: 211px;
+		height: 40px;
+		background-color: #F53838;
+		filter: blur(54px);
+		border-radius: 10px;
+		z-index: -1;
+	}
+
+	&:hover {
+		background-color: darken(#F53838, 10%)
+	}
+}
