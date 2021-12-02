@@ -271,6 +271,41 @@ body._lock {
   line-height: 30px;
 }
 
+.features {
+  padding-bottom: 130px;
+}
+.features__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.features__info {
+  flex: 0 1 428px;
+}
+.features__info-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0b132a;
+  margin-bottom: 20px;
+}
+.features__info-text {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.features__info-item {
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  padding-left: 34px;
+  background-image: url("../../img/icon-list.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.features__info-item:last-child {
+  margin-bottom: 0;
+}
+
 .page {
   flex: 1 1 auto;
 }
