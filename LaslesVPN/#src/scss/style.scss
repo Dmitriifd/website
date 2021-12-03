@@ -89,6 +89,7 @@ body {
 @import "blocks/hero";
 @import "blocks/features";
 @import "blocks/tariffs";
+@import "blocks/network";
 
 @import "blocks/footer";
 
@@ -129,5 +130,14 @@ body {
 
 	&:hover {
 		background-color: darken(#F53838, 10%)
+	}
+}
+
+.fb, .twitter, .insta {
+	fill:  #F53838;
+	&:hover {
+		path {
+			fill:  darken(#F53838, 10%);
+		}
 	}
 }
