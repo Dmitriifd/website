@@ -1,0 +1,121 @@
+.tariffs {
+    padding-bottom: 150px;
+    &__content {
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 50px;
+        text-align: center;
+        color: #0b132a;
+        margin-bottom: 20px;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 555px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__inner {
+        display: flex;
+        margin: 0 -25px;
+        height: 100%;
+    }
+    &__card {
+        flex: 0 1 calc(33.333% - 50px);
+        margin: 0 25px;
+
+        background: #ffffff;
+        border: 2px solid #dddddd;
+        border-radius: 10px;
+        padding: 80px 70px 50px;
+        transition: border 0.2s linear;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100%;
+
+        &:hover {
+            border: 2px solid #F53838;
+        }
+    }
+    &__card-img {
+        img {
+            max-width: 100%;
+        }
+
+        margin-bottom: 30px;
+    }
+    &__card-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #0b132a;
+        margin-bottom: 30px;
+    }
+    &__card-list {
+        li {
+            font-size: 14px;
+            line-height: 30px;
+            margin-bottom: 10px;
+            padding-left: 44px;
+            position: relative;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 24px;
+                height: 24px;
+                background-image: url("../../img/icons/check.svg");
+                background-repeat: no-repeat;
+                background-position: left center;
+            }
+        }
+    }
+    &__card-subtitle {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 30px;
+        color: #0b132a;
+        margin-bottom: 20px;
+        text-align: center;
+
+        span {
+            color: #4F5665;
+            font-weight: 400;
+        }
+    }
+    &__card-btn.btn {
+        background: #FFFFFF;
+        border: 2px solid #F53838;
+        border-radius: 50px;
+        font-weight: bold;
+        line-height: 19px;
+        padding: 13px 62px;
+        color: #F53838;
+        transition: all 0.2s linear;
+        &:after {
+            content:none;
+        }
+        &:hover {
+            background: #F53838;
+            color: #FFFFFF;
+        }
+    }
+    &__card-header {
+    }
+    &__card-body {
+        flex: 1 1 auto;
+        margin-bottom: 50px;
+    }
+    &__card-footer {
+    }
+}
