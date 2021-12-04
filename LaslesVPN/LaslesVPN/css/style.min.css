@@ -449,6 +449,7 @@ body._lock {
   justify-content: space-between;
   min-height: 210px;
 }
+<<<<<<< HEAD
 .footer {
   padding: 180px 0 100px;
 }
@@ -500,6 +501,8 @@ body._lock {
   text-decoration: underline;
 }
 
+=======
+>>>>>>> af0f26bad082bec7f424455f4a5d4c4532d4c060
 .page {
   flex: 1 1 auto;
 }
