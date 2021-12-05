@@ -90,7 +90,7 @@ body {
 @import "blocks/features";
 @import "blocks/tariffs";
 @import "blocks/network";
-
+@import "blocks/reviews";
 @import "blocks/footer";
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -140,4 +140,17 @@ body {
 			fill:  darken(#F53838, 10%);
 		}
 	}
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	background-color: #5080be;
+	width: 15px;
+	height: 15px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+	width: 45px;
+	height: 15px;
+	background-color: #F53838;
+	border-radius: 50px;
 }
