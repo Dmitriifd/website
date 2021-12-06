@@ -6,8 +6,20 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 790px) {
+            flex-direction: column;
+        }
     }
     &__img {
+        margin-right: 50px;
+        img {
+            max-width: 100%;
+        }
+        @media (max-width: 790px) {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
     }
     &__info {
         flex: 0 1 428px;
@@ -19,6 +31,10 @@
 
         color: #0b132a;
         margin-bottom: 20px;
+
+        @media (max-width: 900px) {
+            font-size: 30px;
+        }
     }
     &__info-text {
         line-height: 30px;
