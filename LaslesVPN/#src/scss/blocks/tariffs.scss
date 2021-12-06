@@ -1,5 +1,8 @@
 .tariffs {
     padding-bottom: 150px;
+    @media (max-width: 790px) {
+        padding-bottom: 100px;
+    }
     &__content {
     }
     &__title {
