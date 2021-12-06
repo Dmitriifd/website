@@ -1,13 +1,23 @@
 .footer {
     padding: 180px 0 100px;
+    @media (max-width: 980px) {
+        padding-bottom: 30px;
+    }
     &__container {
     }
     &__body {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 980px) {
+            flex-direction: column-reverse;
+        }
     }
     &__info {
         flex: 0 1 340px;
+        @media (max-width: 980px) {
+            flex: 0 1 auto;
+        }
     }
     &__logo {
         margin-bottom: 20px;
@@ -31,6 +41,14 @@
         display: flex;
         justify-content: space-between;
         flex: 0 1 570px;
+        @media (max-width: 980px) {
+            flex: 0 1 auto;
+            margin-bottom: 50px;
+        }
+        @media (max-width: 520px) {
+            flex-wrap: wrap;
+            gap: 30px;
+        }
     }
     &__menu-column {
     }

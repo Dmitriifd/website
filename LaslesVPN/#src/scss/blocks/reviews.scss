@@ -31,6 +31,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media (max-width: 860px) {
+            flex-direction: column;
+            row-gap: 30px;
+            padding: 45px 30px;
+        }
     }
     &__subscribe-wrap {
     }
@@ -41,12 +47,20 @@
         color: #0b132a;
         margin-bottom: 20px;
         max-width: 372px;
+        @media (max-width: 620px) {
+            text-align: center;
+            font-size: 30px;
+        }
     }
     &__subscribe-desc {
         line-height: 30px;
+        @media (max-width: 620px) {
+            text-align: center;
+        }
     }
     &__subscribe-btn.btn {
         padding: 17px 65px;
+        white-space: nowrap;
     }
 
     // reviews__slider
@@ -59,15 +73,19 @@
         align-items: stretch;
     }
     &__slider-slide {
-        margin-right: 50px;
+        margin-right: 20px;
         width: 400px;
         
         &:last-child {
             margin-right: 0;
         }
+        @media (min-width: 1120px) {
+            margin-right: 50px;
+        }
     }
     &__slider-item {
-        height: 230px;
+        min-height: 230px;
+        height: 100%;
         padding: 30px;
         background: #ffffff;
         border: 2px solid #dddddd;

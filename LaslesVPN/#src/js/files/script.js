@@ -16,6 +16,26 @@ const swiper = new Swiper('.reviews__slider', {
 
    
     slidesPerView: 3,
-    centeredSlides: true
-   
+    // centeredSlides: true,
+
+    breakpoints: {
+        
+        
+        320: {
+            slidesPerView: 1,
+
+        },
+        440: {
+            slidesPerView: 1.3,
+
+        },
+        680: {
+            slidesPerView: 2,
+        },
+        980: {
+            slidesPerView: 3,
+        },
+       
+      
+    }
 });

@@ -717,6 +717,13 @@ body._lock {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 860px) {
+  .reviews__subscribe {
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 45px 30px;
+  }
+}
 .reviews__subscribe-title {
   font-weight: 500;
   font-size: 35px;
@@ -725,11 +732,23 @@ body._lock {
   margin-bottom: 20px;
   max-width: 372px;
 }
+@media (max-width: 620px) {
+  .reviews__subscribe-title {
+    text-align: center;
+    font-size: 30px;
+  }
+}
 .reviews__subscribe-desc {
   line-height: 30px;
 }
+@media (max-width: 620px) {
+  .reviews__subscribe-desc {
+    text-align: center;
+  }
+}
 .reviews__subscribe-btn.btn {
   padding: 17px 65px;
+  white-space: nowrap;
 }
 .reviews__slider.swiper {
   overflow: visible;
@@ -740,14 +759,20 @@ body._lock {
   align-items: stretch;
 }
 .reviews__slider-slide {
-  margin-right: 50px;
+  margin-right: 20px;
   width: 400px;
 }
 .reviews__slider-slide:last-child {
   margin-right: 0;
 }
+@media (min-width: 1120px) {
+  .reviews__slider-slide {
+    margin-right: 50px;
+  }
+}
 .reviews__slider-item {
-  height: 230px;
+  min-height: 230px;
+  height: 100%;
   padding: 30px;
   background: #ffffff;
   border: 2px solid #dddddd;
@@ -800,12 +825,27 @@ body._lock {
 .footer {
   padding: 180px 0 100px;
 }
+@media (max-width: 980px) {
+  .footer {
+    padding-bottom: 30px;
+  }
+}
 .footer__body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 980px) {
+  .footer__body {
+    flex-direction: column-reverse;
+  }
+}
 .footer__info {
   flex: 0 1 340px;
+}
+@media (max-width: 980px) {
+  .footer__info {
+    flex: 0 1 auto;
+  }
 }
 .footer__logo {
   margin-bottom: 20px;
@@ -826,6 +866,18 @@ body._lock {
   display: flex;
   justify-content: space-between;
   flex: 0 1 570px;
+}
+@media (max-width: 980px) {
+  .footer__menu {
+    flex: 0 1 auto;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 520px) {
+  .footer__menu {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .footer__menu-title {
   font-weight: 500;
