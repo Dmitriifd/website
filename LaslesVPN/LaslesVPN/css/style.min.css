@@ -432,6 +432,11 @@ body._lock {
 .features {
   padding-bottom: 130px;
 }
+@media (max-width: 790px) {
+  .features {
+    padding-bottom: 60px;
+  }
+}
 .features__inner {
   display: flex;
   align-items: center;
@@ -456,6 +461,11 @@ body._lock {
 }
 .features__info {
   flex: 0 1 428px;
+}
+@media (max-width: 880px) {
+  .features__info {
+    flex: 0 1 auto;
+  }
 }
 .features__info-title {
   font-weight: 500;
@@ -511,6 +521,17 @@ body._lock {
   margin: 0 -25px;
   height: 100%;
 }
+@media (max-width: 890px) {
+  .tariffs__inner {
+    justify-content: space-between;
+    margin: 0 -10px;
+  }
+}
+@media (max-width: 780px) {
+  .tariffs__inner {
+    overflow: auto;
+  }
+}
 .tariffs__card {
   flex: 0 1 calc(33.333% - 50px);
   margin: 0 25px;
@@ -526,6 +547,16 @@ body._lock {
 }
 .tariffs__card:hover {
   border: 2px solid #F53838;
+}
+@media (max-width: 1120px) {
+  .tariffs__card {
+    padding: 50px 20px 50px;
+  }
+}
+@media (max-width: 890px) {
+  .tariffs__card {
+    margin: 0 10px;
+  }
 }
 .tariffs__card-img {
   margin-bottom: 30px;
@@ -594,6 +625,11 @@ body._lock {
 .tariffs__card-body {
   flex: 1 1 auto;
   margin-bottom: 50px;
+}
+@media (max-width: 780px) {
+  .tariffs__card-body {
+    margin-bottom: 30px;
+  }
 }
 .network {
   padding-bottom: 50px;

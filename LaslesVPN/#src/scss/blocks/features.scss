@@ -1,5 +1,8 @@
 .features {
     padding-bottom: 130px;
+    @media (max-width: 790px) {
+        padding-bottom: 60px;
+    }
     &__content {
     }
     &__inner {
@@ -23,6 +26,11 @@
     }
     &__info {
         flex: 0 1 428px;
+
+        @media (max-width: 880px) {
+            flex: 0 1 auto;
+        }
+        
     }
     &__info-title {
         font-weight: 500;

@@ -23,6 +23,14 @@
         display: flex;
         margin: 0 -25px;
         height: 100%;
+
+        @media (max-width: 890px) {
+            justify-content: space-between;
+            margin: 0 -10px;
+        }
+        @media (max-width: 780px) {
+            overflow: auto;
+        }
     }
     &__card {
         flex: 0 1 calc(33.333% - 50px);
@@ -40,6 +48,13 @@
 
         &:hover {
             border: 2px solid #F53838;
+        }
+
+        @media (max-width: 1120px) {
+            padding: 50px 20px 50px;
+        }
+        @media (max-width: 890px) {
+            margin: 0 10px;
         }
     }
     &__card-img {
@@ -115,6 +130,9 @@
     &__card-body {
         flex: 1 1 auto;
         margin-bottom: 50px;
+        @media (max-width: 780px) {
+            margin-bottom: 30px;
+        }
     }
     &__card-footer {
     }
