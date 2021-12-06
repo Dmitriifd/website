@@ -14,11 +14,8 @@ const swiper = new Swiper('.reviews__slider', {
         prevEl: '.reviews__slider-button--prev',
     },
 
-    // slidesPerView: 3,
-    // freeMode: true,
+   
     slidesPerView: 3,
-    centeredSlides: true,
-    // spaceBetween: 30,
-    // initialSlide: 0,
+    centeredSlides: true
    
 });
