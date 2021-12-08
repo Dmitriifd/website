@@ -44,9 +44,9 @@
 			background-color: #fff;
 			left: -100%;
 			transition: left 0.3s;
-			padding-left: 50px;
 			padding-top: 120px;
 			opacity: 0.95;
+			overflow:auto;
 			z-index: 11;
 		}
 	}
@@ -60,6 +60,7 @@
 		@media (max-width: 998px) {
 			display: block;
 			text-align: center;
+			margin: 0;
 		}
 	}
 	&__item {

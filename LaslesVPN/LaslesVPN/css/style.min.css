@@ -148,9 +148,9 @@ body._lock {
     background-color: #fff;
     left: -100%;
     transition: left 0.3s;
-    padding-left: 50px;
     padding-top: 120px;
     opacity: 0.95;
+    overflow: auto;
     z-index: 11;
   }
 }
@@ -165,6 +165,7 @@ body._lock {
   .menu__list {
     display: block;
     text-align: center;
+    margin: 0;
   }
 }
 .menu__item {
