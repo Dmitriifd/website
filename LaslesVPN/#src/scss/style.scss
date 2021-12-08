@@ -146,12 +146,14 @@ body {
 	background-color: #5080be;
 	width: 15px;
 	height: 15px;
+	transition: .5s linear;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
 	width: 45px;
 	height: 15px;
 	background-color: #F53838;
+	 transition: width .5s linear;
 	border-radius: 50px;
 }
 
