@@ -45,19 +45,48 @@
             flex: 0 1 auto;
             margin-bottom: 50px;
         }
-        @media (max-width: 520px) {
+        @media (max-width: 640px) {
             flex-wrap: wrap;
-            gap: 30px;
+            gap: 15px;
         }
+        
     }
     &__menu-column {
+        flex: 0 1 33.333%;
+
+        @media (max-width: 420px) {
+            flex: 0 1 100%;
+        }
     }
     &__menu-title {
         font-weight: 500;
         font-size: 18px;
         line-height: 30px;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
         color: #0b132a;
+        @media (max-width: 420px) {
+            cursor: pointer;
+            position: relative;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                top: 4px;
+                right: 0;
+                width: 20px;
+                height: 20px;
+                background-image: url('../../img/icons/p-left.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                transform: rotate(270deg);
+                transition: transform .2s linear;
+            }
+        }
+    }
+    &__menu-title._active {
+        &:before {
+             transform: rotate(-270deg);
+        }
     }
     &__menu-list {
     }
