@@ -746,6 +746,22 @@ body._lock {
 }
 .reviews__slider {
   margin-bottom: 65px;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .reviews__slider::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 5;
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    background-color: #F6F6F6;
+  }
 }
 .reviews__subscribe {
   padding: 45px 70px;
@@ -798,7 +814,6 @@ body._lock {
   align-items: stretch;
 }
 .reviews__slider-slide {
-  margin-right: 20px;
   width: 400px;
 }
 .reviews__slider-slide:last-child {
