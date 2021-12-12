@@ -813,16 +813,8 @@ body._lock {
   padding-bottom: 60px;
   align-items: stretch;
 }
-.reviews__slider-slide {
-  width: 400px;
-}
-.reviews__slider-slide:last-child {
+.reviews__slider-slide.swiper-slide:last-child {
   margin-right: 0;
-}
-@media (min-width: 1120px) {
-  .reviews__slider-slide {
-    margin-right: 50px;
-  }
 }
 .reviews__slider-item {
   min-height: 230px;
@@ -1072,4 +1064,8 @@ body._lock {
   background-color: #F53838;
   transition: width 0.5s linear;
   border-radius: 50px;
+}
+
+.reviews__slider-slide.swiper-slide {
+  height: unset;
 }

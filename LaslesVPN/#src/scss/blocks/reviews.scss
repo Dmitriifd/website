@@ -89,16 +89,13 @@
         padding-bottom: 60px;
         align-items: stretch;
     }
-    &__slider-slide {
-        // margin-right: 20px;
-        width: 400px;
+    &__slider-slide.swiper-slide {
+        
         
         &:last-child {
             margin-right: 0;
         }
-        @media (min-width: 1120px) {
-            margin-right: 50px;
-        }
+        
     }
     &__slider-item {
         min-height: 230px;

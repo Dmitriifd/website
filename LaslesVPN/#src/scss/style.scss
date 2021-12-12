@@ -156,3 +156,7 @@ body {
 	 transition: width .5s linear;
 	border-radius: 50px;
 }
+
+.reviews__slider-slide.swiper-slide {
+	height: unset;
+}
