@@ -21,7 +21,6 @@
         text-align: center;
     }
     &__slider {
-        margin-bottom: 65px;
         position: relative;
         
         @media (min-width: 1200px) {
@@ -83,7 +82,9 @@
     // reviews__slider
     &__slider.swiper {
         overflow: visible;
-        margin-bottom: 65px;
+       @media (min-width: 960px) {
+            margin-bottom: 65px;
+       }
     }
     &__slider-wrapper {
         padding-bottom: 60px;
@@ -108,6 +109,11 @@
 
         &:hover {
             border: 2px solid #f53838;
+        }
+
+        @media (max-width: 375px) {
+            min-height: 200px;
+            padding: 20px;
         }
     }
     &__slider-pagination.swiper-pagination {
@@ -170,6 +176,10 @@
         border-radius: 50%;
         overflow: hidden;
         margin-right: 20px;
+
+        @media (max-width: 360px) {
+            margin-right: 10px;
+        }
     }
     &__author {
         h3 {
@@ -179,10 +189,18 @@
             text-align: center;
             color: #0b132a;
             margin-bottom: 5px;
+
+            @media (max-width: 360px) {
+                font-size: 14px;
+                text-align: left;
+            }
         }
         p {
             font-size: 14px;
             line-height: 1;
+            @media (max-width: 360px) {
+                font-size: 13px;
+            }
         }
     }
     &__rating {
