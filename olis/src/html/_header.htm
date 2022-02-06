@@ -5,45 +5,43 @@
                <img src="../img/logo.png" alt="logo">
            </a>
            <div class="header__main">
-                <div class="header__menu-top menu">
-                    <button type="button" class="menu__icon icon-menu">
-                        <span></span>
-                    </button>
+                <div class="header__menu menu">
                     <nav class="menu__body">
-                        <ul class="menu__list">
+                        <ul class="menu__list menu-top">
                             <li class="menu__item"><a href="" class="menu__link">О компании</a></li>
                             <li class="menu__item"><a href="" class="menu__link">Обьекты</a></li>
                             <li class="menu__item"><a href="" class="menu__link">Пресс-центр</a></li>
                             <li class="menu__item"><a href="" class="menu__link">Видео</a></li>
                             <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
                         </ul>
+                        <ul class="menu__list menu-bottom">
+                            <li class="menu__item"><a href="" class="menu__link">Комплексные решения</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Наше оборудование</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Оснащение лабораторий</a></li>
+                            <li class="menu__item"><a href="" class="menu__link">Услуги компании</a></li>
+                        </ul>
                     </nav>
+                    
                 </div>
-                <div class="header__menu-bottom">
-                     <nav class="menu__body">
-                         <ul class="menu__list">
-                             <li class="menu__item"><a href="" class="menu__link">Комплексные решения</a></li>
-                             <li class="menu__item"><a href="" class="menu__link">Наше оборудование</a></li>
-                             <li class="menu__item"><a href="" class="menu__link">Оснащение лабораторий</a></li>
-                             <li class="menu__item"><a href="" class="menu__link">Услуги компании</a></li>
-                         </ul>
-                     </nav>
-                </div>
+                
            </div>
            <div class="header__actions">
                <div class="header__actions-search">
                     <img src="../img/icons/search.svg" alt="search">
                </div>
-               <div class="header__actions-lang">
-                    <select name="form[]" class="control">
+               <div class="header__actions-lang lang-header">
+                    <select name="form[]" class="lang-header__select">
                         <option class="lang-header__item" value="1" selected>RU</option>
                         <option class="lang-header__item" value="2">UA</option>
                         <option class="lang-header__item" value="3">EN</option>
                     </select>
                </div>
+                <button type="button" class="menu__icon icon-menu">
+                    <span></span>
+                </button>
                <div class="header__actions-phone">
-                   <p>Наши номера</p>
-                   <a href="tel:+330325225528" class="link">+33 (032) 522-55-25</a>
+                   <p class="header__actions-text">Наши номера</p>
+                   <a href="tel:+330325225528" class="header__actions-link">+33 (032) 522-55-25</a>
                </div>
            </div>
        </div>

@@ -1,5 +1,83 @@
-//Burger
+.header {
+    &__container {
 
+    }
+    &__body {
+        display: flex;
+        justify-content: space-between;
+         padding-top: rem(28);
+        min-height: 142px;
+       
+    }
+    &__logo {}
+    &__main {}
+    &__menu {}
+    &__actions {
+        display: flex;
+    }
+    &__actions-search {
+        margin-right: rem(33);
+    }
+    &__actions-lang {}
+    &__actions-phone {
+        margin-left: rem(37);
+    }
+    &__actions-text {
+        font-weight: 300;
+        line-height: 15px;
+        margin-bottom: 10px;
+    }
+    &__actions-link {
+        font-weight: 900;
+        line-height: 15px;
+        position: relative;
+        padding-left: 20px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 2px;  
+            background-image: url('../img/icons/phone.svg');
+            background-repeat: no-repeat;
+            width: 11px;
+            height: 11px;
+
+        }
+    }
+}
+.menu {
+    &__icon {}
+    &__body {
+        max-width: 865px;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {margin: 0px 39px 0px 0px;};
+    }
+    &__link {
+        line-height: 15px;
+    }
+}
+
+.lang-header {
+    &__select {}
+    &__item {}
+}
+
+.menu__list.menu-top {
+    justify-content: center;
+    padding-bottom: 18px;
+}
+
+.menu-bottom {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    padding-top: 16px;
+}
+
+//Burger
 .icon-menu {
 	display: none;
 	@media (max-width: $mobile) {
