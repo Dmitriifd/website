@@ -1,4 +1,41 @@
 .header {
+    position: relative;
+
+    &__circle {
+        position: absolute;
+        left: -451px;
+        top: -278px;
+        width: 748px;
+        height: 748px;
+        border: 2px dashed #E4E4E4;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    &__circle-solid {
+        position: absolute;
+        z-index: -1;
+        left: -679px;
+        top: -681px;
+        width: 1280px;
+        height: 1280px;
+        border: 2px solid #E4E4E4;
+        border-radius: 50%;
+    }
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: url('../img/header-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: rem(795);
+        opacity: 0.05;
+        z-index: -1;
+    }
+
     &__container {
 
     }
@@ -45,6 +82,85 @@
 
         }
     }
+
+    &__content {
+        display: flex;
+       
+        padding-top: rem(99);
+    }
+    &__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30px;
+        padding-top: rem(96);
+        margin-right: rem(83);
+    }
+    &__social-label {
+        transform: rotate(-90deg);
+        font-weight: 900;
+        font-size: rem(20);
+        line-height: 137.7%;
+        padding-left: rem(98);
+    }
+    &__social-line {
+        width: 1px;
+        height: 60px;
+        background-color: #000;
+    }
+    &__social-list {
+        padding-top: rem(16);
+    }
+    &__social-item {
+        
+        &:not(:last-child) {margin: 0px 0px 11px 0px;};
+    }
+    &__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 29px;
+        height: 29px;
+        background-color: rgba(254, 173, 4, 1);
+        transition: opacity 0.3s ease-in-out;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__info {}
+    &__title {
+        font-weight: 900;
+        font-size: rem(60);
+        line-height: 114.7%;
+        text-transform: uppercase;
+        color: #FEAD04;
+        padding-bottom: rem(27);
+        margin-bottom: rem(27);
+        max-width: 680px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: rem(446);
+            height: 1px;
+            background-color: #000;
+        }
+    }
+    &__text {
+        font-weight: 300;
+        font-size: rem(35);
+        line-height: 114.7%;
+        max-width: rem(499);
+        margin-bottom: rem(33);
+    }
+    &__btn {
+
+    }
+    &__slider {}
 }
 .menu {
     &__icon {}
@@ -59,6 +175,10 @@
     }
     &__link {
         line-height: 15px;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -76,6 +196,29 @@
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     padding-top: 16px;
 }
+
+
+
+.btn {
+    background-color: #FEAD04;
+    padding: rem(14) rem(58);
+    font-weight: bold;
+    line-height: 137.7%;
+    text-align: center;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+         background-color: lighten(#FEAD04, 10%);
+    }
+}
+
+
+
+
+
+
+
 
 //Burger
 .icon-menu {
