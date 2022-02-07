@@ -1,6 +1,12 @@
 .header {
     position: relative;
 
+    &__wrapper {
+        display: flex;
+        position: relative;
+        padding-top: rem(99);
+    }
+
     &__circle {
         position: absolute;
         left: -451px;
@@ -86,12 +92,11 @@
     &__content {
         display: flex;
        
-        padding-top: rem(99);
+        
     }
     &__social {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
         width: 30px;
         padding-top: rem(96);
@@ -137,9 +142,9 @@
         text-transform: uppercase;
         color: #FEAD04;
         padding-bottom: rem(27);
-        margin-bottom: rem(27);
-        max-width: 680px;
+        max-width: rem(680);
         position: relative;
+        
         &::before {
             content: '';
             position: absolute;
@@ -151,6 +156,8 @@
         }
     }
     &__text {
+        margin-top: rem(27);
+        
         font-weight: 300;
         font-size: rem(35);
         line-height: 114.7%;
@@ -160,7 +167,15 @@
     &__btn {
 
     }
-    &__slider {}
+    &__slider {
+        img {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+            transform: translateX(82px);
+        }
+    }
 }
 .menu {
     &__icon {}
@@ -199,19 +214,6 @@
 
 
 
-.btn {
-    background-color: #FEAD04;
-    padding: rem(14) rem(58);
-    font-weight: bold;
-    line-height: 137.7%;
-    text-align: center;
-    color: #FFFFFF;
-    transition: background-color 0.3s ease-in-out;
-
-    &:hover {
-         background-color: lighten(#FEAD04, 10%);
-    }
-}
 
 
 
@@ -269,3 +271,4 @@
 	}
 }
 
+ 

@@ -1,1 +1,15 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+.btn {
+    background-color: #FEAD04;
+    padding: rem(14) rem(58);
+    font-weight: bold;
+    line-height: 137.7%;
+    text-align: center;
+    color: #FFFFFF;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+         background-color: lighten(#FEAD04, 10%);
+    }
+}
