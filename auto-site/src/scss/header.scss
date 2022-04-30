@@ -1,16 +1,132 @@
-//====================================================================================================
+.header {
+    
+  
+    &__top {
+        background-color: #EFF0F0;
+    }
+}
+.top-header {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 43px;
+    }
+    &__location {
+        
+        display: flex;
+        align-items: center;
+        
+    }
+    &__text {
+            line-height: math.div(16, 14);
+            text-transform: capitalize;
+            color: #737373;
+            margin-left: 8px;
+            
+    }
+    &__time {
+        display: flex;
+        align-items: center;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        line-height: 16px;
+        text-decoration: underline ;
+        color: #737373;
 
-//====================================================================================================
+        svg {
+            margin-right: 8px;
+        }
+    }
+}
+
+.header-info {
+    padding-top: 22px;
+    &__container {
+        display: flex;
+        align-items: center;
+        column-gap: 21px;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        
+    }
+    &__logo {
+        margin-left: 20px;
+        margin-right: 20px;
+        position: relative;
+        padding-right: 21px;
+
+        &::after {
+            top: 50%;
+            right: 0;
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 35px;
+            background-color: #C2C2C4;
+            transform: translateY(-50%);
+        }
+    }
+    &__descr {
+        font-size: rem(16);
+        line-height: math.div(20, 16);
+        font-weight: 500;
+        max-width: 170px;
+        span {
+            background-color: #CA0100;
+            border-radius: 22px;
+            color: #fff;
+            
+            padding: 4px 6px;
+           
+        }
+    }
+    &__menu {}
+    &__contacts {}
+    &__phone {}
+    &__subphone {}
+    &__btn {}
+}
+
+.menu {
+    &__icon {}
+    &__body {}
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        transition: color 0.3s ease 0s;
+    }
+    &__item {}
+    &__link {
+        &:hover {
+            color: #CA0100;;
+        }
+    }
+}
+
+.page-header-image {
+}
+
+.btn {
+}
+
+
+//=======================
 
 //Burger
-/*
+
 .icon-menu {
 	display: none;
-	@media (max-width: $mobile) {
+	@media (min-width: $mobile) {
 		display: block;
 		position: relative;
-		width: rem(30);
-		height: rem(18);
+		width: rem(28);
+		height: rem(22);
 		cursor: pointer;
 		z-index: 5;
 		span,
@@ -21,8 +137,9 @@
 			right: 0;
 			position: absolute;
 			width: 100%;
-			height: rem(2);
-			background-color: #000;
+			height: rem(4);
+			background-color: #262626;
+            border-radius: 5px;
 		}
 		&::before {
 			top: 0;
@@ -31,7 +148,7 @@
 			bottom: 0;
 		}
 		span {
-			top: calc(50% - rem(1));
+			top: calc(50% - rem(2));
 		}
 		.menu-open & {
 			span {
@@ -41,14 +158,13 @@
 			&::after {
 			}
 			&::before {
-				top: calc(50% - rem(1));
+				top: calc(50% - rem(2));
 				transform: rotate(-45deg);
 			}
 			&::after {
-				bottom: calc(50% - rem(1));
+				bottom: calc(50% - rem(2));
 				transform: rotate(45deg);
 			}
 		}
 	}
 }
-*/
