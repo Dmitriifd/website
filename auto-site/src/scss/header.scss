@@ -47,6 +47,7 @@
     &__container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         column-gap: 21px;
     }
     &__inner {
@@ -86,10 +87,31 @@
         }
     }
     &__menu {}
-    &__contacts {}
-    &__phone {}
-    &__subphone {}
-    &__btn {}
+    &__contacts {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+
+        &-inner {
+            text-align: right;
+        }
+    }
+    &__phone {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: rem(24);
+        line-height: math.div(28, 24);
+        svg {
+            margin-right: 12px;
+        }
+    }
+    &__subphone {
+        
+    }
+    &__btn {
+
+    }
 }
 
 .menu {
@@ -112,8 +134,6 @@
 .page-header-image {
 }
 
-.btn {
-}
 
 
 //=======================

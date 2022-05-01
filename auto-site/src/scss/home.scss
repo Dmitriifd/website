@@ -1,3 +1,14 @@
-//====================================================================================================
+.btn {
+    background-color: #CA0100;
+    border-radius: 6px; 
+    padding: 15px 25px;
+    color: #fff;
+    font-weight: 700;
+    font-size: rem(16);
+    line-height: math.div(19, 16);
+    transition: background-color 0.3s ease-out 0s;
 
-//====================================================================================================
+    &:hover {
+        background-color: lighten(#CA0100, 5%)
+    }
+}
