@@ -70,6 +70,9 @@
             height: 35px;
             background-color: #C2C2C4;
             transform: translateY(-50%);
+            @media (max-width: $tablet) {
+                content: unset;
+            }
         }
     }
     &__descr {
@@ -85,16 +88,25 @@
             padding: 4px 6px;
            
         }
+        @media (max-width: $tablet) {
+            display: none;
+        }
     }
     &__menu {}
     &__contacts {
         display: flex;
         align-items: center;
+        margin-left: auto;
         column-gap: 20px;
 
         &-inner {
             text-align: right;
+            @media (max-width: 1200px) {
+                display: flex;
+                align-items: center;
+            }
         }
+
     }
     &__phone {
         display: flex;
@@ -102,15 +114,26 @@
         font-weight: 700;
         font-size: rem(24);
         line-height: math.div(28, 24);
+        white-space: nowrap;
         svg {
             margin-right: 12px;
         }
+
+        @media (max-width: $mobile) {
+            font-size: rem(18);
+            line-height: math.div(21, 18);
+        }
     }
     &__subphone {
-        
+        @media (max-width: 1200px) {
+            display: none;
+        }
     }
     &__btn {
-
+        display: none;
+        @media (min-width: 1400px) {
+            display: block;
+        }
     }
 }
 
@@ -118,10 +141,15 @@
     &__icon {}
     &__body {}
     &__list {
-        display: flex;
+        display: none;
         align-items: center;
         gap: 16px;
         transition: color 0.3s ease 0s;
+
+        // temp
+        @media (min-width: 1200px) {
+            display: flex;
+        }
     }
     &__item {}
     &__link {
@@ -146,15 +174,27 @@
 }
 .menu-catalog {
     &__list {
-        display: flex;
+        display: none;
         align-items: center;
-        column-gap: rem(86);
+        column-gap: rem(83);
+        column-gap: rem(30);
+        @media (min-width: 1400px) {
+            column-gap: rem(83);
+        }
+        // temp
+        @media (min-width: 1200px) {
+            display: flex;
+        }
+        
     }
     &__item {
         
          
     }
     &__link {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
         font-weight: 700;
         font-size: rem(16);
         line-height: 19px;
@@ -178,6 +218,11 @@
         display: flex;
         align-items: center;
         column-gap: 40px;
+        margin-left: 20px;
+
+        @media (max-width: $mobile) {
+            column-gap: 28px;
+        }
     }
 }
 .actions {
@@ -215,8 +260,8 @@
 //Burger
 
 .icon-menu {
-	display: none;
-	@media (min-width: $mobile) {
+
+	@media (min-width: 320px) {
 		display: block;
 		position: relative;
 		width: rem(28);
@@ -261,4 +306,8 @@
 			}
 		}
 	}
+}
+
+.hamburger-menu {
+    
 }
