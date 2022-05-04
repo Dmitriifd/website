@@ -7,10 +7,50 @@
 }
 .top-header {
     &__container {
+        
+    }
+    &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: 43px;
+
+        @media (max-width: $tablet) {
+            display: none;
+        }
+    }
+    &__mobile {
+        display: none;
+
+        @media (max-width: $tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+    }
+    &__mobile-link {
+        display: flex;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 13px;
+        color: #CA0100;
+        align-items: center;
+        svg {
+            margin-right: 5px;
+        }
+        @media (max-width: $mobileSmall) {
+            font-size: 13px;
+        }
+    }
+    &__mobile-phone {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 13px;
+
+        @media (max-width: $mobileSmall) {
+            font-size: 13px;
+        }
     }
     &__location {
         
@@ -44,11 +84,20 @@
 
 .header-info {
     padding-top: 22px;
+
+      @media (max-width: $mobileSmall) {
+        padding-top: 15px;
+    }
+
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
         column-gap: 21px;
+
+        @media (max-width: $mobileSmall) {
+            gap: 0;
+        }
     }
     &__inner {
         display: flex;
@@ -72,7 +121,17 @@
             transform: translateY(-50%);
             @media (max-width: $tablet) {
                 content: unset;
+                margin-right: 0;
+                padding-right: 0;
             }
+        }
+
+         @media (max-width: $tablet) {
+            margin-right: 0;
+            padding-right: 0;
+        }
+        @media (max-width: $mobileSmall) {
+            margin-left: 14px;
         }
     }
     &__descr {
@@ -119,9 +178,12 @@
             margin-right: 12px;
         }
 
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
             font-size: rem(18);
             line-height: math.div(21, 18);
+        }
+        @media (max-width: 640px) {
+            display: none;
         }
     }
     &__subphone {
@@ -220,8 +282,12 @@
         column-gap: 40px;
         margin-left: 20px;
 
-        @media (max-width: $mobile) {
+        @media (max-width: $tablet) {
             column-gap: 28px;
+        }
+        @media (max-width: $mobileSmall) {
+            margin-left: 0;
+            column-gap: 20px;
         }
     }
 }
@@ -248,6 +314,13 @@
             svg path{
                 transition: all 0.3s ease;
                 stroke: #CA0100;
+            }
+        }
+
+        svg {
+            @media (max-width: $mobileSmall) {
+                width: 20px;
+                height: 20px;
             }
         }
     }
