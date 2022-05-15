@@ -27,9 +27,11 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.main-block__slider')) { // Указываем скласс нужного слайдера
+	if (document.querySelector('.promo-slider')) {
+		// Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.main-block__slider', { // Указываем скласс нужного слайдера
+		new Swiper('.promo-slider', {
+			// Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation, Pagination],
@@ -40,10 +42,10 @@ function initSliders() {
 			autoHeight: false,
 			speed: 800,
 
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
 
 			loop: true,
 			//touchRatio: 0,
@@ -61,10 +63,9 @@ function initSliders() {
 			*/
 
 			// Пагинация
-			
-			
+
 			// Скроллбар
-	
+
 			// scrollbar: {
 			// 	el: '.swiper-scrollbar',
 			// 	draggable: true,
@@ -99,9 +100,7 @@ function initSliders() {
 			},
 			*/
 			// События
-			on: {
-
-			}
+			on: {},
 		});
 	}
 }
