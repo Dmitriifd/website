@@ -13,6 +13,10 @@
 
 		@media (max-width: 1580px) {
 		}
+
+        @media (max-width: 600px) {
+            padding: 0;
+        }
 	}
 
 	&__container {
@@ -54,45 +58,31 @@
 		text-align: right;
 		img {
 			width: 80%;
-
-			@media (max-width: 1320px) {
-				width: 70%;
-			}
-			@media (max-width: 1200px) {
-				width: 0%;
-			}
-
-			@media (max-width: 998px) {
-				width: 50%;
-				height: auto;
-			}
-			@media (max-width: 767px) {
-				width: 60%;
-				height: auto;
-			}
-			@media (max-width: 600px) {
-				width: 80%;
-				height: auto;
-			}
-			@media (max-width: 480px) {
-				width: 100%;
-				height: auto;
-			}
+            height: auto;
+			@media (max-width: 1300px) {
+                width: 60%;
+            }
+            @media (max-width: 768px) {
+               width: 70%;
+            }
+            @media (max-width: 600px) {
+                width: 80%;
+            }
+           
+            @media (max-width: 450px) {
+                width: 100%;
+            }
+           
 		}
 
 		@media (max-width: 998px) {
-			top: 60%;
-			transform: translateY(-50%);
-		}
-
-		@media (max-width: 767px) {
-			top: 60%;
-		}
-
-		@media (max-width: 600px) {
-			position: static;
-			transform: translateY(0);
-		}
+              top: 100px; 
+        }
+        @media (max-width: 600px) {
+            position: static;
+            text-align: center;
+            max-width: 400px;
+        }
 	}
 
 	&-slider__label {
@@ -118,7 +108,7 @@
 		line-height: 70px;
 		margin-bottom: 24px;
 
-		@media (max-width: 998px) {
+		@media (max-width: 1200px) {
 			font-size: rem(36);
 			line-height: 42px;
 			max-width: 605px;
@@ -216,6 +206,6 @@
 	@media (max-width: 600px) {
 		display: flex;
 		flex-direction: column;
-		gap: 30px;
+		gap: 10px;
 	}
 }
