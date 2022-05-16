@@ -1,0 +1,46 @@
+.choice {
+	margin-top: 38px;
+    
+    margin-bottom: 64px;
+    
+	/* .choice__container */
+	&__container {
+	}
+	/* .choice__body */
+	&__body {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px 30px;
+        background: #EFF0F0;
+        border-radius: 11px;
+	}
+	/* .choice__llist */
+	&__llist {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 138px);
+        grid-template-rows: repeat(8, 28px);
+        max-height: 320px;
+        max-width: 800px;
+        justify-content: space-between;
+        gap: 15px;
+	}
+	/* .choice__item */
+	&__item {
+        flex: 1 1 auto;
+	}
+	/* .choice__link */
+	&__link {
+        display: flex;
+        align-items: center;
+	}
+	/* .choice__logo */
+	&__logo {
+        margin-right: 10px;
+	}
+	/* .choice__name */
+	&__name {
+	}
+	/* .choice__form */
+	&__form {
+	}
+}
