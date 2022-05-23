@@ -20,6 +20,7 @@ export function rangeInit() {
 
 		noUiSlider.create(priceSlider, {
 			start: [0, 500],
+			connect: true,
 			step: 300,
 
 			range: {
