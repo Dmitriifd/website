@@ -1,0 +1,26 @@
+.auto {
+	/* .auto__container */
+	&__container {
+	}
+	/* .auto__title */
+	&__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+        margin-bottom: rem(64);
+	}
+	/* .auto__cards */
+	&__cards {
+	}
+	/* .auto__card */
+	&__card {
+	}
+}
+
+.reserve {
+}
+.buy {
+}
+.more {
+}
