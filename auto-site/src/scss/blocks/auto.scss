@@ -12,15 +12,13 @@
 	}
 	/* .auto__cards */
 	&__cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(446px, 1fr));
+        gap: 31px;
 	}
 	/* .auto__card */
 	&__card {
 	}
 }
 
-.reserve {
-}
-.buy {
-}
-.more {
-}
+
