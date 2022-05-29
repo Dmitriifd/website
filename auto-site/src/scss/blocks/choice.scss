@@ -3,6 +3,10 @@
 
 	margin-bottom: 64px;
 
+    @media (max-width: 455px) {
+        margin-bottom: 40px;
+    }
+
 	/* .choice__container */
 	&__container {
 	}
