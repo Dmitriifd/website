@@ -1,0 +1,143 @@
+.offer {
+    margin-top: 67px;
+	/* .offer__container */
+	&__container {
+	}
+	/* .offer__slider */
+	&__slider {
+        margin-bottom: 89px;
+	}
+    // offer__slider-title
+    &__slider-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 47px;
+        margin-bottom: 47px;
+        display: inline-block;
+        margin-right: 24px;
+    }
+    // offer__slider-link
+    &__slider-link {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        background-color: #CA0100;
+        border-radius: 11px;
+        padding: 6px 14px;
+        
+        vertical-align: super;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+	/* .offer__wrapper */
+	&__wrapper {
+	}
+	/* .offer__slide */
+	&__slide {
+	}
+	/* .offer__slide-img */
+	&__slide-img {
+        width: 447px;
+        height: 317px;
+        position: relative;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+	}
+	/* .offer__slide-info */
+	&__slide-info {
+        position: absolute;
+        bottom: 25px;
+        left: 33px;
+        display: flex;
+        align-items: center;
+        column-gap: 19px;
+	}
+	/* .offer__slide-title */
+	&__slide-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+        max-width: 218px;
+	}
+	/* .offer__slide-button */
+	&__slide-button {
+        background: #CA0100;
+        border-radius: 6px;
+        padding: 7px 30px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #FFFFFF;
+        align-self: stretch;
+        transition: background-color 0.2s ease-out;
+
+        &:hover {
+            background-color: lighten(#CA0100, 5%);
+        }
+	}
+	/* .offer__form */
+	&__form {
+        min-height: 328px;
+        margin-bottom: 77px;
+        background: linear-gradient(274deg, rgba(0,0,0,1) 45%, rgba(172,1,0,1) 100%);
+        border-radius: 25px;
+        padding: 60px 143px;
+	}
+	/* .offer__slider-spec */
+	&__slider-spec {
+	}
+	/* .offer__wrapper-spec */
+	&__wrapper-spec {
+	}
+	/* .offer__slide-spec */
+	&__slide-spec {
+	}
+}
+
+.form-offer {
+    
+	/* .form-offer__title */
+	&__title {
+	}
+	/* .form-offer__subtitle */
+	&__subtitle {
+	}
+	/* .form-offer__wrapper */
+	&__wrapper {
+	}
+	/* .form-offer__input */
+	&__input {
+	}
+	/* .form-offer__button */
+	&__button {
+	}
+	/* .form-offer__terms */
+	&__terms {
+	}
+}
+
+.spec-slide {
+	/* .spec-slide__img */
+	&__img {
+	}
+	/* .spec-slide__info */
+	&__info {
+	}
+	/* .spec-slide__title */
+	&__title {
+	}
+	/* .spec-slide__desc */
+	&__desc {
+	}
+	/* .spec-slide__button */
+	&__button {
+	}
+}
