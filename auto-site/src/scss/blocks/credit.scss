@@ -1,0 +1,133 @@
+.credit {
+	margin-bottom: 72px;
+	/* .credit__container */
+	&__container {
+	}
+	/* .credit__title */
+	&__title {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 47px;
+		margin-bottom: 37px;
+	}
+	/* .credit__body */
+	&__body {
+       display: flex;
+       column-gap: 30px;
+	}
+	/* .credit__form-wrapper */
+	&__form-wrapper {
+		
+	}
+	/* .credit__form-top */
+	&__form-top {
+		display: flex;
+		gap: 18px;
+        background: #c2c2c4;
+		border-radius: 25px;
+		padding: 23px;
+	}
+    
+	/* .credit__select */
+
+	&__select {
+        
+	}
+	/* .credit__calc */
+	&__calc {
+	}
+	/* .credit__calc-img */
+	&__calc-img {
+	}
+	/* .credit__calc-info */
+	&__calc-info {
+	}
+	/* .credit__form-profit */
+	&__form-profit {
+	}
+}
+.credit-wrapper {
+	max-width: 1870px;
+	margin: 0 15px;
+	background: #eff0f0;
+	border-radius: 25px;
+	padding-top: 80px;
+	padding-bottom: 135px;
+}
+.calc {
+	/* .calc__slider-sum */
+	&__slider-sum {
+	}
+	/* .calc__slider-time */
+	&__slider-time {
+	}
+	/* .calc__total */
+	&__total {
+	}
+	/* .calc__input */
+	&__input {
+	}
+	/* .calc__input-pay */
+	&__input-pay {
+	}
+}
+.calc-column {
+	/* .calc-column__left */
+	&__left {
+	}
+	/* .calc-column__right */
+	&__right {
+	}
+}
+.calc-info {
+	/* .calc-info__label */
+	&__label {
+	}
+	/* .calc-info__line */
+	&__line {
+	}
+}
+.profit-form {
+    display: flex;
+    flex-direction: column;
+    
+	/* .profit-form__title */
+	&__title {
+	}
+	/* .profit-form__input */
+	&__input {
+	}
+	/* .profit-form__btn */
+	&__btn {
+	}
+	/* .profit-form__term */
+	&__term {
+	}
+}
+
+
+	.select_credit__select {
+		flex: 0 1 33.333%;
+        
+		.select__content {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+
+			color: #262626;
+		}
+        .select__value {
+            padding: 12px 19px;
+            min-height: 46px;
+        }
+	}
+
+    .credit-column-left {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    .credit-column-right {
+       flex-basis: 447px;
+    }
