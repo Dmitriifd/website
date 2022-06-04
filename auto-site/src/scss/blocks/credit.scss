@@ -12,32 +12,32 @@
 	}
 	/* .credit__body */
 	&__body {
-       display: flex;
-       column-gap: 30px;
+		display: flex;
+		column-gap: 30px;
 	}
 	/* .credit__form-wrapper */
 	&__form-wrapper {
-		
 	}
 	/* .credit__form-top */
 	&__form-top {
 		display: flex;
 		gap: 18px;
-        background: #c2c2c4;
+		background: #c2c2c4;
 		border-radius: 25px;
 		padding: 23px;
+		margin-bottom: 25px;
 	}
-    
+
 	/* .credit__select */
 
 	&__select {
-        
 	}
 	/* .credit__calc */
 	&__calc {
 	}
 	/* .credit__calc-img */
 	&__calc-img {
+		margin-bottom: 22px;
 	}
 	/* .credit__calc-info */
 	&__calc-info {
@@ -55,17 +55,48 @@
 	padding-bottom: 135px;
 }
 .calc {
+	display: flex;
+	column-gap: 52px;
 	/* .calc__slider-sum */
 	&__slider-sum {
+		p {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			margin-bottom: 10px;
+		}
+		margin-bottom: 34px;
 	}
 	/* .calc__slider-time */
 	&__slider-time {
+		p {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			margin-bottom: 10px;
+		}
 	}
 	/* .calc__total */
 	&__total {
+		margin-top: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		p {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 19px;
+			max-width: 156px;
+		}
 	}
 	/* .calc__input */
 	&__input {
+		max-width: 250px;
+		width: 100%;
+		height: 63px;
+		border: 1px solid #e1e1e1;
+		border-radius: 6px;
+		padding: 20px 25px;
 	}
 	/* .calc__input-pay */
 	&__input-pay {
@@ -74,60 +105,134 @@
 .calc-column {
 	/* .calc-column__left */
 	&__left {
+		flex: 0 1 46%;
 	}
 	/* .calc-column__right */
 	&__right {
+		flex: 0 1 49%;
+
+		display: flex;
+		flex-direction: column;
 	}
 }
 .calc-info {
 	/* .calc-info__label */
 	&__label {
+		display: flex;
+		justify-content: space-between;
+		span {
+			display: inline-block;
+			background: #adadb0;
+			border-radius: 30px;
+			font-weight: 900;
+			font-size: 16px;
+			line-height: 19px;
+			text-align: center;
+			color: #ffffff;
+			padding: 1px 30px;
+			margin-bottom: 13px;
+		}
 	}
 	/* .calc-info__line */
 	&__line {
+		border: 6px solid #e1e1e1;
+		border-radius: 25px;
+		margin-bottom: 9px;
 	}
-}
-.profit-form {
-    display: flex;
-    flex-direction: column;
-    
-	/* .profit-form__title */
-	&__title {
-	}
-	/* .profit-form__input */
-	&__input {
-	}
-	/* .profit-form__btn */
-	&__btn {
-	}
-	/* .profit-form__term */
-	&__term {
-	}
-}
-
-
-	.select_credit__select {
-		flex: 0 1 33.333%;
-        
-		.select__content {
+	&__line-wrap {
+		display: flex;
+		justify-content: space-between;
+		p {
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 19px;
-
-			color: #262626;
+			color: #adadb0;
+			&:nth-child(2) {
+				text-align: right;
+			}
 		}
-        .select__value {
-            padding: 12px 19px;
-            min-height: 46px;
-        }
 	}
+}
+.profit-form {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	border-radius: 25px;
+	padding: 40px 30px 78px;
 
-    .credit-column-left {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 100%;
-    }
+	/* .profit-form__title */
+	&__title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 34px;
+		margin-bottom: 13px;
+		span {
+			color: #ca0100;
+		}
+	}
+	/* .profit-form__input */
+	&__input {
+		height: 63px;
+		padding: 18px 25px;
+		border: 1px solid #e1e1e1;
+		border-radius: 6px;
+	}
+	&__input:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	/* .profit-form__btn */
+	&__btn {
+		margin-bottom: 22px;
+		height: 65px;
+	}
+	/* .profit-form__term */
+	&__term {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 130%;
+		text-align: center;
+		color: #737373;
 
-    .credit-column-right {
-       flex-basis: 447px;
-    }
+		a {
+			text-decoration: underline;
+		}
+	}
+}
+
+.select_credit__select {
+	flex: 0 1 33.333%;
+
+	.select__content {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+
+		color: #262626;
+	}
+	.select__value {
+		padding: 12px 19px;
+		min-height: 46px;
+	}
+}
+
+.credit-column-left {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+}
+
+.credit-column-right {
+	flex-basis: 447px;
+}
+
+.slider-range .noUi-connect {
+    background-color: #ca0100;
+}
+
+.slider-range .noUi-marker {
+    display: none;
+}
+
+.range-slider__value {
+    
+}
