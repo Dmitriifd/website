@@ -14,7 +14,6 @@ export function rangeInit() {
 	const sliderTime = document.querySelector('#slider-time');
 
 	if (priceSlider) {
-
 		const nonLinearStepSliderValueElement =
 			document.getElementById('slider-value');
 
@@ -57,8 +56,6 @@ export function rangeInit() {
 	}
 
 	if (sliderSum) {
-		
-
 		// let sliderSumValue = document.document.querySelector('.range-slider__value');
 
 		noUiSlider.create(sliderSum, {
@@ -84,13 +81,9 @@ export function rangeInit() {
 			},
 		});
 
-      
-      
-
 		let lineValue = document.querySelectorAll('.slider-range .noUi-value');
 		lineValue[0].textContent = 0;
 		lineValue[1].textContent = '500т';
-
 
 		var pips = sliderSum.querySelectorAll('.noUi-value');
 
