@@ -12,12 +12,13 @@
 	}
 	/* .review__wrapper */
 	&__wrapper {
-        display: flex;
-        gap: 29px;
+		display: flex;
+		gap: 29px;
+		margin-bottom: 100px;
 	}
 	/* .review__card */
 	&__card {
-        flex: 0 1 33.333%;
+		flex: 0 1 33.333%;
 		max-width: 446px;
 	}
 	/* .review__card-header */
@@ -88,9 +89,90 @@
 		background: #f2f2f2;
 		border-radius: 0px 0px 25px 25px;
 	}
+
+	/* .review__about */
+	&__about {
+		margin-bottom: 114px;
+	}
+	/* .review__about-title */
+	&__about-title {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 47px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	/* .review__about-text */
+	&__about-text {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 160%;
+		text-align: center;
+
+		color: #737373;
+		margin-bottom: 49px;
+	}
+	/* .review__about-video */
+	&__about-video {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__about-play {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	/* .review__card-play */
+	&__card-play {
+	}
+	/* .review__card-icon */
+	&__card-icon {
+	}
+
+	/* .review__blog */
+	&__blog {
+	}
+	/* .review__blog-head */
+	&__blog-head {
+		display: flex;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+	/* .review__blog-title */
+	&__blog-title {
+		margin-right: 24px;
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 47px;
+	}
+	/* .review__blog-link */
+	&__blog-link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 24px;
+		width: 132px;
+		height: 32px;
+		color: #ffffff;
+		background-color: #ca0100;
+		border-radius: 11px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
-.title {
-}
+
 .card-review {
 	/* .card-review__title */
 	&__title {
@@ -109,11 +191,11 @@
 	}
 	/* .card-review__button */
 	&__button {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 188px;
-        text-align: left;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 188px;
+		text-align: left;
 		margin-top: 20px;
 		font-weight: 700;
 		font-size: 14px;
@@ -122,10 +204,70 @@
 		border-radius: 20px;
 		padding: 10px 12px 10px 20px;
 
-        svg {
-
-        }
+		svg {
+		}
 	}
+}
+
+.review {
+	/* .review__blog */
+	&__blog {
+		position: relative;
+	}
+	/* .review__blog-head */
+	&__blog-head {
+	}
+	/* .review__blog-title */
+	&__blog-title {
+	}
+	/* .review__blog-link */
+	&__blog-link {
+	}
+}
+.blog {
+	/* .blog__slider */
+	&__slider {
+	}
+	/* .blog__wrapper */
+	&__wrapper {
+	}
+	/* .blog__slide */
+	&__slide {
+	}
+}
+
+.blog-card {
+	/* .blog-card__img */
+	&__img {
+		margin-bottom: 23px;
+		max-width: 100%;
+		height: auto;
+	}
+	/* .blog-card__date */
+	&__date {
+		display: inline-block;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+
+		color: #adadb0;
+		margin-bottom: 12px;
+	}
+	/* .blog-card__text */
+	&__text {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 19px;
+	}
+}
+
+.blog__slider-btns {
+	display: flex;
+	gap: 15px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 11;
 }
 
 @keyframes playCircleOne {
