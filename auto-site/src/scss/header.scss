@@ -193,6 +193,7 @@
     }
     &__btn {
         display: none;
+        white-space: nowrap;
         @media (min-width: 1400px) {
             display: block;
         }

@@ -22,12 +22,16 @@
 					</ul>
 				</div>
 			</div>
+
 			<div class="footer__body">
 				<div class="footer__body-wrapper footer-nav">
 					<div class="footer-nav__column footer-nav__menu">
 						<div class="footer-nav__header">
-							Каталог авто
-							<a href="#">Подробнее</a>
+							<div>
+								<p>Каталог авто</p>
+								<a href="#">Подробнее</a>
+							</div>
+
 							<a href="#">Карта сайта</a>
 						</div>
 						<ul class="footer-nav__list">
@@ -165,111 +169,197 @@
 								</li>
 							</ul>
 						</div>
-						<div class="info-footer__contacts">
+						<div class="info-footer__contacts footer-contacts">
 							<button class="info-footer__btn">Контакты</button>
-                            <div class="info-footer__phones">
-                                <a href="#">+7 (800) 541-91-41</a>
-                                <a href="#">+7 (495) 212-48-37</a>
-                            </div>
-                            <p>Ежедневно с 08:00 до 21:00</p>
-                            <p>Россия, Москва, 38КМ МКАД, 6Бс1</p>
-                            <a href="#">Схема проезда</a>
-                            <div class="info-footer__dropdown">
-                                Москва
+							<div class="info-footer__phones">
+								<a href="#">
+                                    <span>
+                                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="11.5" cy="12.4095" rx="11.5" ry="11.5018" fill="#CA0100">
+                                            </ellipse>
+                                            <g clip-path="url(#clip0_2456_22834)">
+                                                <path
+                                                    d="M15.7982 15.0214L14.4083 13.6313C14.1315 13.3556 13.673 13.364 13.3865 13.6506L12.6863 14.3507C12.642 14.3263 12.5963 14.3008 12.5481 14.2738C12.1059 14.0288 11.5007 13.693 10.8638 13.0556C10.2251 12.417 9.88894 11.8108 9.64317 11.3683C9.61724 11.3214 9.59239 11.2762 9.56785 11.2333L10.0378 10.7641L10.2689 10.5327C10.5558 10.2457 10.5637 9.78739 10.2875 9.51085L8.89761 8.12064C8.62141 7.84449 8.16274 7.85287 7.87582 8.13987L7.48409 8.53385L7.4948 8.54447C7.36345 8.71207 7.25369 8.90538 7.17201 9.11383C7.09671 9.31225 7.04983 9.5016 7.0284 9.69133C6.84487 11.2128 7.54015 12.6034 9.42704 14.4903C12.0353 17.0983 14.1372 16.9013 14.2279 16.8917C14.4254 16.8681 14.6147 16.8209 14.807 16.7462C15.0136 16.6655 15.2068 16.5559 15.3743 16.4248L15.3829 16.4324L15.7797 16.0438C16.066 15.7569 16.0743 15.2984 15.7982 15.0214Z"
+                                                    fill="white"></path>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_2456_22834">
+                                                    <rect width="9" height="9.00138" fill="white"
+                                                        transform="translate(7 7.90869)"></rect>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </span>
+                                    +7 (800) 541-91-41
+                                </a>
+								<a href="#">+7 (495) 212-48-37</a>
+							</div>
+							<p>
+                                <span><svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <ellipse cx="11.5" cy="11.5101" rx="11.5" ry="11.5018" fill="#CA0100"></ellipse>
+                                        <path
+                                            d="M11.5 6.00928C8.46718 6.00928 6 8.47683 6 11.5101C6 14.5434 8.46718 17.011 11.5 17.011C14.5328 17.011 17 14.5434 17 11.5101C17 8.47683 14.5328 6.00928 11.5 6.00928ZM14.1157 14.3554C14.0263 14.4448 13.909 14.4898 13.7917 14.4898C13.6744 14.4898 13.557 14.4448 13.4677 14.3554L11.176 12.0634C11.0898 11.9777 11.0417 11.8612 11.0417 11.7393V8.7597C11.0417 8.50621 11.247 8.30132 11.5 8.30132C11.753 8.30132 11.9583 8.50621 11.9583 8.7597V11.5496L14.1157 13.7072C14.2949 13.8865 14.2949 14.1762 14.1157 14.3554Z"
+                                            fill="white"></path>
+                                    </svg></span>
+                                Ежедневно с 08:00 до 21:00
+                            </p>
+							<p class="footer-contacts__address">
+                                <span>
+                                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <ellipse cx="11.5" cy="11.5164" rx="11.5" ry="11.5018" fill="#CA0100"></ellipse>
+                                        <g clip-path="url(#clip0_2456_22836)">
+                                            <path
+                                                d="M11.4994 6.01562C9.30274 6.01562 7.51562 7.80301 7.51562 10C7.51562 12.7265 11.0807 16.7292 11.2325 16.8983C11.3751 17.0571 11.624 17.0568 11.7663 16.8983C11.9181 16.7292 15.4832 12.7265 15.4832 10C15.4831 7.80301 13.6961 6.01562 11.4994 6.01562ZM11.4994 12.0046C10.3942 12.0046 9.49509 11.1054 9.49509 10C9.49509 8.89463 10.3942 7.99537 11.4994 7.99537C12.6046 7.99537 13.5037 8.89465 13.5037 10C13.5037 11.1054 12.6046 12.0046 11.4994 12.0046Z"
+                                                fill="white"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2456_22836">
+                                                <rect width="11" height="11.0017" fill="white"
+                                                    transform="translate(6 6.01562)"></rect>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </span>
+                                Россия, Москва, 38КМ МКАД, 6Бс1
+                            </p>
+							<a class="footer-contacts__scheme" href="#">Схема проезда</a>
+							<div class="info-footer__dropdown">
+                                <p>Москва</p>
+                                <span>
+                                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.50002 6C5.69716 6 5.89428 5.92797 6.04458 5.78422L10.7743 1.25832C11.0752 0.970413 11.0752 0.503627 10.7743 0.21584C10.4736 -0.0719468 9.98587 -0.0719468 9.68497 0.21584L5.50002 4.22061L1.31504 0.21598C1.01416 -0.0718069 0.526495 -0.0718069 0.225766 0.21598C-0.0752544 0.503767 -0.0752544 0.970553 0.225766 1.25846L4.95545 5.78436C5.10583 5.92814 5.30295 6 5.50002 6Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </span>
                             </div>
 						</div>
 					</div>
 				</div>
-				<div class="footer__copyright">
-                    <div class="footer__copyright-column">
-                        <p>© 2021 Автосалон "ABC AUTO". Официальный дилер</p>
-                        <ul>
-                            <li><a href="#">Политика конфиденциальности</a></li>
-                            <li><a href="#">Пользовательское соглашение</a></li>
-                        </ul>
+			</div>
+		</div>
+
+		<div class="footer__copyright">
+			<div class="footer__container footer__copyright-wrapper">
+				<div class="footer__copyright-column footer__copyright-about">
+					<p>© 2021 Автосалон "ABC AUTO". Официальный дилер</p>
+					<ul>
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Пользовательское соглашение</a></li>
+					</ul>
+				</div>
+				<div class="footer__copyright-column footer__copyright-info">
+					<p class="footer__copyright-text">
+						Обращаем Ваше внимание на то, что данный интернет-сайт носит
+						исключительно информационный характер и ни при каких условиях не
+						является публичной офертой, определяемой положениями Статьи 437
+						Гражданского кодекса Российской Федерации.
+					</p>
+				</div>
+				<div class="footer__copyright-column footer__copyright-logo">
+					<div class="footer__copyright-img">
+						<img src="../img/yandex-footer.png" alt="yandex logo" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer__container">
+			<div class="footer__catalog">
+                <div class="footer__catalog-column">
+                    	<div class="footer__catalog-item">
+                    	    <button>KIA</button>
+                    	  <p> Picanto (2020), Sorento 2019, Sorento Prime, Sportage New, Rio 2019,
+                    	      Pro Ceed, Mohave 2019, Rio X-Line, Stringer (2020), Optima NEW, Ceed
+                    	      2020, Cerato 2020, K900, Ceed SW 2020, Soul, Seltos, XCeed, K5, Rio,
+                    	      Sorento, Mohave, Rio X, Carnival, Picanto, Stinger, Cerato, Ceed, Ceed
+                    	      SW</p>
+                    	</div>
+                    	<div class="footer__catalog-item">
+                    	    <button>HYundai</button>
+                    	    i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019,
+                    	    Sonata, Solaris, Creta 2020, Tucson N Line, Elantra, Palisade, Santa
+                    	    Fe, Tucson, Creta
+                    	</div>
+                    	<div class="footer__catalog-item">
+                    	    <button>SKOda</button>
+                    	    Octavia 2019, Kodiaq 2020, Rapid 2019, Kodiaq Scout, Kodiaq Sportline,
+                    	    Superb New, Superb Combi New, Superb Sportline, Karoq, Rapid, Octavia
+                    	    A8, Kodiaq
+                    	</div>
+                </div>
+                <div class="footer__catalog-column">
+                    <div class="footer__catalog-item">
+                        <button>Volkswagen</button>
+                        Golf (2020), Polo 2019, Passat 2019, Tiguan 2019, Jetta 2019, Touareg,
+                        Teramont (2020), Amarok, Passat, Jetta, Polo, Arteon
                     </div>
-                    <div class="footer__copyright-column">
-                        <p class="footer__copyright-text">Обращаем Ваше внимание на то, что данный интернет-сайт носит
-                            исключительно информационный
-                            характер и ни при каких условиях не является публичной офертой, определяемой положениями
-                            Статьи 437 Гражданского кодекса Российской Федерации.</p>
+                    <div class="footer__catalog-item">
+                        <button>HYundai</button>
+                        i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019,
+                        Sonata
                     </div>
-                    <div class="footer__copyright-column">
-                        <div class="footer__copyright-img">
-                            <img src="../img/yandex-footer.png" alt="yandex logo">
+                    <div class="footer__catalog-item">
+                        <button>KIA</button>
+                        Picanto (2020), Sorento 2019, Sorento Prime, Sportage New, Rio 2019,
+                        Pro Ceed, Mohave 2019, Rio X-Line, Stringer (2020)
+                    </div>
+                     <div class="footer__catalog-item">
+                         <button>KIA</button>
+                         i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019,
+                         Sonata, Solaris, Creta 2020, Tucson N Line, Elantra, Palisade, Santa
+                         Fe, Tucson, Creta
+                     </div>
+                </div>
+                <div class="footer__catalog-column">
+                    <div class="footer__catalog-item">
+                        <button>HYundai</button>
+                        i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019,
+                        Sonata
+                    </div>
+                    <div class="footer__catalog-item">
+                        <button>KIA</button>
+                        Picanto (2020), Sorento 2019, Sorento Prime, Sportage New, Rio 2019,
+                        Pro Ceed, Mohave 2019, Rio X-Line, Stringer (2020)
+                    </div>
+                   
+                        <div class="footer__catalog-item">
+                            <button>KIA</button>
+                            Picanto (2020), Sorento 2019, Sorento Prime, Sportage New, Rio 2019,
+                            Pro Ceed, Mohave 2019, Rio X-Line, Stringer (2020), Optima NEW, Ceed
+                            2020, Cerato 2020, K900, Ceed SW 2020, Soul, Seltos, XCeed, K5, Rio,
+                            Sorento, Mohave, Rio X, Carnival, Picanto, Stinger, Cerato, Ceed, Ceed
+                            SW
                         </div>
+                </div>
+                <div class="footer__catalog-column">
+                    <div class="footer__catalog-item">
+                        <button>HYundai</button>
+                        i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019,
+                        Sonata
+                    </div>
+                    <div class="footer__catalog-item">
+                        <button>KIA</button>
+                        Picanto (2020), Sorento 2019, Sorento Prime, Sportage New, Rio
+                    </div>
+                    <div class="footer__catalog-item">
+                        <button>KIA</button>
+                        i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019,
+                        Sonata
+                    </div>
+                    <div class="footer__catalog-item">
+                        <button>Авто под такси</button>
+                        Hyundai Solaris, Skoda Octavia, Volswagen Polo, Hyundai Solaris, Skoda
+                        Octavia, Volswagen Polo, Hyundai Solaris, Skoda Octavia, Volswagen
+                        Polo, Hyundai Solaris, Skoda Octavia, Volswagen Polo.
                     </div>
                 </div>
 			</div>
-			<div class="footer__catalog">
-                <div class="footer__catalog-column">
-                    <button>KIA</button>
-                    Picanto (2020), Sorento 2019, Sorento Prime, Sportage New, Rio 2019, Pro Ceed, Mohave 2019, Rio
-                    X-Line, Stringer (2020), Optima NEW, Ceed 2020, Cerato 2020, K900, Ceed SW 2020, Soul, Seltos,
-                    XCeed, K5, Rio, Sorento, Mohave, Rio X, Carnival, Picanto, Stinger, Cerato, Ceed, Ceed SW
-                </div>
-                <div class="footer__catalog-column">
-                    <button>HYundai</button>
-                    i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019, Sonata, Solaris, Creta 2020, Tucson
-                    N Line, Elantra, Palisade, Santa Fe, Tucson, Creta
-                </div>
-                <div class="footer__catalog-column">
-                    <button>SKOda</button>
-                    Octavia 2019, Kodiaq 2020, Rapid 2019, Kodiaq Scout, Kodiaq Sportline, Superb New, Superb Combi New,
-                    Superb Sportline, Karoq, Rapid, Octavia A8, Kodiaq
-                </div>
-                <div class="footer__catalog-column">
-                    <button>Volkswagen</button>
-                    Golf (2020), Polo 2019, Passat 2019, Tiguan 2019, Jetta 2019, Touareg, Teramont (2020), Amarok,
-                    Passat, Jetta, Polo, Arteon
-                </div>
-                <div class="footer__catalog-column">
-                    <button>HYundai</button>
-                    i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019, Sonata
-                </div>
-                <div class="footer__catalog-column">
-                    <button>KIA</button>
-                    Picanto (2020), Sorento 2019, Sorento Prime, Sportage New, Rio 2019, Pro Ceed, Mohave 2019, Rio
-                    X-Line, Stringer (2020)
-                </div>
-                <div class="footer__catalog-column">
-                    <button>KIA</button>
-                    Picanto (2020), Sorento 2019, Sorento Prime, Sportage New, Rio 2019, Pro Ceed, Mohave 2019, Rio
-                    X-Line, Stringer (2020), Optima NEW, Ceed 2020, Cerato 2020, K900, Ceed SW 2020, Soul, Seltos,
-                    XCeed, K5, Rio, Sorento, Mohave, Rio X, Carnival, Picanto, Stinger, Cerato, Ceed, Ceed SW
-                </div>
-                <div class="footer__catalog-column">
-                    <button>HYundai</button>
-                    i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019, Sonata
-                </div>
-                <div class="footer__catalog-column">
-                    <button>KIA</button>
-                    Picanto (2020), Sorento 2019, Sorento Prime, Sportage New, Rio 2019, Pro Ceed, Mohave 2019, Rio
-                    X-Line, Stringer (2020)
-                </div>
-                <div class="footer__catalog-column">
-                    <button>KIA</button>
-                    i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019, Sonata, Solaris, Creta 2020, Tucson
-                    N Line, Elantra, Palisade, Santa Fe, Tucson, Creta
-                </div>
-                <div class="footer__catalog-column">
-                    <button>HYundai</button>
-                    i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019, Sonata
-                </div>
-                <div class="footer__catalog-column">
-                    <button>KIA</button>
-                    Picanto (2020), Sorento 2019, Sorento Prime, Sportage New, Rio
-                </div>
-                <div class="footer__catalog-column">
-                    <button>KIA</button>
-                    i30, Solaris 2019, Santa Fe 2020, Tucson 2020, H1, Elantra 2019, Sonata
-                </div>
-                <div class="footer__catalog-column">
-                    <button>Авто под такси</button>
-                    Hyundai Solaris, Skoda Octavia, Volswagen Polo, Hyundai Solaris, Skoda Octavia, Volswagen Polo,
-                    Hyundai Solaris, Skoda Octavia, Volswagen Polo, Hyundai Solaris, Skoda Octavia, Volswagen Polo.
-                </div>
-            </div>
 		</div>
 	</div>
 </footer>
