@@ -224,24 +224,32 @@ function initSliders() {
 
 			// Брейкпоинты
 
-			// breakpoints: {
-			// 	320: {
-			// 		slidesPerView: 1.1,
-			// 		spaceBetween: 10,
-			// 	},
-			// 	768: {
-			// 		slidesPerView: 2,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	998: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	1340: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 20,
-			// 	},
-			// },
+			breakpoints: {
+				320: {
+					slidesPerView: 1.1,
+					spaceBetween: 10,
+				},
+				440: {
+					slidesPerView: 1.5,
+					spaceBetween: 20,
+				},
+				650: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 2.2,
+					spaceBetween: 20,
+				},
+				998: {
+					slidesPerView: 2.5,
+					spaceBetween: 20,
+				},
+				1320: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+			},
 		});
 	}
 	if (document.querySelector('.offer__slider-spec')) {
@@ -293,25 +301,26 @@ function initSliders() {
 			*/
 
 			// Брейкпоинты
-
-			// breakpoints: {
-			// 	320: {
-			// 		slidesPerView: 1.1,
-			// 		spaceBetween: 10,
-			// 	},
-			// 	768: {
-			// 		slidesPerView: 2,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	998: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	1340: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 20,
-			// 	},
-			// },
+			breakpoints: {
+				320: {
+					slidesPerView: 1.1,
+					spaceBetween: 10,
+				},
+				480: {
+					slidesPerView: 1.1,
+					// spaceBetween: 20,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				998: {
+					slidesPerView: 2.5,
+				},
+				1180: {
+					slidesPerView: 3,
+				},
+			},
 		});
 	}
 	if (document.querySelector('.partners__slider')) {
@@ -487,24 +496,7 @@ function initSliders() {
 
 			// Брейкпоинты
 
-			// breakpoints: {
-			// 	320: {
-			// 		slidesPerView: 1.1,
-			// 		spaceBetween: 10,
-			// 	},
-			// 	768: {
-			// 		slidesPerView: 2,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	998: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	1340: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 20,
-			// 	},
-			// },
+		
 		});
 	}
 }
