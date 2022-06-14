@@ -3,77 +3,98 @@
 		<div class="credit__container">
 			<h2 class="credit__title">Заявка на автокредит</h2>
 			<div class="credit__body">
-                <div class="credit__body-column credit-column-left">
-                    <form class="credit__form-top">
-                        <select name="form[]" class="credit__select">
-                            <option value="1" selected>Марка</option>
-                            <option value="2">Пункт №2</option>
-                            <option value="3">Пункт №3</option>
-                        </select>
-                        <select name="form[]" class="credit__select">
-                            <option value="1" selected>Модель</option>
-                            <option value="2">Пункт №2</option>
-                            <option value="3">Пункт №3</option>
-                        </select>
-                        <select name="form[]" class="credit__select">
-                            <option value="1" selected>Комплектация</option>
-                            <option value="2">Пункт №2</option>
-                            <option value="3">Пункт №3</option>
-                        </select>
-                    </form>
-                    <div class="credit__calc calc">
-                        <div class="calc-column calc-column__left">
-                            <div class="credit__calc-img">
-                                <img src="../img/credit-bg.png" alt="img" />
-                            </div>
-                            <div class="credit__calc-info calc-info">
-                                <div class="calc-info__label">
-                                    <span>0</span>
-                                    <span>0</span>
-                                </div>
-                                <div class="calc-info__line">
-                                </div>
-                                <div class="calc-info__line-wrap">
-                                    <p>Первоначальный<br> взнос</p>
-                                    <p>Остаток<br> по кредиту</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="calc-column calc-column__right">
-                            <div class="calc__slider-sum range-slider">
-                                <p>Сумма кредита, руб</p>
-                                <div id="slider-sum" class="slider-range"></div>
-                            </div>
-                            <div class="calc__slider-time range-slider">
-                                <p>Срок кредита, мес.</p>
-                                <div id="slider-time" class="slider-range"></div>
-                                <div class="range-slider__value"></div>
-                            </div>
-                            <div class="calc__total">
-                                <p>Первоначальный взнос, руб</p>
-                                <input type="text" class="calc__input calc__input-pay"  placeholder="0"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="credit__body-column credit-column-right">
-                    <div class="credit__form-profit">
-                        <form class="profit-form">
-                            <h2 class="profit-form__title">
-                                Получить выгоду<br> <span>300 000 ₽</span>
-                            </h2>
-                            <input type="text" class="profit-form__input" placeholder="Ваше имя" />
-                            <input type="text" class="profit-form__input" placeholder="Ваш телефон" />
-                            <button class="profit-form__btn btn">Получить предложение</button>
+				<div class="credit__body-column credit-column-left">
+					<form class="credit__form-top">
+						<select name="form[]" class="credit__select">
+							<option value="1" selected>Марка</option>
+							<option value="2">Пункт №2</option>
+							<option value="3">Пункт №3</option>
+						</select>
+						<select name="form[]" class="credit__select">
+							<option value="1" selected>Модель</option>
+							<option value="2">Пункт №2</option>
+							<option value="3">Пункт №3</option>
+						</select>
+						<select name="form[]" class="credit__select">
+							<option value="1" selected>Комплектация</option>
+							<option value="2">Пункт №2</option>
+							<option value="3">Пункт №3</option>
+						</select>
+					</form>
+					<div class="credit__calc calc">
+						<div class="calc-column calc-column__left">
+							<div class="credit__calc-img">
+								<img src="../img/credit-bg.png" alt="img" />
+							</div>
+							<div class="credit__calc-info calc-info">
+								<div class="calc-info__label">
+									<span>0</span>
+									<span>0</span>
+								</div>
+								<div class="calc-info__line"></div>
+								<div class="calc-info__line-wrap">
+									<p>
+										Первоначальный<br />
+										взнос
+									</p>
+									<p>
+										Остаток<br />
+										по кредиту
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="calc-column calc-column__right">
+							<div class="calc__slider-sum range-slider">
+								<p>Сумма кредита, руб</p>
+								<div id="slider-sum" class="slider-range"></div>
+							</div>
+							<div class="calc__slider-time range-slider">
+								<p>Срок кредита, мес.</p>
+								<div id="slider-time" class="slider-range"></div>
+								<div class="range-slider__value"></div>
+							</div>
+							<div class="calc__total">
+								<p>Первоначальный взнос, руб</p>
+								<input
+									type="text"
+									class="calc__input calc__input-pay"
+									placeholder="0"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="credit__body-column credit-column-right">
+					<div class="credit__form-profit">
+						<form class="profit-form">
+							<h2 class="profit-form__title">
+								Получить выгоду
+								<span>300 000 ₽</span>
+							</h2>
+							<div class="profit-form__body">
+								<input
+									type="text"
+									class="profit-form__input"
+									placeholder="Ваше имя"
+								/>
+								<input
+									type="text"
+									class="profit-form__input"
+									placeholder="Ваш телефон"
+								/>
+								<button class="profit-form__btn btn">
+									Получить предложение
+								</button>
+							</div>
                             <p class="profit-form__term">
-                                Нажимая кнопку “Получить скидку” Вы даете согласие на обработку
-                                своих <a href="#">персональных данных</a>
+                                Нажимая кнопку “Получить скидку” Вы даете согласие на
+                                обработку своих <a href="#">персональных данных</a>
                             </p>
-                        </form>
-                    </div>
-                </div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
