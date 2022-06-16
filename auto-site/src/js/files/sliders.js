@@ -368,24 +368,32 @@ function initSliders() {
 
 			// Брейкпоинты
 
-			// breakpoints: {
-			// 	320: {
-			// 		slidesPerView: 1.1,
-			// 		spaceBetween: 10,
-			// 	},
-			// 	768: {
-			// 		slidesPerView: 2,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	998: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	1340: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 20,
-			// 	},
-			// },
+			breakpoints: {
+				320: {
+					slidesPerView: 1.1,
+					spaceBetween: 10,
+				},
+				540: {
+					slidesPerView: 1.5,
+					spaceBetween: 10,
+				},
+				700: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				900: {
+					slidesPerView: 2.5,
+					spaceBetween: 20,
+				},
+				1080: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1400: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+			},
 		});
 	}
 	if (document.querySelector('.reviews-slider')) {
@@ -432,24 +440,32 @@ function initSliders() {
 
 			// Брейкпоинты
 
-			// breakpoints: {
-			// 	320: {
-			// 		slidesPerView: 1.1,
-			// 		spaceBetween: 10,
-			// 	},
-			// 	768: {
-			// 		slidesPerView: 2,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	998: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 20,
-			// 	},
-			// 	1340: {
-			// 		slidesPerView: 3,
-			// 		spaceBetween: 20,
-			// 	},
-			// },
+			breakpoints: {
+				320: {
+					slidesPerView: 1.1,
+					spaceBetween: 10,
+				},
+				540: {
+					slidesPerView: 1.5,
+					spaceBetween: 10,
+				},
+				700: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				900: {
+					slidesPerView: 2.5,
+					spaceBetween: 20,
+				},
+				1080: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1400: {
+					slidesPerView: 4,
+					spaceBetween: 20,
+				},
+			},
 		});
 	}
 	if (document.querySelector('.blog__slider')) {
