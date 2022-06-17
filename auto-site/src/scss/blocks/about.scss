@@ -9,10 +9,18 @@
 .about-tabs {
 	margin-bottom: 90px;
 
+	@media (max-width: 768px) {
+		margin-bottom: 40px;
+	}
+
 	/* .about-tabs__navigation */
 	&__navigation {
 		display: flex;
 		gap: 53px;
+
+		@media (max-width: 768px) {
+			gap: 25px;
+		}
 	}
 	/* .about-tabs__title */
 	&__title {
@@ -20,6 +28,11 @@
 		font-size: 16px;
 		line-height: 19px;
 		padding-bottom: 19px;
+
+		@media (max-width: 768px) {
+			font-size: 14px;
+			line-height: 16px;
+		}
 	}
 	&__title._tab-active {
 		color: #ca0100;
@@ -32,11 +45,20 @@
 	&__body {
 		padding-top: 48px;
 
+		@media (max-width: 768px) {
+			padding-top: 30px;
+		}
+
 		h2 {
 			font-weight: 700;
 			font-size: 40px;
 			line-height: 47px;
 			margin-bottom: 8px;
+
+			@media (max-width: 768px) {
+				font-size: 30px;
+				line-height: 35px;
+			}
 		}
 		p {
 			font-weight: 400;
@@ -54,11 +76,25 @@
 	overflow: hidden;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
-    padding: 0;
+	padding: 0;
+
+	@media (max-width: 580px) {
+		margin: 0 10px;
+	}
 }
 
 .about-map {
 	position: relative;
+
+	iframe {
+		@media (max-width: 768px) {
+			height: 360px;
+		}
+
+		@media (max-width: 580px) {
+			height: 600px;
+		}
+	}
 
 	/* .about-map___info */
 	&___info {
@@ -70,51 +106,68 @@
 		display: flex;
 		flex-direction: column;
 		row-gap: 20px;
+
+		@media (max-width: 768px) {
+			top: 64px;
+			right: 45px;
+			padding: 20px;
+		}
+
+		@media (max-width: 580px) {
+			top: unset;
+			bottom: 30px;
+		}
+
+		@media (max-width: 440px) {
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
 	}
 	/* .about-map__link */
 	&__link {
 		display: flex;
-        align-items: center;
+		align-items: center;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 19px;
 		&:first-child {
 			margin-bottom: 5px;
 		}
-        &:nth-child(2) {
-            padding-left: 35px;
-        }
+		&:nth-child(2) {
+			padding-left: 35px;
+		}
 
-        svg {
-            margin-right: 12px;
-        }
+		svg {
+			margin-right: 12px;
+		}
 	}
 	&__phone {
 	}
 	/* .about-map__work */
 	&__work {
-        display: flex;
-        align-items: center;
+		display: flex;
+		align-items: center;
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 19px;
 
-        svg {
-            margin-right: 12px;
-        }
+		svg {
+			margin-right: 12px;
+		}
 	}
 	/* .about-map__address */
 	&__address {
-        display: flex;
-        align-items: center;
+		display: flex;
+		align-items: center;
 
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 19px;
 
-        svg {
-            margin-right: 12px;
-        }
+		svg {
+			margin-right: 12px;
+		}
 	}
 	/* .about-map__btn */
 	&__btn {
