@@ -45,9 +45,20 @@
 			max-height: unset;
 		}
 
+        @media (max-width: 820px) {
+            grid-template-columns: repeat(4, 138px);
+            column-gap: 30px;
+			grid-template-rows: auto;
+        }
+        @media (max-width: 720px) {
+            grid-template-columns: repeat(3, 138px);
+            column-gap: 30px;
+			grid-template-rows: auto;
+        }
+
 		@media (max-width: 555px) {
 			grid-template-columns: repeat(3, 1fr);
-			column-gap: 30px;
+			
 			grid-template-rows: auto;
 			justify-items: center;
 		}
