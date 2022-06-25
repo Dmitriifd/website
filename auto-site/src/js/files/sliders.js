@@ -391,7 +391,6 @@ function initSliders() {
 				},
 				1400: {
 					slidesPerView: 4,
-					spaceBetween: 20,
 				},
 			},
 		});
