@@ -374,8 +374,20 @@
 
 /* hamburger-menu */
 .hamburger-menu {
-    display: none;
-    padding-bottom: 150px;
+	display: none;
+	padding-bottom: 150px;
+
+    @media (max-width: 1402px) {
+        
+        position: fixed;
+        z-index: 11;
+        background-color: #fff;
+        overflow: auto;
+        height: 100%;
+        padding-bottom: 250px;
+        
+        
+    }
 	// .hamburger-menu__form
 	&__form {
 		position: relative;
@@ -419,6 +431,12 @@
 	&__body {
 		display: flex;
 		gap: 70px;
+        flex-wrap: wrap;
+
+        @media (max-width: 1402px) {
+            gap: 30px;
+        }
+        
 	}
 	// .hamburger-menu__column
 	&__column {
@@ -429,33 +447,49 @@
 
 			color: #737373;
 		}
-        ul {
-            
-        }
+		ul {
+		}
 	}
 	// .hamburger-menu__category
 	&__category {
 		font-weight: 700;
 		font-size: 30px;
 		line-height: 200%;
+
+        @media (max-width: 780px) {
+            font-size: 20px;
+        }
 	}
 
-    &__auto {
-        display: grid;
-        grid-template-columns: repeat(4, 111px);
-        grid-template-rows: repeat(11, 30px);
-        column-gap: 10px;
-    }
-    &__catalog {
-        display: grid;
-        grid-template-columns: repeat(4, 111px);
-         grid-template-rows: repeat(11, 30px);
-        column-gap: 10px;
-    }
+	&__auto {
+		display: grid;
+		grid-template-columns: repeat(4, 111px);
+		grid-template-rows: repeat(11, 30px);
+		column-gap: 10px;
 
+        @media (max-width: 480px) {
+            grid-template-columns: repeat(3, 111px);
+        }
+        @media (max-width: 380px) {
+            grid-template-columns: repeat(2, 111px);
+        }
+	}
+	&__catalog {
+		display: grid;
+		grid-template-columns: repeat(4, 111px);
+		grid-template-rows: repeat(11, 30px);
+		column-gap: 10px;
+
+          @media (max-width: 480px) {
+            grid-template-columns: repeat(3, 111px);
+        }
+          @media (max-width: 380px) {
+            grid-template-columns: repeat(2, 111px);
+        }
+	}
 }
 
 .hamburger-menu.active {
-    display: block;
-    
-}  
+	display: block;
+}
+
