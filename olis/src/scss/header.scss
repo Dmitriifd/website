@@ -4,7 +4,8 @@
     &__wrapper {
         display: flex;
         position: relative;
-        padding-top: rem(99);
+        align-items: flex-start;
+        
     }
 
     &__circle {
@@ -91,7 +92,7 @@
 
     &__content {
         display: flex;
-       
+       padding-top: rem(99);
         
     }
     &__social {
@@ -142,7 +143,7 @@
         text-transform: uppercase;
         color: #FEAD04;
         padding-bottom: rem(27);
-        max-width: rem(680);
+        // max-width: rem(680);
         position: relative;
         
         &::before {
@@ -167,15 +168,15 @@
     &__btn {
 
     }
-    &__slider {
-        img {
-            position: absolute;
-            right: 0;
-            top: 0;
-            z-index: -1;
-            transform: translateX(82px);
-        }
-    }
+    // &__slider {
+    //    height: 100%;
+    //     img {
+    //        max-width: 100%;
+    //        height: auto;
+    //     }
+
+    //     // transform: translateX(82px);
+    // }
 }
 .menu {
     &__icon {}
@@ -271,4 +272,6 @@
 	}
 }
 
- 
+ .parent {
+     display: flex;
+ }
