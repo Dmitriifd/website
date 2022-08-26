@@ -7,15 +7,15 @@ let autoprefixer = require("gulp-autoprefixer");
 let scss = require('gulp-sass')(require('sass'));
 let group_media = require("gulp-group-css-media-queries");
 let plumber = require("gulp-plumber");
-let del = require("del");
-let imagemin = require("gulp-imagemin");
+// let del = require("del");
+// let imagemin = require("gulp-imagemin");
 let uglify = require("gulp-uglify-es").default;
 let rename = require("gulp-rename");
 let fileinclude = require("gulp-file-include");
 let clean_css = require("gulp-clean-css");
 let newer = require('gulp-newer');
 
-let webp = require('imagemin-webp');
+// let webp = require('imagemin-webp');
 let webpcss = require("gulp-webpcss");
 let webphtml = require('gulp-webp-html');
 
@@ -120,11 +120,11 @@ function images() {
 	return src(path.src.images)
 		.pipe(newer(path.build.images))
 		.pipe(
-			imagemin([
-				webp({
-					quality: 75
-				})
-			])
+			// imagemin([
+			// 	// webp({
+			// 	// 	quality: 75
+			// 	// })
+			// ])
 		)
 		.pipe(
 			rename({
@@ -135,12 +135,12 @@ function images() {
 		.pipe(src(path.src.images))
 		.pipe(newer(path.build.images))
 		.pipe(
-			imagemin({
-				progressive: true,
-				svgoPlugins: [{ removeViewBox: false }],
-				interlaced: true,
-				optimizationLevel: 3 // 0 to 7
-			})
+			// imagemin({
+			// 	progressive: true,
+			// 	svgoPlugins: [{ removeViewBox: false }],
+			// 	interlaced: true,
+			// 	optimizationLevel: 3 // 0 to 7
+			// })
 		)
 		.pipe(dest(path.build.images))
 }
@@ -199,7 +199,7 @@ function fontstyle() {
 
 function cb() { }
 function clean() {
-	return del(path.clean);
+	// return del(path.clean);
 }
 function watchFiles() {
 	gulp.watch([path.watch.html], html);
